@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>5. Guerre totale · Grande Guerre</title>
+<style>
+*{box-sizing:border-box}
+:root{
+--bg:#faf9f6;--fg:#1c1c1e;--muted:#5d5d66;--card:#fff;--line:#e3e0d8;--accent:#1d4f7a;--accent-bg:#e7eff7;--link:#1d5fa0;
+--def:#1d5fa0;--def-bg:#e9f1fb;--src:#8a5a00;--src-bg:#fbf2df;--ex:#1d7445;--ex-bg:#e7f5ed;
+--warn:#b02a1f;--warn-bg:#fdebe9;--app:#6a3d9e;--app-bg:#f2ecfa;--note:#555a61;--note-bg:#eef0f2;
+--ana:#0d7480;--ana-bg:#e4f4f6;--q:#383896;--q-bg:#ebebfa;
+--ok:#1d7445;--ok-bg:#e7f5ed;--ko:#b02a1f;--ko-bg:#fdebe9;
+--de:#5a6474;--fr:#2c6db3;--uk:#c25a1c;--it:#2e8b57;--soft:#f2f0ea;
+}
+@media (prefers-color-scheme:dark){:root{
+--bg:#141518;--fg:#e9e9ec;--muted:#a3a3ad;--card:#1d1f24;--line:#33363e;--accent:#8fbbe6;--accent-bg:#1f2a36;--link:#8fbbe6;
+--def:#8fbbe6;--def-bg:#1b2633;--src:#e2b25c;--src-bg:#2c2416;--ex:#76cf9c;--ex-bg:#17281f;
+--warn:#f08a80;--warn-bg:#2f1a18;--app:#c5a6ef;--app-bg:#251d33;--note:#b9bec5;--note-bg:#24272c;
+--ana:#6fd0db;--ana-bg:#152a2d;--q:#aeaef5;--q-bg:#1f1f38;
+--ok:#76cf9c;--ok-bg:#17281f;--ko:#f08a80;--ko-bg:#2f1a18;
+--de:#9aa5b5;--fr:#6fa8e8;--uk:#f0955a;--it:#6fcf97;--soft:#22252b;
+}}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 clamp(17px,.95rem + .35vw,19px)/1.68 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;overflow-x:hidden}
+a{color:var(--link)}
+h1,h2,h3,h4{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;line-height:1.25}
+h1{font-size:clamp(1.7rem,1.2rem + 2vw,2.4rem);margin:.2em 0 .3em}
+h2{font-size:1.55rem;margin:2.4em 0 .6em;padding-top:.8em;border-top:2px solid var(--line)}
+h3{font-size:1.2rem;margin:1.7em 0 .4em}
+h4{font-size:1.05rem;margin:1.1em 0 .3em}
+p{margin:.6em 0}
+ul,ol{padding-left:1.3em}
+li{margin:.25em 0}
+.cit{font-style:italic}
+strong{font-weight:700}
+.top{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--line);font-size:.92rem}
+.top a{text-decoration:none;font-weight:600;white-space:nowrap}
+.top .crumb{color:var(--muted);white-space:nowrap}
+.top .sp{flex:1}
+.top .nav a{padding:4px 10px;border:1px solid var(--line);border-radius:999px;margin-left:4px}
+.layout{max-width:1180px;margin:0 auto;padding:0 16px}
+main{max-width:780px;margin:0 auto;padding-bottom:60px;min-width:0}
+.toc-side{display:none}
+@media (min-width:1120px){
+ .layout{display:grid;grid-template-columns:250px minmax(0,780px);gap:48px;justify-content:center}
+ main{margin:0}
+ .toc-side{display:block;position:sticky;top:70px;align-self:start;max-height:calc(100vh - 90px);overflow:auto;padding-top:34px;font-size:.88rem}
+ .toc-mob{display:none}
+}
+.toc-h{font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:.78rem;margin-bottom:6px}
+.toc-side ol,.toc-mob ol{list-style:none;padding:0;margin:0}
+.toc-side a,.toc-mob a{display:block;padding:4px 10px;border-left:3px solid transparent;text-decoration:none;color:var(--fg)}
+.toc-side a.on{border-left-color:var(--accent);background:var(--accent-bg);color:var(--accent);font-weight:600}
+.toc-mob{margin:16px 0;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.toc-mob summary{cursor:pointer;padding:12px 16px;font-weight:700}
+.toc-mob ol{padding:0 6px 10px}
+.hero{padding:30px 0 6px}
+.kicker{color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.07em;font-weight:600}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+.box{--c:var(--note);--cbg:var(--note-bg);border-left:5px solid var(--c);background:var(--cbg);border-radius:10px;padding:12px 16px;margin:18px 0}
+.box>.lbl{font-size:.74rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--c);margin-bottom:2px}
+.box>:last-child{margin-bottom:0}
+.box.def{--c:var(--def);--cbg:var(--def-bg)}
+.box.src{--c:var(--src);--cbg:var(--src-bg)}
+.box.ex{--c:var(--ex);--cbg:var(--ex-bg)}
+.box.warn{--c:var(--warn);--cbg:var(--warn-bg)}
+.box.app{--c:var(--app);--cbg:var(--app-bg)}
+.box.note{--c:var(--note);--cbg:var(--note-bg)}
+.box.ana{--c:var(--ana);--cbg:var(--ana-bg)}
+.box.q{--c:var(--q);--cbg:var(--q-bg)}
+.box.intu{--c:var(--accent);--cbg:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);font-size:1.06em}
+blockquote{margin:10px 0;padding:6px 14px;border-left:3px solid var(--line);color:var(--fg);font-family:Georgia,serif}
+blockquote .tr{display:block;color:var(--muted);font-family:system-ui,sans-serif;font-size:.92em;margin-top:4px}
+.tblwrap{overflow-x:auto;margin:14px 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.93em;background:var(--card)}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tl{list-style:none;padding:0;margin:14px 0 14px 6px;border-left:3px solid var(--line)}
+.tl li{position:relative;padding:4px 0 10px 18px}
+.tl li::before{content:"";position:absolute;left:-8px;top:12px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl .d{display:block;font-weight:700;color:var(--accent);font-size:.9em}
+.tl li.it::before{background:var(--it)}
+.tl li.it .d{color:var(--it)}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:1px 7px;border-radius:999px;background:var(--soft);color:var(--muted);vertical-align:middle;margin-left:4px}
+.ex-card{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:16px 0}
+.ex-h{font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lvl{font-size:.72rem;font-weight:800;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+.lvl.l1{background:var(--ok-bg);color:var(--ok)}
+.lvl.l2{background:var(--src-bg);color:var(--src)}
+.lvl.l3{background:var(--ko-bg);color:var(--ko)}
+button{font:inherit;cursor:pointer}
+.sol-btn,.retry,.st-ctl button,.seg button,.calc button,.sort-ctl button{border:1px solid var(--accent);background:var(--accent-bg);color:var(--accent);border-radius:8px;padding:7px 14px;font-weight:600;font-size:.92em;min-height:40px}
+.sol-btn:hover{filter:brightness(.97)}
+.sol{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--ok-bg);border-left:4px solid var(--ok)}
+.sol>:first-child{margin-top:0}.sol>:last-child{margin-bottom:0}
+.quiz{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:14px 0}
+.quiz .q{font-weight:600;margin-top:0}
+.quiz .opts{display:grid;gap:8px}
+.opt{text-align:left;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:9px;padding:10px 12px;min-height:44px}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt.ok{background:var(--ok-bg);border-color:var(--ok);color:var(--fg)}
+.opt.ok::after{content:"  ✓";color:var(--ok);font-weight:800}
+.opt.ko{background:var(--ko-bg);border-color:var(--ko)}
+.opt.ko::after{content:"  ✗";color:var(--ko);font-weight:800}
+.opt:disabled{cursor:default;opacity:1}
+.fb{margin:10px 0 8px;padding:10px 12px;border-radius:9px;background:var(--soft)}
+.quiz .opts.row{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+.stepper{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:18px 0}
+.stepper>.st-title{font-weight:700;margin:0 0 8px}
+.st-prog{height:6px;background:var(--soft);border-radius:999px;overflow:hidden;margin-bottom:10px}
+.st-prog i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.stepper .step{display:none}
+.stepper .step.on{display:block;animation:fade .25s}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.stepper .step h4{margin-top:4px}
+.st-ctl{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px;flex-wrap:wrap}
+.st-ctl button:disabled{opacity:.4;cursor:default}
+.st-n{color:var(--muted);font-size:.9em}
+@media (max-width:480px){.st-ctl .st-n{order:-1;flex-basis:100%;text-align:center}}
+.seg{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.seg button[aria-pressed=true],.calc button[aria-pressed=true],.sort-ctl button[aria-pressed=true]{background:var(--accent);color:var(--card)}
+.widget{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:18px 0}
+.widget svg{width:100%;height:auto;display:block}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.88em;color:var(--muted)}
+.legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--sw)}
+.small{font-size:.88em;color:var(--muted)}
+.calc{display:flex;flex-wrap:wrap;gap:6px}
+.calc-out{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--soft);min-height:3em}
+.big{font-size:1.5em;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:48px}
+.pager a{display:block;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--fg)}
+.pager a small{display:block;color:var(--muted)}
+.pager a.next{text-align:right;grid-column:2}
+.cards{display:grid;gap:12px;margin:16px 0}
+.cards a{display:block;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--fg)}
+.cards a:hover{border-color:var(--accent)}
+.cards .n{font-weight:800;color:var(--accent);font-size:.85em;text-transform:uppercase;letter-spacing:.06em}
+.cards .t{font-family:Georgia,serif;font-size:1.2em;font-weight:700;display:block;margin:2px 0}
+.cards .d{color:var(--muted);font-size:.93em}
+.legend-boxes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.legend-boxes .box{margin:0;padding:8px 12px;font-size:.9em}
+.hot{cursor:pointer}
+.hot circle{fill:var(--accent);stroke:var(--card);stroke-width:2}
+.hot text{fill:var(--card);font:700 13px system-ui,sans-serif;pointer-events:none}
+.hot.on circle{fill:var(--warn)}
+svg text{font-family:system-ui,sans-serif}
+.sort-item{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0;background:var(--bg)}
+.sort-item.ok{border-color:var(--ok);background:var(--ok-bg)}
+.sort-item.ko{border-color:var(--ko);background:var(--ko-bg)}
+.sort-item .why{margin-top:6px;font-size:.92em}
+.score{font-weight:700;margin-top:10px}
+.sort-item .sort-ctl{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.sort-item .sort-ctl button{font-size:.85em;padding:6px 8px;line-height:1.25}
+.cycle{display:flex;align-items:center;gap:8px;margin:10px 0}
+.cyc{flex:1 1 0;border:1px solid var(--accent);background:var(--accent-bg);border-radius:10px;padding:10px 12px;font-weight:600;text-align:center}
+.cyc.loop{background:transparent;border-style:dashed;font-weight:500;color:var(--muted)}
+.cyc-ar{color:var(--accent);font-weight:800;font-size:1.3em;flex:0 0 auto}
+@media (max-width:640px){.cycle{flex-direction:column;align-items:stretch}.cyc-ar{text-align:center;transform:rotate(90deg)}}
+.hot-btns{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:10px}
+.hot-btns button{border:1px solid var(--accent);background:var(--accent-bg);color:var(--accent);border-radius:8px;font-weight:700;min-height:42px}
+.hot-btns button[aria-pressed=true]{background:var(--accent);color:var(--card)}
+@media print{.top,.toc-side,.toc-mob,.pager{display:none}.sol{display:block!important}.stepper .step{display:block}}
+</style>
+</head>
+<body>
+<header class="top"><a class="home" href="index.html">☰ Sommaire</a><span class="crumb">Leçon 5/6</span><span class="sp"></span><span class="nav"><a href="lecon-4-1917-1919.html" title="1917, l'année décisive — du tournant à Versailles">◀ 4</a><a href="lecon-6-italie.html" title="L'Italie dans la Grande Guerre">6 ▶</a></span></header>
+<div class="layout">
+<aside class="toc-side" aria-label="Sections"><div class="toc-h">Dans cette page</div></aside>
+<main>
+<div class="hero"><div class="kicker">Diapositives XIII (5) · Leçon 5 sur 6</div><h1>La guerre totale</h1><p class="sub">Pourquoi la Première Guerre mondiale mobilise toute la société, et pas seulement les armées.</p></div>
+<details class="toc-mob"><summary>Sections de la page</summary></details>
+<section>
+<h2 id="intuition">Intuition</h2>
+<div class="box intu"><div class="lbl">En 4 lignes</div>
+<p>Dans une guerre « classique », ce sont les armées qui se battent ; le reste du pays continue à vivre. Entre 1914 et 1918, c'est tout le pays qui fait la guerre : les usines fabriquent des obus au lieu de produits ordinaires, l'État rationne la nourriture et fixe les prix, les femmes remplacent les hommes partis au front, et les affiches et les journaux sont mis au service du moral. On parle de <strong>guerre totale</strong> parce que <em>toutes</em> les ressources d'un pays, humaines, économiques et morales, sont mobilisées pour la victoire.</p>
+</div>
+<div class="box q"><div class="lbl">La question directrice de la diapositive (question d'examen probable)</div>
+<p>« Pourquoi la Première Guerre mondiale fut-elle une guerre totale ? »</p>
+<p>Les diapositives répondent en <strong>cinq piliers</strong> : armes nouvelles, immobilisme meurtrier, économie de guerre, mobilisation de toute la population, propagande et censure. Apprends-les comme cinq paragraphes.</p>
+</div>
+</section>
+
+<section>
+<h2 id="pas-a-pas" data-toc="Explication pas à pas">Explication pas à pas</h2>
+
+<div class="box def"><div class="lbl">Définition de travail</div>
+<p>Une <strong>guerre totale</strong> est une guerre qui mobilise <strong>l'ensemble des ressources d'un pays</strong> (soldats, mais aussi économie, civils, opinion publique) au service de la victoire. Les diapositives ne donnent pas de définition en une phrase ; celle-ci reprend le résumé joint : « toute la société et toute l'économie sont mobilisées pour la victoire ».</p>
+</div>
+<div class="box warn"><div class="lbl">Attention · « totale » ≠ « mondiale »</div>
+<p><strong>Mondiale</strong> décrit l'<em>étendue</em> géographique du conflit (de nombreux pays, plusieurs continents). <strong>Totale</strong> décrit la <em>profondeur</em> de la mobilisation à l'intérieur de chaque pays. Ce sont deux idées différentes : ne les mélange pas dans une réponse.</p>
+</div>
+
+<h3>Pilier 1 · Des armes nouvelles : une guerre industrielle</h3>
+<p>« Le conflit voit l'apparition d'<strong>armements inédits</strong> » :</p>
+<ul>
+<li><strong>gaz toxiques</strong> (chlore, ypérite) ;</li>
+<li><strong>chars d'assaut</strong> ;</li>
+<li><strong>avions</strong> de combat et de reconnaissance ;</li>
+<li><strong>mitrailleuses</strong> perfectionnées ;</li>
+<li><strong>artillerie lourde</strong> à longue portée.</li>
+</ul>
+<p>« Cette modernisation technologique transforme radicalement la nature des combats et <strong>multiplie leur pouvoir destructeur</strong>. » Pourquoi est-ce un pilier de la guerre <em>totale</em> ? Parce que ces armes se fabriquent dans des usines, en quantités énormes. Une guerre industrielle a besoin de toute l'industrie du pays : c'est le lien avec le pilier 3.</p>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>Le chlore est utilisé pour la première fois par l'armée allemande près d'Ypres (Belgique) en avril 1915. L'ypérite, ou « gaz moutarde », tire son nom de cette même ville ; elle apparaît en 1917. Les premiers chars d'assaut sont britanniques et entrent en action sur la Somme en septembre 1916.</p>
+</div>
+
+<h3>Pilier 2 · Un immobilisme meurtrier : une violence de masse</h3>
+<p>« Contrairement aux guerres précédentes, fondées sur le mouvement, ce conflit <strong>s'enlise dans un immobilisme meurtrier</strong>. » Les offensives, « souvent inutiles, se soldent par des <strong>pertes massives</strong> pour des <strong>gains territoriaux dérisoires</strong> ». C'est, dit la diapositive, « une nouvelle forme de <strong>violence de masse et impersonnelle</strong> ».</p>
+<p>Que signifie <strong>impersonnelle</strong> ? Dans une guerre de tranchées, on meurt le plus souvent sans voir l'ennemi : tué par un obus tiré à des kilomètres, par une rafale de mitrailleuse, par un nuage de gaz. Ce n'est plus un combat d'homme à homme, c'est une destruction industrielle. Tu as déjà vu ce pilier dans les <a href="lecon-2-etapes-1914-1917.html">leçons 2</a> et <a href="lecon-3-verdun.html">3</a> (tranchées, Verdun, artillerie responsable de la majorité des pertes).</p>
+
+<h3>Pilier 3 · L'économie de guerre</h3>
+<p>« Les États <strong>réorganisent entièrement leur économie</strong> pour soutenir l'effort de guerre » :</p>
+<div class="tblwrap"><table>
+<tr><th>Mesure (diapositive)</th><th>Ce que cela veut dire concrètement</th></tr>
+<tr><td><strong>Réquisition des usines</strong></td><td>L'État décide de ce que produisent les usines : des obus, des armes, des munitions plutôt que des biens ordinaires.</td></tr>
+<tr><td><strong>Rationnement des ressources</strong></td><td>Chacun a droit à une quantité limitée de nourriture, de charbon, etc., pour qu'il en reste assez pour le front.</td></tr>
+<tr><td><strong>Contrôle des prix et de la production</strong></td><td>L'État fixe les prix et les quantités, au lieu de laisser faire le marché.</td></tr>
+</table></div>
+<p>« On parle d'<strong>économie de guerre</strong>, où l'ensemble des ressources nationales est mis au service du front. » Retiens l'idée de base : <strong>l'État prend la direction de l'économie</strong>. En temps de paix, il ne le fait pas à ce point.</p>
+
+<h3>Pilier 4 · La mobilisation de toute la population</h3>
+<p>« La guerre implique désormais <strong>l'ensemble de la population</strong>, et non plus seulement les soldats. »</p>
+<ul>
+<li>Les <strong>femmes</strong> remplacent les hommes partis au front « dans les <strong>usines</strong>, les <strong>champs</strong> et les <strong>administrations</strong> ».</li>
+<li>Les <strong>enfants</strong> et les <strong>personnes âgées</strong> participent aussi à l'effort national, « à travers le travail ou la propagande ».</li>
+</ul>
+<p>Pourquoi ? Parce que des millions d'hommes sont au front pendant des années. Sans eux, il faut quand même produire des munitions, cultiver la terre et faire tourner les bureaux. La photo des ouvrières de Londres (plus bas) illustre ce pilier.</p>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>En France, on surnomme <strong>« munitionnettes »</strong> les femmes qui travaillent dans les usines d'armement. Le mot vient du résumé joint, pas des diapositives.</p>
+</div>
+
+<h3>Pilier 5 · Propagande et censure</h3>
+<p>« Les gouvernements utilisent massivement <strong>affiches</strong>, <strong>journaux</strong> et <strong>cinéma</strong> » pour trois objectifs :</p>
+<ol>
+<li><strong>maintenir le moral</strong> des populations ;</li>
+<li><strong>diaboliser l'ennemi</strong> ;</li>
+<li><strong>censurer</strong> les informations négatives sur le déroulement du conflit.</li>
+</ol>
+<p>« Cette <strong>manipulation systématique de l'opinion publique</strong> constitue un aspect <strong>inédit</strong> de la guerre moderne. » Remarque que la propagande vise d'abord <em>sa propre population</em>, pas seulement l'ennemi : il faut que l'arrière tienne, accepte les sacrifices et continue à soutenir la guerre.</p>
+<p>Tu as déjà rencontré plusieurs exemples : la carte postale de Bertiglia (<a href="lecon-1-origines.html#sources">leçon 1</a>), l'affiche de Neumont « On ne passe pas ! » (<a href="lecon-3-verdun.html#sources">leçon 3</a>), et, côté censure, les « bruits » sur les mutineries dans la lettre de Jourdan (<a href="lecon-4-1917-1919.html#sources">leçon 4</a>).</p>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>Les poilus se moquaient de la propagande des journaux, qu'ils appelaient le <strong>« bourrage de crâne »</strong> : des récits héroïques et rassurants très éloignés de ce qu'ils vivaient dans les tranchées.</p>
+</div>
+
+<h3>Le moteur : l'usure</h3>
+<p>Une diapositive (numérotée (2)) relie tous les piliers à la guerre d'usure : « <strong>Plus la guerre s'éternise, plus toutes les ressources de l'État sont mobilisées</strong> pour l'effort de guerre (guerre d'usure) : économie de guerre (toutes les ressources disponibles sont envoyées au front), propagande, participation massive des femmes dans les usines et les champs, censure de la presse. »</p>
+
+<div class="widget">
+<p style="margin-top:0"><strong>La spirale de la guerre totale</strong></p>
+<div class="cycle" role="list" aria-label="La spirale de la guerre totale">
+<div class="cyc" role="listitem">La guerre s'éternise</div><span class="cyc-ar" aria-hidden="true">→</span>
+<div class="cyc" role="listitem">Il faut toujours plus d'hommes et d'obus</div><span class="cyc-ar" aria-hidden="true">→</span>
+<div class="cyc" role="listitem">L'État mobilise toutes ses ressources</div><span class="cyc-ar" aria-hidden="true">→</span>
+<div class="cyc" role="listitem">Chaque camp tient plus longtemps</div><span class="cyc-ar" aria-hidden="true">→</span>
+<div class="cyc loop" role="listitem">↺ retour au début : l'usure continue</div>
+</div>
+<p class="small">La flèche « la guerre s'éternise → toutes les ressources sont mobilisées » vient de la diapositive. Le retour « chaque camp peut tenir plus longtemps → la guerre s'éternise » est ma lecture (approfondissement) : c'est ce qui transforme le lien en spirale.</p>
+</div>
+</section>
+
+<section>
+<h2 id="classer" data-toc="Exercice interactif : classer">Exercice interactif : à quel pilier ?</h2>
+<p>Pour chaque exemple, choisis le pilier de la guerre totale qu'il illustre. Tous les exemples viennent des diapositives du cours.</p>
+<div class="widget sorter" data-cats='[["arm","Armes nouvelles"],["eco","Économie de guerre"],["soc","Mobilisation de la population"],["pro","Propagande et censure"]]'>
+<div class="sort-item" data-a="eco" data-why="La réquisition des usines est une mesure de l'économie de guerre : l'État décide de ce qu'on produit.">L'État réquisitionne les usines.</div>
+<div class="sort-item" data-a="arm" data-why="L'ypérite est un gaz toxique : c'est l'un des armements inédits.">L'ypérite est utilisée sur le champ de bataille.</div>
+<div class="sort-item" data-a="soc" data-why="Les femmes remplacent les hommes dans les champs : c'est la mobilisation de toute la population.">Des femmes remplacent les hommes partis au front dans les champs.</div>
+<div class="sort-item" data-a="pro" data-why="Diaboliser l'ennemi est l'un des trois objectifs de la propagande.">Les affiches présentent l'ennemi comme un monstre.</div>
+<div class="sort-item" data-a="eco" data-why="Le rationnement des ressources fait partie de l'économie de guerre.">La nourriture est rationnée.</div>
+<div class="sort-item" data-a="pro" data-why="Cacher les informations négatives, c'est la censure.">Les journaux ne publient pas les mauvaises nouvelles du front.</div>
+<div class="sort-item" data-a="arm" data-why="Les avions de reconnaissance font partie des armements inédits.">Des avions survolent les lignes ennemies pour les observer.</div>
+<div class="sort-item" data-a="soc" data-why="La diapositive le dit : enfants et personnes âgées participent à l'effort national, par le travail ou la propagande. Ici, le travail : c'est la mobilisation de la population.">Des personnes âgées travaillent pour l'effort de guerre.</div>
+<div class="sort-item" data-a="eco" data-why="Contrôler les prix et la production, c'est l'économie de guerre.">L'État fixe le prix du pain.</div>
+<div class="sort-item" data-a="pro" data-why="Une carte postale qui met en scène les alliances avec des enfants en uniforme sert à maintenir le moral et à convaincre : c'est de la propagande.">La carte postale de Bertiglia montre des enfants en uniforme (leçon 1).</div>
+<div class="score" aria-live="polite"></div>
+</div>
+</section>
+
+<section>
+<h2 id="analogies">Analogies</h2>
+<div class="box ana"><div class="lbl">Analogie · l'équipe et tout le club</div>
+<p>Dans une guerre « classique », seule l'équipe joue le match ; le club continue sa vie normale. Dans une guerre totale, <em>tout le club</em> ne vit plus que pour le match : la cantine nourrit les joueurs en priorité (rationnement), l'atelier ne fabrique plus que des crampons (réquisition), les supporters remplacent le personnel absent (mobilisation de la population), et le journal du club ne publie que des bonnes nouvelles (propagande et censure).</p>
+<p><em>Limite de l'analogie :</em> dans une guerre, l'enjeu n'est pas un trophée mais la survie de millions de personnes, et personne ne peut quitter le club.</p>
+</div>
+<div class="box ana"><div class="lbl">Analogie · l'entreprise en crise</div>
+<p>Imagine une entreprise qui, pour survivre à une crise, suspend tous ses projets, met chaque employé sur une seule mission et contrôle étroitement la communication interne pour éviter la panique. C'est, à l'échelle d'un État, l'économie de guerre plus la propagande.</p>
+</div>
+</section>
+
+<section>
+<h2 id="sources" data-toc="Sources analysées">Sources analysées (exemples traités)</h2>
+<div class="box src"><div class="lbl">Source 1 · Photo, « femmes terminent des cartouches d'armes légères dans une usine à Londres », mai 1918 (Getty Images)</div>
+<p><strong>1) Qui, quand, où :</strong> photographie prise à Londres en mai 1918, diffusée aujourd'hui par Getty Images. L'auteur n'est pas indiqué.</p>
+<p><strong>2) Ce qu'on voit :</strong> des dizaines de femmes, les cheveux couverts d'un bonnet, assises le long de longues tables couvertes de plateaux de cartouches. Plusieurs regardent l'objectif.</p>
+<p><strong>3) Sens :</strong> à la fin de la guerre, la production de munitions repose en grande partie sur les femmes. C'est à la fois l'<strong>économie de guerre</strong> (une usine au service du front) et la <strong>mobilisation de la population</strong> (les femmes remplacent les hommes).</p>
+<p><strong>4) Regard critique :</strong> plusieurs ouvrières posent pour le photographe : l'image est probablement mise en scène. Une photo de ce type peut elle-même servir la propagande, en montrant un arrière uni et efficace. C'est une hypothèse de lecture, pas une information de la diapositive.</p>
+</div>
+
+<div class="box ex"><div class="lbl">Exemple traité · reconnaître la propagande de guerre parmi les documents du cours</div>
+<p>Question : parmi les images du cours, lesquelles sont de la <strong>propagande de la Première Guerre mondiale</strong> (produite pendant le conflit pour soutenir l'effort de guerre) ?</p>
+<ol>
+<li><strong>Carte postale de Bertiglia, 1914–1915</strong> → oui : produite pendant la guerre, elle rend « naturel » le camp de l'Italie.</li>
+<li><strong>Affiche de Neumont, « On ne passe pas ! », 1918</strong> → oui : produite pendant la guerre, elle exalte la résistance du poilu.</li>
+<li><strong>« Enfin ! » de Metlicovitz, 1918</strong> → oui, propagande patriotique italienne de la fin de la guerre (<a href="lecon-6-italie.html">leçon 6</a>).</li>
+<li><strong>« Les héros de Verdun », 1942</strong> → non : c'est une propagande, mais celle du régime de Vichy, 24 ans après la guerre.</li>
+<li><strong>Affiche de Lénine, 1920</strong> → non : propagande révolutionnaire soviétique, après la guerre.</li>
+<li><strong>Caricature « Supprimez ce fardeau », 1931</strong> → non : propagande contre le traité de Versailles, dans l'entre-deux-guerres.</li>
+</ol>
+<p><strong>La leçon de méthode :</strong> pour qualifier un document, regarde toujours sa <strong>date</strong> et son <strong>but</strong>. Un document peut parler de la guerre sans appartenir à la guerre.</p>
+</div>
+<div class="box note"><div class="lbl">Note sur le matériel</div>
+<p>Le paquet (5) ne contient presque pas de documents : à part la photo de Londres, ce sont des diapositives de texte. Pour analyser la propagande, il faut donc réutiliser les images des autres paquets, comme ci-dessus.</p>
+</div>
+</section>
+
+<section>
+<h2 id="examen" data-toc="Répondre à l'examen">Répondre à l'examen</h2>
+<div class="box q"><div class="lbl">Question</div>
+<p>« Pourquoi la Première Guerre mondiale fut-elle une guerre totale ? »</p>
+</div>
+<p><strong>Idée :</strong> une définition, cinq piliers avec chacun un exemple, puis le moteur (l'usure).</p>
+<ol>
+<li><strong>Définition :</strong> une guerre qui mobilise toutes les ressources du pays, pas seulement les soldats.</li>
+<li><strong>Armes nouvelles :</strong> gaz (chlore, ypérite), chars, avions, mitrailleuses, artillerie lourde → pouvoir destructeur multiplié.</li>
+<li><strong>Immobilisme meurtrier :</strong> pertes massives pour des gains dérisoires → violence de masse et impersonnelle (exemple : Verdun).</li>
+<li><strong>Économie de guerre :</strong> réquisition des usines, rationnement, contrôle des prix et de la production.</li>
+<li><strong>Toute la population :</strong> femmes dans les usines, les champs, les administrations ; enfants et personnes âgées (photo de Londres, 1918).</li>
+<li><strong>Propagande et censure :</strong> affiches, journaux, cinéma ; maintenir le moral, diaboliser l'ennemi, censurer.</li>
+<li><strong>Conclusion :</strong> plus la guerre s'éternise, plus l'État mobilise toutes ses ressources : la guerre totale est le produit de la guerre d'usure.</li>
+</ol>
+<div class="box ex"><div class="lbl">Réponse modèle (version courte)</div>
+<p>La Première Guerre mondiale est une guerre totale parce qu'elle mobilise toutes les ressources des pays en guerre, et pas seulement leurs armées. C'est d'abord une guerre industrielle, marquée par des armements inédits : gaz toxiques comme le chlore et l'ypérite, chars d'assaut, avions, mitrailleuses perfectionnées et artillerie lourde, qui multiplient le pouvoir destructeur des combats. Le conflit s'enlise dans un immobilisme meurtrier où les offensives provoquent des pertes massives pour des gains dérisoires, une violence de masse et impersonnelle. Pour tenir, les États réorganisent leur économie : ils réquisitionnent les usines, rationnent les ressources et contrôlent les prix et la production ; c'est l'économie de guerre. Toute la population est mobilisée : les femmes remplacent les hommes dans les usines, les champs et les administrations, comme ces ouvrières qui fabriquent des cartouches à Londres en 1918, et les enfants et les personnes âgées participent aussi à l'effort national. Enfin, les gouvernements utilisent affiches, journaux et cinéma pour maintenir le moral, diaboliser l'ennemi et censurer les mauvaises nouvelles. Plus la guerre s'éternise, plus cette mobilisation devient totale.</p>
+</div>
+</section>
+
+<section>
+<h2 id="erreurs">Erreurs fréquentes</h2>
+<div class="box warn"><div class="lbl">Pièges</div>
+<ul>
+<li><strong>Confondre « totale » et « mondiale ».</strong> Mondiale = étendue géographique ; totale = mobilisation de toute la société.</li>
+<li><strong>Réduire la guerre totale aux armes nouvelles.</strong> Les armes ne sont qu'un pilier sur cinq : l'économie, la population et l'opinion comptent autant.</li>
+<li><strong>Réduire l'économie de guerre au rationnement.</strong> Elle comprend trois mesures : réquisition des usines, rationnement des ressources, contrôle des prix et de la production.</li>
+<li><strong>Dire que les femmes travaillent seulement dans les usines.</strong> La diapositive dit : les usines, les champs <em>et</em> les administrations.</li>
+<li><strong>Croire que la propagande ne vise que l'ennemi.</strong> Elle vise surtout sa propre population : maintenir le moral et cacher les mauvaises nouvelles.</li>
+<li><strong>Oublier la censure.</strong> Propagande (ce qu'on montre) et censure (ce qu'on cache) vont ensemble.</li>
+<li><strong>Citer l'affiche de 1942 comme propagande de 1914–1918.</strong> Vérifie toujours la date d'un document.</li>
+<li><strong>Oublier le lien avec l'usure.</strong> La guerre devient totale <em>parce qu'</em>elle dure : c'est la meilleure conclusion possible.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2 id="vocabulaire" data-toc="Vocabulaire clé">Vocabulaire clé</h2>
+<div class="tblwrap"><table>
+<tr><th>Terme</th><th>Sens</th></tr>
+<tr><td>la guerre totale</td><td>une guerre qui mobilise toutes les ressources d'un pays</td></tr>
+<tr><td>inédit</td><td>qui n'a jamais existé avant</td></tr>
+<tr><td>les gaz toxiques (chlore, ypérite)</td><td>des gaz qui empoisonnent ou brûlent les soldats</td></tr>
+<tr><td>un char d'assaut</td><td>un véhicule blindé armé, qui avance sur des chenilles</td></tr>
+<tr><td>l'artillerie lourde</td><td>les gros canons, qui tirent loin</td></tr>
+<tr><td>s'enliser</td><td>s'enfoncer et ne plus pouvoir avancer (comme dans la boue)</td></tr>
+<tr><td>dérisoire</td><td>minuscule, ridiculement petit</td></tr>
+<tr><td>une violence de masse et impersonnelle</td><td>une violence qui tue en très grand nombre, à distance, sans face-à-face</td></tr>
+<tr><td>l'effort de guerre</td><td>tout ce qu'un pays fait pour soutenir la guerre</td></tr>
+<tr><td>l'économie de guerre</td><td>une économie dirigée par l'État et mise au service du front</td></tr>
+<tr><td>réquisitionner</td><td>prendre d'autorité (une usine, un bien) pour les besoins de l'État</td></tr>
+<tr><td>le rationnement</td><td>la limitation de la quantité de biens que chacun peut obtenir</td></tr>
+<tr><td>l'arrière</td><td>le territoire loin du front, où vivent les civils</td></tr>
+<tr><td>la propagande</td><td>l'ensemble des moyens pour influencer l'opinion</td></tr>
+<tr><td>diaboliser</td><td>présenter quelqu'un comme mauvais, comme un « diable »</td></tr>
+<tr><td>la censure</td><td>le contrôle et la suppression des informations jugées dangereuses</td></tr>
+<tr><td>l'opinion publique</td><td>ce que pense la population</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2 id="resume">Résumé</h2>
+<ul>
+<li><strong>Guerre totale</strong> = toutes les ressources du pays mobilisées, pas seulement l'armée.</li>
+<li><strong>Armes nouvelles</strong> : gaz (chlore, ypérite), chars, avions, mitrailleuses, artillerie lourde → pouvoir destructeur multiplié.</li>
+<li><strong>Immobilisme meurtrier</strong> : pertes massives, gains dérisoires, violence de masse et impersonnelle.</li>
+<li><strong>Économie de guerre</strong> : réquisition des usines, rationnement, contrôle des prix et de la production.</li>
+<li><strong>Toute la population</strong> : femmes (usines, champs, administrations), enfants et personnes âgées.</li>
+<li><strong>Propagande et censure</strong> : affiches, journaux, cinéma ; moral, ennemi diabolisé, mauvaises nouvelles cachées.</li>
+<li><strong>Moteur</strong> : plus la guerre s'éternise (usure), plus la mobilisation devient totale.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="quiz" data-toc="Quiz rapide">Quiz rapide</h2>
+<div class="quiz"><p class="q">Laquelle de ces mesures ne fait PAS partie de l'économie de guerre selon la diapositive ?</p><div class="opts">
+<button type="button" class="opt" data-why="Si : la réquisition des usines est la première mesure citée.">La réquisition des usines</button>
+<button type="button" class="opt" data-why="Si : le contrôle des prix et de la production en fait partie.">Le contrôle des prix</button>
+<button type="button" class="opt" data-ok data-why="Exact : la censure de la presse relève de la propagande et de la censure, pas de l'économie de guerre.">La censure de la presse</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">Que veut dire « totale » dans « guerre totale » ?</p><div class="opts">
+<button type="button" class="opt" data-why="Ça, c'est le sens de « mondiale ».">Que presque tous les pays du monde sont en guerre</button>
+<button type="button" class="opt" data-ok data-why="Oui : soldats, mais aussi économie, civils et opinion publique.">Que toutes les ressources d'un pays sont mobilisées</button>
+<button type="button" class="opt" data-why="Non : la guerre se termine par un armistice, pas par une destruction totale d'un camp.">Que la guerre ne s'arrête qu'avec la destruction complète d'un camp</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">Selon la diapositive, à qui s'adresse d'abord la propagande ?</p><div class="opts">
+<button type="button" class="opt" data-ok data-why="Oui : maintenir le moral des populations et censurer les mauvaises nouvelles visent sa propre population.">À sa propre population, pour maintenir le moral</button>
+<button type="button" class="opt" data-why="Diaboliser l'ennemi est un objectif, mais le public visé est sa propre population.">Uniquement aux soldats ennemis</button>
+<button type="button" class="opt" data-why="La diapositive ne parle pas des pays neutres.">Aux pays neutres</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">Quel lien la diapositive (2) établit-elle entre usure et guerre totale ?</p><div class="opts">
+<button type="button" class="opt" data-ok data-why="Oui : « Plus la guerre s'éternise, plus toutes les ressources de l'État sont mobilisées ».">Plus la guerre dure, plus l'État mobilise toutes ses ressources</button>
+<button type="button" class="opt" data-why="C'est l'inverse : la durée pousse à mobiliser davantage.">La guerre totale rend la guerre plus courte</button>
+<button type="button" class="opt" data-why="Non, la diapositive relie explicitement les deux.">Il n'y a aucun lien entre les deux</button>
+</div><p class="fb" hidden></p></div>
+</section>
+
+<section>
+<h2 id="exercices" data-toc="Exercices de vérification">Exercices de vérification</h2>
+<div class="ex-card"><div class="ex-h"><span class="lvl l1">Facile</span> Exercice 1</div>
+<p>Cite les cinq armements inédits mentionnés par la diapositive.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Les gaz toxiques (chlore, ypérite), les chars d'assaut, les avions de combat et de reconnaissance, les mitrailleuses perfectionnées, l'artillerie lourde à longue portée.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l1">Facile</span> Exercice 2</div>
+<p>Quelles sont les trois mesures de l'économie de guerre ? Explique chacune en une phrase.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p><strong>Réquisition des usines :</strong> l'État décide de ce que produisent les usines (armes, munitions). <strong>Rationnement des ressources :</strong> chacun reçoit une quantité limitée de biens, pour en garder assez pour le front. <strong>Contrôle des prix et de la production :</strong> l'État fixe les prix et les quantités produites.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l2">Moyen</span> Exercice 3</div>
+<p>Explique l'expression « violence de masse et impersonnelle » à l'aide d'un exemple tiré de la leçon sur Verdun.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>« De masse » : à Verdun, environ 300.000 morts en dix mois, soit environ mille par jour. « Impersonnelle » : l'artillerie, responsable de la majorité des pertes, tue à distance ; 2 millions d'obus sont tirés le seul premier jour. Les soldats meurent sans voir ceux qui les tuent.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l2">Moyen</span> Exercice 4</div>
+<p>La photo des ouvrières de Londres (1918) illustre-t-elle un seul pilier de la guerre totale ? Justifie.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Non, au moins deux. La mobilisation de la population : des femmes remplacent les hommes à l'usine. L'économie de guerre : l'usine produit des cartouches pour le front. On peut ajouter, comme hypothèse, la propagande : la photo semble posée et peut servir à montrer un arrière uni et efficace.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l3">Difficile</span> Exercice 5</div>
+<p>Pourquoi la propagande et la censure sont-elles indispensables dans une guerre longue ? Utilise au moins une source d'une autre leçon.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Une guerre longue exige des sacrifices énormes et durables : morts, rationnement, travail intense à l'arrière. Si la population perd courage, l'effort de guerre s'effondre. La propagande entretient le moral et l'hostilité envers l'ennemi (l'affiche de Neumont, « On ne passe pas ! », 1918, montre un poilu inébranlable). La censure empêche les mauvaises nouvelles de circuler : en 1917, le soldat Jourdan ne connaît les mutineries que par des « bruits ». Sans ces deux outils, la lassitude révélée par les mutineries de 1917 aurait pu se propager plus vite.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l3">Difficile</span> Exercice 6</div>
+<p>« La guerre totale est une conséquence de l'échec de la guerre de mouvement. » Argumente en reliant les leçons 2, 3 et 5.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Le plan Schlieffen prévoyait une guerre courte. Son échec sur la Marne (septembre 1914) fige le front et ouvre la guerre de position (leçon 2). Personne ne pouvant percer, la guerre devient une guerre d'usure, dont Verdun est le symbole : 30 millions d'obus en 300 jours (leçon 3). Une telle guerre consomme des quantités énormes d'hommes, d'armes et de munitions. Pour tenir, les États doivent mobiliser toute leur économie et toute leur population, et contrôler l'opinion : c'est la guerre totale (leçon 5). La diapositive le résume : plus la guerre s'éternise, plus toutes les ressources de l'État sont mobilisées.</p></div></div>
+</section>
+
+<section>
+<h2 id="liens" data-toc="Liens avec les autres leçons">Liens avec les autres leçons</h2>
+<ul>
+<li><strong>← Leçon 1 :</strong> la propagande nationaliste d'avant-guerre prépare l'esprit de 1914 ; la carte de Bertiglia est un exemple de propagande de guerre.</li>
+<li><strong>← Leçon 2 :</strong> l'échec de la guerre de mouvement et les tranchées (gaz, mitrailleuses) sont à l'origine du pilier « immobilisme meurtrier ».</li>
+<li><strong>← Leçon 3 :</strong> Verdun montre la guerre industrielle (artillerie, Voie sacrée) et sa mémoire.</li>
+<li><strong>← Leçon 4 :</strong> les mutineries de 1917 révèlent la limite de la mobilisation : la lassitude des peuples.</li>
+<li><strong>→ Leçon 6 :</strong> l'Italie connaît la même logique : armée mal préparée à une guerre moderne, offensives coûteuses, puis propagande nationaliste après la guerre (« victoire mutilée »).</li>
+</ul>
+</section>
+
+<nav class="pager"><a class="prev" href="lecon-4-1917-1919.html"><small>◀ Leçon précédente</small>4. 1917 → Versailles</a><a class="next" href="lecon-6-italie.html"><small>Leçon suivante ▶</small>6. L'Italie</a></nav>
+</main>
+</div>
+<script>
+(function(){
+ var main=document.querySelector('main');
+ var hs=[].slice.call(main.querySelectorAll('h2[id]'));
+ function mk(){var ol=document.createElement('ol');hs.forEach(function(h){var li=document.createElement('li');var a=document.createElement('a');a.href='#'+h.id;a.textContent=h.getAttribute('data-toc')||h.textContent;li.appendChild(a);ol.appendChild(li)});return ol}
+ var side=document.querySelector('.toc-side'),mob=document.querySelector('.toc-mob');
+ if(hs.length){if(side)side.appendChild(mk());if(mob)mob.appendChild(mk())}else{if(side)side.remove();if(mob)mob.remove()}
+ if(mob)mob.addEventListener('click',function(e){if(e.target.tagName==='A')mob.removeAttribute('open')});
+ if(side&&'IntersectionObserver' in window){var links={};side.querySelectorAll('a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){side.querySelectorAll('a.on').forEach(function(x){x.classList.remove('on')});var l=links[e.target.id];if(l)l.classList.add('on')}})},{rootMargin:'0px 0px -75% 0px'});hs.forEach(function(h){io.observe(h)})}
+ document.querySelectorAll('.sol-btn').forEach(function(b){var s=b.nextElementSibling;b.setAttribute('aria-expanded','false');b.addEventListener('click',function(){var show=s.hidden;s.hidden=!show;b.textContent=show?'Masquer la solution':'Afficher la solution';b.setAttribute('aria-expanded',String(show))})});
+ document.querySelectorAll('.quiz').forEach(function(q){var opts=[].slice.call(q.querySelectorAll('.opt'));var fb=q.querySelector('.fb');
+  opts.forEach(function(o){o.addEventListener('click',function(){if(q.classList.contains('done'))return;q.classList.add('done');var good=o.hasAttribute('data-ok');
+   opts.forEach(function(x){x.disabled=true;if(x.hasAttribute('data-ok'))x.classList.add('ok')});if(!good)o.classList.add('ko');
+   fb.textContent='';var b=document.createElement('b');b.textContent=good?'Juste. ':'Pas tout à fait. ';fb.appendChild(b);fb.appendChild(document.createTextNode(o.getAttribute('data-why')||q.getAttribute('data-why')||''));fb.hidden=false;
+   var r=document.createElement('button');r.className='retry';r.type='button';r.textContent='Réessayer';r.onclick=function(){q.classList.remove('done');opts.forEach(function(x){x.disabled=false;x.classList.remove('ok','ko')});fb.hidden=true;r.remove()};fb.after(r)})})});
+ document.querySelectorAll('.stepper').forEach(function(st){var steps=[].slice.call(st.children).filter(function(c){return c.classList.contains('step')});var i=0;
+  var prog=document.createElement('div');prog.className='st-prog';prog.innerHTML='<i></i>';var t=st.querySelector('.st-title');if(t)t.after(prog);else st.prepend(prog);
+  var bar=document.createElement('div');bar.className='st-ctl';bar.innerHTML='<button type="button" class="st-prev">◀ Précédent</button><span class="st-n"></span><button type="button" class="st-next">Suivant ▶</button>';st.appendChild(bar);
+  function show(){steps.forEach(function(s,k){s.classList.toggle('on',k===i)});bar.querySelector('.st-n').textContent='Étape '+(i+1)+' sur '+steps.length;bar.querySelector('.st-prev').disabled=i===0;bar.querySelector('.st-next').disabled=i===steps.length-1;prog.firstChild.style.width=((i+1)/steps.length*100)+'%'}
+  bar.querySelector('.st-prev').onclick=function(){if(i>0){i--;show()}};bar.querySelector('.st-next').onclick=function(){if(i<steps.length-1){i++;show()}};show()});
+ document.querySelectorAll('.sorter').forEach(function(so){var items=[].slice.call(so.querySelectorAll('.sort-item'));var cats=JSON.parse(so.getAttribute('data-cats'));var sc=so.querySelector('.score');
+  function upd(){var done=items.filter(function(it){return it.dataset.done}).length,good=items.filter(function(it){return it.dataset.done==='ok'}).length;sc.textContent=done?('Score : '+good+' / '+done+' (sur '+items.length+')'):''}
+  items.forEach(function(it){var ctl=document.createElement('div');ctl.className='sort-ctl';var why=document.createElement('div');why.className='why';why.hidden=true;
+   cats.forEach(function(c){var b=document.createElement('button');b.type='button';b.textContent=c[1];b.setAttribute('aria-pressed','false');b.onclick=function(){ctl.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});var ok=it.getAttribute('data-a')===c[0];it.classList.toggle('ok',ok);it.classList.toggle('ko',!ok);it.dataset.done=ok?'ok':'ko';why.textContent=(ok?'Juste. ':'Non : ')+it.getAttribute('data-why');why.hidden=false;upd()};ctl.appendChild(b)});
+   it.appendChild(ctl);it.appendChild(why)});upd()});
+})();
+</script>
+</body>
+</html>

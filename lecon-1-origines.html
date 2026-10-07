@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1. Origines (1914) · Grande Guerre</title>
+<style>
+*{box-sizing:border-box}
+:root{
+--bg:#faf9f6;--fg:#1c1c1e;--muted:#5d5d66;--card:#fff;--line:#e3e0d8;--accent:#1d4f7a;--accent-bg:#e7eff7;--link:#1d5fa0;
+--def:#1d5fa0;--def-bg:#e9f1fb;--src:#8a5a00;--src-bg:#fbf2df;--ex:#1d7445;--ex-bg:#e7f5ed;
+--warn:#b02a1f;--warn-bg:#fdebe9;--app:#6a3d9e;--app-bg:#f2ecfa;--note:#555a61;--note-bg:#eef0f2;
+--ana:#0d7480;--ana-bg:#e4f4f6;--q:#383896;--q-bg:#ebebfa;
+--ok:#1d7445;--ok-bg:#e7f5ed;--ko:#b02a1f;--ko-bg:#fdebe9;
+--de:#5a6474;--fr:#2c6db3;--uk:#c25a1c;--it:#2e8b57;--soft:#f2f0ea;
+}
+@media (prefers-color-scheme:dark){:root{
+--bg:#141518;--fg:#e9e9ec;--muted:#a3a3ad;--card:#1d1f24;--line:#33363e;--accent:#8fbbe6;--accent-bg:#1f2a36;--link:#8fbbe6;
+--def:#8fbbe6;--def-bg:#1b2633;--src:#e2b25c;--src-bg:#2c2416;--ex:#76cf9c;--ex-bg:#17281f;
+--warn:#f08a80;--warn-bg:#2f1a18;--app:#c5a6ef;--app-bg:#251d33;--note:#b9bec5;--note-bg:#24272c;
+--ana:#6fd0db;--ana-bg:#152a2d;--q:#aeaef5;--q-bg:#1f1f38;
+--ok:#76cf9c;--ok-bg:#17281f;--ko:#f08a80;--ko-bg:#2f1a18;
+--de:#9aa5b5;--fr:#6fa8e8;--uk:#f0955a;--it:#6fcf97;--soft:#22252b;
+}}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 clamp(17px,.95rem + .35vw,19px)/1.68 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;overflow-x:hidden}
+a{color:var(--link)}
+h1,h2,h3,h4{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;line-height:1.25}
+h1{font-size:clamp(1.7rem,1.2rem + 2vw,2.4rem);margin:.2em 0 .3em}
+h2{font-size:1.55rem;margin:2.4em 0 .6em;padding-top:.8em;border-top:2px solid var(--line)}
+h3{font-size:1.2rem;margin:1.7em 0 .4em}
+h4{font-size:1.05rem;margin:1.1em 0 .3em}
+p{margin:.6em 0}
+ul,ol{padding-left:1.3em}
+li{margin:.25em 0}
+.cit{font-style:italic}
+strong{font-weight:700}
+.top{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--line);font-size:.92rem}
+.top a{text-decoration:none;font-weight:600;white-space:nowrap}
+.top .crumb{color:var(--muted);white-space:nowrap}
+.top .sp{flex:1}
+.top .nav a{padding:4px 10px;border:1px solid var(--line);border-radius:999px;margin-left:4px}
+.layout{max-width:1180px;margin:0 auto;padding:0 16px}
+main{max-width:780px;margin:0 auto;padding-bottom:60px;min-width:0}
+.toc-side{display:none}
+@media (min-width:1120px){
+ .layout{display:grid;grid-template-columns:250px minmax(0,780px);gap:48px;justify-content:center}
+ main{margin:0}
+ .toc-side{display:block;position:sticky;top:70px;align-self:start;max-height:calc(100vh - 90px);overflow:auto;padding-top:34px;font-size:.88rem}
+ .toc-mob{display:none}
+}
+.toc-h{font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:.78rem;margin-bottom:6px}
+.toc-side ol,.toc-mob ol{list-style:none;padding:0;margin:0}
+.toc-side a,.toc-mob a{display:block;padding:4px 10px;border-left:3px solid transparent;text-decoration:none;color:var(--fg)}
+.toc-side a.on{border-left-color:var(--accent);background:var(--accent-bg);color:var(--accent);font-weight:600}
+.toc-mob{margin:16px 0;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.toc-mob summary{cursor:pointer;padding:12px 16px;font-weight:700}
+.toc-mob ol{padding:0 6px 10px}
+.hero{padding:30px 0 6px}
+.kicker{color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.07em;font-weight:600}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+.box{--c:var(--note);--cbg:var(--note-bg);border-left:5px solid var(--c);background:var(--cbg);border-radius:10px;padding:12px 16px;margin:18px 0}
+.box>.lbl{font-size:.74rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--c);margin-bottom:2px}
+.box>:last-child{margin-bottom:0}
+.box.def{--c:var(--def);--cbg:var(--def-bg)}
+.box.src{--c:var(--src);--cbg:var(--src-bg)}
+.box.ex{--c:var(--ex);--cbg:var(--ex-bg)}
+.box.warn{--c:var(--warn);--cbg:var(--warn-bg)}
+.box.app{--c:var(--app);--cbg:var(--app-bg)}
+.box.note{--c:var(--note);--cbg:var(--note-bg)}
+.box.ana{--c:var(--ana);--cbg:var(--ana-bg)}
+.box.q{--c:var(--q);--cbg:var(--q-bg)}
+.box.intu{--c:var(--accent);--cbg:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);font-size:1.06em}
+blockquote{margin:10px 0;padding:6px 14px;border-left:3px solid var(--line);color:var(--fg);font-family:Georgia,serif}
+blockquote .tr{display:block;color:var(--muted);font-family:system-ui,sans-serif;font-size:.92em;margin-top:4px}
+.tblwrap{overflow-x:auto;margin:14px 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.93em;background:var(--card)}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tl{list-style:none;padding:0;margin:14px 0 14px 6px;border-left:3px solid var(--line)}
+.tl li{position:relative;padding:4px 0 10px 18px}
+.tl li::before{content:"";position:absolute;left:-8px;top:12px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl .d{display:block;font-weight:700;color:var(--accent);font-size:.9em}
+.tl li.it::before{background:var(--it)}
+.tl li.it .d{color:var(--it)}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:1px 7px;border-radius:999px;background:var(--soft);color:var(--muted);vertical-align:middle;margin-left:4px}
+.ex-card{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:16px 0}
+.ex-h{font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lvl{font-size:.72rem;font-weight:800;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+.lvl.l1{background:var(--ok-bg);color:var(--ok)}
+.lvl.l2{background:var(--src-bg);color:var(--src)}
+.lvl.l3{background:var(--ko-bg);color:var(--ko)}
+button{font:inherit;cursor:pointer}
+.sol-btn,.retry,.st-ctl button,.seg button,.calc button,.sort-ctl button{border:1px solid var(--accent);background:var(--accent-bg);color:var(--accent);border-radius:8px;padding:7px 14px;font-weight:600;font-size:.92em;min-height:40px}
+.sol-btn:hover{filter:brightness(.97)}
+.sol{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--ok-bg);border-left:4px solid var(--ok)}
+.sol>:first-child{margin-top:0}.sol>:last-child{margin-bottom:0}
+.quiz{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:14px 0}
+.quiz .q{font-weight:600;margin-top:0}
+.quiz .opts{display:grid;gap:8px}
+.opt{text-align:left;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:9px;padding:10px 12px;min-height:44px}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt.ok{background:var(--ok-bg);border-color:var(--ok);color:var(--fg)}
+.opt.ok::after{content:"  ✓";color:var(--ok);font-weight:800}
+.opt.ko{background:var(--ko-bg);border-color:var(--ko)}
+.opt.ko::after{content:"  ✗";color:var(--ko);font-weight:800}
+.opt:disabled{cursor:default;opacity:1}
+.fb{margin:10px 0 8px;padding:10px 12px;border-radius:9px;background:var(--soft)}
+.quiz .opts.row{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+.stepper{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:18px 0}
+.stepper>.st-title{font-weight:700;margin:0 0 8px}
+.st-prog{height:6px;background:var(--soft);border-radius:999px;overflow:hidden;margin-bottom:10px}
+.st-prog i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.stepper .step{display:none}
+.stepper .step.on{display:block;animation:fade .25s}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.stepper .step h4{margin-top:4px}
+.st-ctl{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px;flex-wrap:wrap}
+.st-ctl button:disabled{opacity:.4;cursor:default}
+.st-n{color:var(--muted);font-size:.9em}
+@media (max-width:480px){.st-ctl .st-n{order:-1;flex-basis:100%;text-align:center}}
+.seg{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.seg button[aria-pressed=true],.calc button[aria-pressed=true],.sort-ctl button[aria-pressed=true]{background:var(--accent);color:var(--card)}
+.widget{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:18px 0}
+.widget svg{width:100%;height:auto;display:block}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.88em;color:var(--muted)}
+.legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--sw)}
+.small{font-size:.88em;color:var(--muted)}
+.calc{display:flex;flex-wrap:wrap;gap:6px}
+.calc-out{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--soft);min-height:3em}
+.big{font-size:1.5em;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:48px}
+.pager a{display:block;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--fg)}
+.pager a small{display:block;color:var(--muted)}
+.pager a.next{text-align:right;grid-column:2}
+.cards{display:grid;gap:12px;margin:16px 0}
+.cards a{display:block;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--fg)}
+.cards a:hover{border-color:var(--accent)}
+.cards .n{font-weight:800;color:var(--accent);font-size:.85em;text-transform:uppercase;letter-spacing:.06em}
+.cards .t{font-family:Georgia,serif;font-size:1.2em;font-weight:700;display:block;margin:2px 0}
+.cards .d{color:var(--muted);font-size:.93em}
+.legend-boxes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.legend-boxes .box{margin:0;padding:8px 12px;font-size:.9em}
+.hot{cursor:pointer}
+.hot circle{fill:var(--accent);stroke:var(--card);stroke-width:2}
+.hot text{fill:var(--card);font:700 13px system-ui,sans-serif;pointer-events:none}
+.hot.on circle{fill:var(--warn)}
+svg text{font-family:system-ui,sans-serif}
+.sort-item{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0;background:var(--bg)}
+.sort-item.ok{border-color:var(--ok);background:var(--ok-bg)}
+.sort-item.ko{border-color:var(--ko);background:var(--ko-bg)}
+.sort-item .why{margin-top:6px;font-size:.92em}
+.score{font-weight:700;margin-top:10px}
+.sort-item .sort-ctl{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.sort-item .sort-ctl button{font-size:.85em;padding:6px 8px;line-height:1.25}
+.cycle{display:flex;align-items:center;gap:8px;margin:10px 0}
+.cyc{flex:1 1 0;border:1px solid var(--accent);background:var(--accent-bg);border-radius:10px;padding:10px 12px;font-weight:600;text-align:center}
+.cyc.loop{background:transparent;border-style:dashed;font-weight:500;color:var(--muted)}
+.cyc-ar{color:var(--accent);font-weight:800;font-size:1.3em;flex:0 0 auto}
+@media (max-width:640px){.cycle{flex-direction:column;align-items:stretch}.cyc-ar{text-align:center;transform:rotate(90deg)}}
+.hot-btns{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:10px}
+.hot-btns button{border:1px solid var(--accent);background:var(--accent-bg);color:var(--accent);border-radius:8px;font-weight:700;min-height:42px}
+.hot-btns button[aria-pressed=true]{background:var(--accent);color:var(--card)}
+@media print{.top,.toc-side,.toc-mob,.pager{display:none}.sol{display:block!important}.stepper .step{display:block}}
+</style>
+</head>
+<body>
+<header class="top"><a class="home" href="index.html">☰ Sommaire</a><span class="crumb">Leçon 1/6</span><span class="sp"></span><span class="nav"><a href="lecon-2-etapes-1914-1917.html" title="Les principales étapes du conflit (1914–1917)">2 ▶</a></span></header>
+<div class="layout">
+<aside class="toc-side" aria-label="Sections"><div class="toc-h">Dans cette page</div></aside>
+<main>
+<div class="hero"><div class="kicker">Diapositives XIII (1) · Leçon 1 sur 6</div><h1>Les origines et le déclenchement de la guerre</h1><p class="sub">Rivalités coloniales, alliances, course aux armements, Balkans, Sarajevo et « l'esprit de 1914 ».</p></div>
+<details class="toc-mob"><summary>Sections de la page</summary></details>
+<section>
+<h2 id="intuition">Intuition</h2>
+<div class="box intu"><div class="lbl">En 4 lignes</div>
+<p>En 1914, l'Europe ressemble à une pièce remplie de poudre. Les grandes puissances se disputent colonies et marchés, s'arment de plus en plus et sont liées en deux blocs d'alliances rigides. Dans les Balkans, les nationalismes slaves poussent contre deux empires en difficulté. Il suffit d'une étincelle, l'attentat de Sarajevo, pour que le mécanisme des alliances transforme en quelques semaines une crise locale en guerre européenne. Et les foules partent en chantant, convaincues que ce sera court.</p>
+</div>
+<p>Le titre du thème, la « der' des der' », est l'abréviation populaire de « la dernière des dernières ». La diapositive d'ouverture l'explique : c'est <strong>« l'espoir qu'une telle guerre ne se reproduise plus jamais »</strong>. Garde-le en tête : tout le cours raconte comment on arrive à une guerre qui fait naître cet espoir.</p>
+</section>
+
+<section>
+<h2 id="pas-a-pas" data-toc="Explication pas à pas">Explication pas à pas</h2>
+<div class="box def"><div class="lbl">Notion clé</div>
+<p>Pour expliquer une guerre, il faut séparer deux niveaux :</p>
+<ul>
+<li><strong>Les causes profondes</strong> : des tensions accumulées pendant des années ou des décennies (rivalités coloniales, alliances, réarmement, nationalismes). Elles rendent la guerre <em>possible</em>.</li>
+<li><strong>La cause immédiate</strong>, ou <strong>élément déclencheur</strong> : l'événement qui la fait éclater à ce moment précis. Pour la Première Guerre mondiale, c'est l'attentat de Sarajevo, que la diapositive appelle « l'élément déclencheur immédiat ».</li>
+</ul>
+<p>Sarajevo seul n'explique pas une guerre mondiale. Il explique pourquoi elle éclate <em>à l'été 1914</em>.</p>
+</div>
+
+<h3>1. Rivalités coloniales et économiques</h3>
+<p>Selon la diapositive, « les grandes puissances se disputent des territoires et des marchés en Afrique et en Asie ». Le point important, c'est <strong>qui</strong> s'oppose à <strong>qui</strong>. D'un côté, l'<strong>Allemagne</strong>, « en pleine expansion industrielle », qui arrive tard dans le partage du monde. De l'autre, « les puissances déjà établies », le <strong>Royaume-Uni</strong> et la <strong>France</strong>, qui ont déjà leurs colonies. Cette concurrence « exacerbe les tensions internationales ».</p>
+<p>Pourquoi c'est important ? Parce que cela crée des inimitiés <em>avant</em> la guerre. Quand les camps se forment en 1914, voir l'Allemagne d'un côté, la France et le Royaume-Uni de l'autre n'a rien de surprenant : ce sont des rivaux depuis des années. La diapositive illustre ce point avec un dessin français de 1906 sur le Maroc (analysé plus bas, dans <a href="#sources">Sources analysées</a>).</p>
+
+<h3>2. Le système d'alliances</h3>
+<p>L'Europe est divisée en deux blocs rivaux :</p>
+<div class="tblwrap"><table>
+<tr><th></th><th>Triple-Alliance</th><th>Triple-Entente</th></tr>
+<tr><td>Membres</td><td>Allemagne, Autriche-Hongrie, Italie</td><td>France, Royaume-Uni, Russie</td></tr>
+<tr><td>Comment elle naît</td><td>Un <strong>traité unique</strong>, en <strong>1882</strong></td><td><strong>Pas</strong> de traité unique : « une série d'accords bilatéraux progressifs » entre les trois puissances</td></tr>
+<tr><td>Liens extérieurs</td><td>—</td><td>La Russie est alliée à la <strong>Serbie</strong>, « nation nouvellement née » (congrès de Berlin, 1878), qui mène une politique nationaliste d'expansion dans les Balkans</td></tr>
+</table></div>
+<p>Le paradoxe est le suivant : ce jeu d'alliances a été « conçu à l'origine pour maintenir un équilibre des forces ». Si deux blocs se valent, personne ne devrait oser attaquer. Mais ce sont des <strong>alliances défensives</strong> qui « obligent les alliés d'un pays attaqué à intervenir » (diapositive sur les causes, au début du paquet (2)). Dès qu'un pays est impliqué, ses alliés sont entraînés l'un après l'autre. Le système conçu pour éviter la guerre la rend <strong>continentale</strong>.</p>
+<div class="box warn"><div class="lbl">Attention</div>
+<p>Retiens le mot <strong>défensive</strong>. C'est la clé de la neutralité italienne de 1914 : l'Italie devait aider ses alliés s'ils étaient attaqués, or l'Allemagne et l'Autriche-Hongrie <em>ont attaqué les premières</em>. Tu le verras dans la <a href="lecon-6-italie.html">leçon 6</a>.</p>
+</div>
+
+<h3>3. La course aux armements</h3>
+<p>« Depuis la fin du XIX<sup>e</sup> siècle, les nations européennes investissent massivement dans leurs armées et leurs marines. » Il existe notamment une forte <strong>rivalité navale anglo-allemande</strong>. Résultat : « un climat de militarisation généralisée », une atmosphère de <strong>méfiance</strong> et de <strong>préparation à la guerre</strong>.</p>
+<p>La diapositive donne un tableau de chiffres. Utilise le graphique ci-dessous : compare d'abord les valeurs absolues, puis passe à « Indice 1905 = 100 » pour voir qui augmente le plus vite.</p>
+
+<div class="widget" id="depenses">
+<div class="seg" role="group" aria-label="Type de dépense">
+<button type="button" data-k="tot" aria-pressed="true">Total</button>
+<button type="button" data-k="army" aria-pressed="false">Armée</button>
+<button type="button" data-k="navy" aria-pressed="false">Marine</button>
+</div>
+<div class="seg" role="group" aria-label="Échelle">
+<button type="button" data-m="abs" aria-pressed="true">Millions de Goldmark</button>
+<button type="button" data-m="idx" aria-pressed="false">Indice 1905 = 100</button>
+</div>
+<svg id="depenses-svg" viewBox="0 0 640 300" style="height:auto" role="img" aria-label="Dépenses militaires de l'Allemagne, de la France et du Royaume-Uni, 1905-1913"></svg>
+<div class="legend"><span style="--sw:var(--de)">Allemagne</span><span style="--sw:var(--fr)">France</span><span style="--sw:var(--uk)">Royaume-Uni</span></div>
+<p class="small" style="margin:6px 0 0">Les valeurs exactes sont dans le tableau ci-dessous.</p>
+<div class="tblwrap"><table id="depenses-tab"></table></div>
+<p class="small">Données : tableau de la diapositive (en millions de Goldmark). Source : « Les dépenses militaires du Reich allemand », données publiées par le député allemand Matthias Erzberger, 1914. Les totaux, indices et pourcentages sont calculés par moi à partir de ces données.</p>
+</div>
+
+<p>Ce que disent les chiffres (tu peux tout retrouver dans le graphique) :</p>
+<ul>
+<li><strong>L'Allemagne augmente le plus :</strong> sa dépense totale passe de 928 à 1.476 millions (+59 %), contre +37 % pour la France et +21 % pour le Royaume-Uni.</li>
+<li><strong>La marine allemande double</strong> (de 231 à 467, +102 %). C'est le chiffre de la rivalité navale.</li>
+<li><strong>Mais le Royaume-Uni reste très en avance sur mer :</strong> en 1913, il dépense 945 millions pour sa marine, environ le double de l'Allemagne. Sa dépense pour l'armée de terre, elle, ne bouge pas (581 → 576). Le Royaume-Uni est une puissance navale ; l'Allemagne est une puissance terrestre qui essaie de devenir aussi une puissance navale.</li>
+<li>En 1913, les <strong>totaux</strong> de l'Allemagne (1.476) et du Royaume-Uni (1.521) sont presque égaux, mais répartis à l'inverse : l'Allemagne met environ 68 % dans l'armée, le Royaume-Uni environ 62 % dans la marine.</li>
+</ul>
+
+<h3>4. Les Balkans, « poudrière de l'Europe »</h3>
+<p>Dans les Balkans, surnommés la « poudrière de l'Europe », les nationalismes slaves s'opposent à deux empires multinationaux :</p>
+<ul>
+<li>l'<strong>Empire austro-hongrois</strong>, qui gouverne de nombreux peuples slaves ;</li>
+<li>l'<strong>Empire ottoman</strong>, en déclin, surnommé « le malade de l'Europe ».</li>
+</ul>
+<p>La <strong>Serbie</strong>, soutenue par la <strong>Russie</strong>, « aspire à unifier les populations slaves du sud, ce qui inquiète Vienne ». La raison est simple : si les Slaves de l'Empire voient la Serbie comme leur « patrie », l'Autriche-Hongrie risque de se disloquer.</p>
+<p>Relie les fils : Serbie ↔ Russie (alliées), Russie ↔ France et Royaume-Uni (Entente), Autriche-Hongrie ↔ Allemagne (Triple-Alliance). Un conflit entre la Serbie et l'Autriche-Hongrie est donc le point où <strong>les deux blocs se touchent</strong>. C'est pour cela que les Balkans sont une poudrière : la mèche est là.</p>
+
+<h3>5. L'étincelle : Sarajevo, 28 juin 1914</h3>
+<p>L'archiduc <strong>François-Ferdinand</strong>, héritier du trône austro-hongrois, est assassiné à <strong>Sarajevo</strong> par <strong>Gavrilo Princip</strong>, « un bosnien d'origine serbe ». L'Autriche-Hongrie adresse un <strong>ultimatum</strong> à la Serbie, et « le jeu des alliances entraîne rapidement toute l'Europe dans le conflit ». Suis la chaîne étape par étape :</p>
+
+<div class="stepper">
+<p class="st-title">Du coup de pistolet à la guerre européenne</p>
+<div class="step"><h4>1 · Sarajevo, 28 juin 1914</h4><p>Gavrilo Princip tue l'héritier du trône austro-hongrois. Pour Vienne, c'est la preuve que le nationalisme serbe menace l'Empire.</p></div>
+<div class="step"><h4>2 · L'ultimatum</h4><p>L'Autriche-Hongrie adresse un ultimatum à la Serbie. Le conflit est encore <strong>local</strong> : il ne concerne que deux États.</p><div class="box app"><div class="lbl">Approfondissement · hors diapositives</div><p>Le 28 juillet 1914, l'Autriche-Hongrie déclare la guerre à la Serbie.</p></div></div>
+<div class="step"><h4>3 · La Russie entre en jeu</h4><p>La Russie est alliée à la Serbie et la soutient. Le conflit n'est plus seulement balkanique : une grande puissance est maintenant impliquée.</p></div>
+<div class="step"><h4>4 · L'Allemagne entre en jeu</h4><p>L'Allemagne est liée à l'Autriche-Hongrie par la Triple-Alliance. Face à la Russie, et à la France alliée de la Russie, l'affrontement entre les deux blocs se déclenche.</p><div class="box app"><div class="lbl">Approfondissement · hors diapositives</div><p>L'Allemagne déclare la guerre à la Russie le 1<sup>er</sup> août et à la France le 3 août 1914.</p></div></div>
+<div class="step"><h4>5 · La Belgique et le Royaume-Uni</h4><p>Pour attaquer la France, l'Allemagne applique le plan Schlieffen et envahit la <strong>Belgique, État neutre</strong>. « Cette violation de la neutralité belge entraîne l'entrée en guerre du Royaume-Uni » (diapositives (2), <a href="lecon-2-etapes-1914-1917.html">leçon 2</a>).</p><div class="box app"><div class="lbl">Approfondissement · hors diapositives</div><p>Le Royaume-Uni entre en guerre le 4 août 1914.</p></div></div>
+<div class="step"><h4>6 · Et l'Italie ?</h4><p>Elle reste <strong>neutre</strong>, bien qu'elle fasse partie de la Triple-Alliance : l'alliance est défensive et ses alliés ont attaqué les premiers. Elle entrera en guerre en 1915, dans l'autre camp (<a href="lecon-6-italie.html">leçon 6</a>).</p></div>
+<div class="step"><h4>Résultat</h4><p>En quelques semaines, « ce jeu d'alliances [...] transforme un conflit local en guerre continentale ». C'est exactement le mécanisme que la diapositive range parmi les causes : « une situation locale [...] dégénère en conflit mondial ».</p></div>
+</div>
+
+<h3>6. « L'esprit de 1914 »</h3>
+<p>« La déclaration de guerre est accueillie avec un <strong>enthousiasme populaire massif</strong> dans presque tous les pays belligérants » : les foules acclament le départ des soldats, « persuadées d'une victoire rapide ». On parle de « l'esprit de 1914 ». La diapositive cite l'Allemagne, la France, le Royaume-Uni et l'Autriche-Hongrie, où la propagande nationaliste avait préparé les esprits à voir la guerre comme une occasion :</p>
+<ul>
+<li>de <strong>revanche</strong>,</li>
+<li>de <strong>gloire</strong>,</li>
+<li>ou d'<strong>affirmation nationale</strong>.</li>
+</ul>
+<p>La phrase attribuée à l'empereur Guillaume II résume l'illusion :</p>
+<blockquote>« Vous serez rentrés chez vous avant que les feuilles ne tombent des arbres. »</blockquote>
+<p>Autrement dit, avant l'automne 1914. La guerre durera plus de quatre ans.</p>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>Pour la France, la <strong>revanche</strong> a une cible précise : l'Alsace-Lorraine, perdue au profit de l'Allemagne en 1871. Les diapositives ne le laissent deviner qu'à la fin, quand le traité de Versailles l'<em>restitue</em> à la France (<a href="lecon-4-1917-1919.html">leçon 4</a>).</p>
+</div>
+</section>
+
+<section>
+<h2 id="analogies">Analogies</h2>
+<div class="box ana"><div class="lbl">Analogie · la poudre et l'étincelle</div>
+<p>Les diapositives utilisent elles-mêmes l'image de la <strong>poudrière</strong>. Prends-la au sérieux : une étincelle dans une pièce vide ne fait rien ; une étincelle dans un dépôt de poudre fait sauter l'immeuble. La <strong>poudre</strong>, ce sont les causes profondes (rivalités, réarmement, alliances, nationalismes). L'<strong>étincelle</strong>, c'est Sarajevo. À l'examen, la phrase utile est : « l'étincelle explique le moment, la poudre explique l'explosion ».</p>
+</div>
+<div class="box ana"><div class="lbl">Analogie · la bagarre à la fête</div>
+<p>Imagine un groupe d'amis où chacun a promis à quelqu'un : « si on te touche, j'interviens ». Une bousculade entre deux personnes devient en un instant une bagarre générale, parce que chaque promesse en déclenche une autre. Ce sont les alliances de 1914.</p>
+<p><em>Là où l'analogie ne tient plus :</em> les alliances étaient <strong>défensives</strong>. Si celui qui a promis son aide voit que son ami a donné le premier coup, il peut dire « ça ne me concerne pas ». C'est ce que fait l'Italie.</p>
+</div>
+<div class="box ana"><div class="lbl">Analogie · la course aux clôtures</div>
+<p>Deux voisins qui se méfient l'un de l'autre élèvent leur clôture. Chacun voit la clôture de l'autre comme une menace et élève la sienne encore plus. Aucun des deux ne se sent plus en sécurité, mais tous deux dépensent toujours plus. C'est la logique de la course aux armements : le réarmement de l'un justifie celui de l'autre et nourrit la méfiance.</p>
+</div>
+</section>
+
+<section>
+<h2 id="sources" data-toc="Sources analysées">Sources analysées (exemples traités)</h2>
+<p>En histoire, l'équivalent de « l'exercice corrigé », c'est l'<strong>analyse de document</strong>. La méthode est toujours la même, en quatre temps : <strong>1) qui, quand, où</strong> · <strong>2) ce qu'on voit ou lit</strong> · <strong>3) ce que cela veut dire</strong> · <strong>4) le lien avec la leçon</strong>.</p>
+
+<div class="box src"><div class="lbl">Source 1 · « À l'Hôpital d'Algésiras », illustration française, 1906</div>
+<p><strong>1) Qui, quand :</strong> illustration française de 1906, aujourd'hui au Deutsches Historisches Museum de Berlin.</p>
+<p><strong>2) Ce qu'on voit :</strong> un malade au lit, avec l'inscription <strong>MAROC</strong>. Autour de lui, des « médecins » portent les uniformes des puissances : on reconnaît l'Oncle Sam (États-Unis), un officier au casque à pointe prussien (Allemagne), un officier au képi français. Ils tiennent des seringues marquées <strong>DOUANES</strong> et <strong>POLICE</strong> et un bol « BONS OFFICES ». En dessous, le Maroc déclare : « Par Allah ! administré par l'un ou par l'autre, je n'en suis pas moins un “malade par persuasion” ». Autrement dit : quel que soit celui qui me « soigne », je reste un malade qu'on a persuadé de l'être.</p>
+<p><strong>3) Sens :</strong> les puissances font semblant de « soigner » le Maroc, mais en réalité elles se disputent le contrôle de ses douanes et de sa police. La « maladie » est un prétexte pour intervenir.</p>
+<p><strong>4) Lien avec la leçon :</strong> c'est la rivalité coloniale de la diapositive, avec la France et l'Allemagne au premier rang. Note la métaphore du « malade », qui revient avec l'Empire ottoman, « le malade de l'Europe » : un État faible devient une proie pour les puissances.</p>
+</div>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>Algésiras est la ville espagnole où, en 1906, les puissances ont tenu une conférence internationale sur le Maroc, après une crise entre la France et l'Allemagne (la « première crise marocaine »). Le résumé joint parle de « crise d'Algésiras ». Les diapositives montrent seulement l'image.</p>
+</div>
+
+<div class="box src"><div class="lbl">Source 2 · « Der Dreibund auf dem Marsche » (La Triple-Alliance en marche), 1893</div>
+<p><strong>1) Qui, quand :</strong> dessin paru en 1893 dans l'hebdomadaire satirique <strong>allemand</strong> <em>Lustige Blätter</em>, repris par le supplément illustré du <em>Petit Journal</em> français sous le titre « La Triple Alliance caricaturée à Berlin ».</p>
+<p><strong>2) Ce qu'on voit :</strong> « au premier plan un soldat allemand et un soldat autrichien qui avancent d'un bon pas, tandis qu'à l'arrière-plan le troisième partenaire, l'Italien, est très loin ». Dans le dialogue, l'Autrichien remarque que « notre frère d'Italie » semble déjà faiblir ; le Prussien répond que ce n'est pas étonnant, puisqu'« il n'a plus de sous pour passer à la cantine ».</p>
+<p><strong>3) Sens :</strong> « la pointe souligne les difficultés financières de l'Italie de la fin du siècle, jugée à Berlin comme <strong>le maillon faible</strong> et le partenaire pauvre de l'alliance ».</p>
+<p><strong>4) Lien :</strong> sur le papier, l'alliance est solide ; de l'intérieur, elle est fragile. Et c'est un journal <em>d'un pays de l'alliance</em> qui s'en moque, dès 1893. Vingt-deux ans plus tard, l'Italie changera de camp.</p>
+</div>
+<div class="box note"><div class="lbl">Note sur le matériel</div>
+<p>La légende de la diapositive écrit « Petit Journal, Der Dreibund auf dem Marsche » puis « paru dans... Lustige Blätter ». Ce n'est pas une contradiction : le dessin vient de la revue allemande, et le <em>Petit Journal</em> l'a republié. Si tu cites la source à l'examen, dis que c'est une caricature allemande (<em>Lustige Blätter</em>, 1893).</p>
+</div>
+
+<div class="box src"><div class="lbl">Source 3 · Aurelio Bertiglia, carte postale « Triplice e Quadruplice », 1914–1915</div>
+<p><strong>Ce qu'on voit :</strong> des enfants en uniforme. À gauche, un groupe en uniformes des puissances de l'Entente (on reconnaît le pantalon rouge français et la toque russe). Au centre, une fillette avec une couronne, la croix de Savoie sur la robe et un drapeau tricolore : l'<strong>Italie</strong>, entourée par eux. À droite, trois enfants isolés et boudeurs (casque à pointe allemand, uniforme autrichien, fez ottoman). L'inscription, en trois langues : « Triplice e Quadruplice ».</p>
+<p><strong>Lecture proposée :</strong> l'Italie est représentée <em>dans le camp de l'Entente</em>. La « Triplice » désigne maintenant le camp ennemi, la « Quadruplice » le camp avec l'Italie. C'est une propagande au style enfantin, qui rend le changement de camp « naturel ».</p>
+<p><strong>Lien :</strong> la diapositive la place parmi les alliances et la reprend dans le paquet (2), là où il est question de l'entrée en guerre de l'Italie (1915).</p>
+</div>
+<div class="box note"><div class="lbl">Note sur le matériel</div>
+<p>La légende indique « 1914-195 » : c'est une coquille, très probablement pour « 1914-1915 ». L'identification des différents uniformes est ma propre lecture de l'image : la diapositive ne la commente pas.</p>
+</div>
+
+<div class="box src"><div class="lbl">Source 4 · Une du supplément illustré du « Petit Journal », 18 octobre 1908</div>
+<p><strong>Ce qu'on voit :</strong> le titre « Le réveil de la question d'Orient ». Un souverain en uniforme autrichien arrache de la carte les morceaux « Bosnie » et « Herzégovine », un souverain couronné arrache la « Bulgarie », tandis qu'un souverain coiffé du fez (l'Empire ottoman) regarde, impuissant, la carte de la « Turquie ». La légende : « La Bulgarie proclame son indépendance. — L'Autriche prend la Bosnie et l'Herzégovine. »</p>
+<p><strong>Sens :</strong> l'Empire ottoman, « malade de l'Europe », perd des morceaux et les autres se servent. En 1908, l'Autriche-Hongrie annexe la Bosnie-Herzégovine.</p>
+<p><strong>Lien :</strong> Sarajevo est en Bosnie. L'attentat de 1914 a lieu dans un territoire que l'Autriche-Hongrie a pris six ans plus tôt, et que le nationalisme serbe considère comme slave. La poudrière a une histoire.</p>
+</div>
+
+<div class="box src"><div class="lbl">Source 5 · Photo « Saluto dal treno dei militari alle famiglie », 1915</div>
+<p><strong>Ce qu'on voit :</strong> des soldats italiens aux fenêtres d'un train, souriants, qui saluent en agitant leur calot. Un enfant est soulevé vers un soldat ; une femme se cache le visage. (Archivio Touring Club Italia.)</p>
+<p><strong>Sens :</strong> l'enthousiasme du départ, mais aussi la séparation d'avec les familles. Sur la même photo coexistent la fête et la peur.</p>
+<p><strong>Lien :</strong> la photo est <strong>italienne et date de 1915</strong>, pas de 1914. L'Italie entre en guerre un an après les autres, et la scène du départ se répète à l'identique.</p>
+</div>
+
+<div class="box ex"><div class="lbl">Exemple traité · lire le tableau des dépenses militaires</div>
+<ol>
+<li><strong>Que mesure-t-il ?</strong> Les dépenses militaires en millions de Goldmark, réparties entre armée et marine, pour trois pays et trois années (1905, 1910, 1913). L'unité commune (le Goldmark) permet de comparer des pays aux monnaies différentes.</li>
+<li><strong>Calcule les totaux.</strong> Allemagne 1905 : 697 + 231 = 928. Allemagne 1913 : 1.009 + 467 = 1.476.</li>
+<li><strong>Calcule la croissance.</strong> (1.476 − 928) / 928 = 548 / 928 ≈ 0,59, soit <strong>+59 %</strong>. Même calcul : France 857 → 1.178 (+37 %), Royaume-Uni 1.257 → 1.521 (+21 %).</li>
+<li><strong>Interprète.</strong> L'Allemagne est le pays qui accélère le plus, surtout pour la marine (+102 %). Le Royaume-Uni répond en concentrant son effort sur la marine. Cela correspond à la « rivalité navale anglo-allemande » de la diapositive.</li>
+<li><strong>Critique la source.</strong> Les données sont publiées en 1914 par un député allemand (Matthias Erzberger). Questions à toujours se poser : qui produit le chiffre ? En quelle année ? Pour qui écrit-il ? Pas besoin de connaître les réponses : il faut montrer que tu te poses la question.</li>
+</ol>
+</div>
+</section>
+
+<section>
+<h2 id="examen" data-toc="Répondre à l'examen">Répondre à l'examen</h2>
+<div class="box q"><div class="lbl">Question d'examen (posée par la diapositive au début du paquet (2))</div>
+<p>« Quelles peuvent être considérées comme les causes de la Première Guerre mondiale ? »</p>
+</div>
+<p>La diapositive répond en cinq points. Les énumérer ne suffit pas : il faut les <strong>relier</strong>. D'abord l'idée, ensuite les détails.</p>
+<p><strong>Idée de la réponse :</strong> sépare causes profondes et élément déclencheur, puis montre le <em>mécanisme</em> qui les relie.</p>
+<ol>
+<li><strong>Introduction :</strong> distinguer causes profondes et élément déclencheur.</li>
+<li><strong>Tensions liées aux revendications coloniales :</strong> Allemagne en expansion contre Royaume-Uni et France → des inimitiés déjà en place.</li>
+<li><strong>Politique de réarmement (notamment l'Allemagne) :</strong> méfiance et préparation à la guerre. Cite un chiffre (marine allemande +102 % entre 1905 et 1913).</li>
+<li><strong>Enthousiasme nationaliste :</strong> la guerre est « perçue comme une occasion de vengeance ou d'affirmation », donc les populations l'acceptent.</li>
+<li><strong>Système d'alliances défensives :</strong> il oblige les alliés d'un pays attaqué à intervenir.</li>
+<li><strong>Élément déclencheur :</strong> Sarajevo, 28 juin 1914 → ultimatum → la crise locale entre la Serbie et l'Autriche dégénère en conflit mondial <em>par le jeu</em> des alliances.</li>
+<li><strong>Conclusion :</strong> aucune cause ne suffit seule. Les alliances sont le « mécanisme de transmission » qui transforme l'étincelle en explosion.</li>
+</ol>
+<div class="box ex"><div class="lbl">Réponse modèle (version courte)</div>
+<p>La Première Guerre mondiale a des causes profondes et un élément déclencheur. Parmi les causes profondes, on trouve d'abord les rivalités coloniales et économiques, surtout entre une Allemagne en pleine expansion industrielle et les puissances déjà établies, le Royaume-Uni et la France. Il y a ensuite la course aux armements : entre 1905 et 1913, l'Allemagne double ses dépenses navales. Le nationalisme, enfin, présente la guerre comme une occasion de revanche et de gloire. L'Europe est en outre divisée en deux blocs d'alliances défensives, la Triple-Alliance et la Triple-Entente. L'élément déclencheur est l'assassinat de l'archiduc François-Ferdinand à Sarajevo, le 28 juin 1914. L'ultimatum autrichien à la Serbie met les alliances en mouvement : la Russie soutient la Serbie, l'Allemagne soutient l'Autriche-Hongrie, et en quelques semaines un conflit local devient une guerre continentale.</p>
+</div>
+</section>
+
+<section>
+<h2 id="erreurs">Erreurs fréquentes</h2>
+<div class="box warn"><div class="lbl">Pièges</div>
+<ul>
+<li><strong>Confondre Alliance et Entente.</strong> Astuce : Triple-<strong>A</strong>lliance = <strong>A</strong>llemagne + <strong>A</strong>utriche (+ Italie). L'Entente, c'est la France, le Royaume-Uni et la Russie.</li>
+<li><strong>Dire que l'Entente est un traité unique comme la Triple-Alliance.</strong> Non : c'est une série d'accords bilatéraux progressifs. La diapositive insiste exprès sur ce détail.</li>
+<li><strong>Écrire « la guerre a éclaté à cause de l'attentat ».</strong> L'attentat est l'élément <em>déclencheur</em>, pas « la » cause.</li>
+<li><strong>Princip « serbe ».</strong> La diapositive dit : un Bosnien d'origine serbe.</li>
+<li><strong>« L'Italie a combattu avec l'Allemagne parce qu'elle était dans la Triple-Alliance. »</strong> Faux : elle reste neutre en 1914 et entre en guerre en 1915 aux côtés de l'Entente.</li>
+<li><strong>Le « malade de l'Europe », c'est l'Autriche.</strong> Non : c'est l'<strong>Empire ottoman</strong>.</li>
+<li><strong>Lire le tableau seulement en pourcentage.</strong> La marine allemande double, mais en 1913 elle ne représente encore qu'environ la moitié de la marine britannique. Pourcentage et valeur absolue disent des choses différentes : cite les deux.</li>
+<li><strong>Dates :</strong> congrès de Berlin <strong>1878</strong>, Triple-Alliance <strong>1882</strong>, annexion de la Bosnie <strong>1908</strong>, Sarajevo <strong>28 juin 1914</strong>.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2 id="vocabulaire" data-toc="Vocabulaire clé">Vocabulaire clé</h2>
+<div class="tblwrap"><table>
+<tr><th>Terme</th><th>Sens</th></tr>
+<tr><td>la « der' des der' »</td><td>« la dernière des dernières » : l'espoir que cette guerre soit la dernière</td></tr>
+<tr><td>l'élément déclencheur</td><td>l'événement qui fait éclater la guerre à un moment précis (cause immédiate)</td></tr>
+<tr><td>une cause profonde</td><td>une tension de long terme qui rend la guerre possible</td></tr>
+<tr><td>la poudrière de l'Europe</td><td>les Balkans, région où un conflit peut « exploser » à tout moment</td></tr>
+<tr><td>le malade de l'Europe</td><td>l'Empire ottoman, en déclin</td></tr>
+<tr><td>la Triple-Alliance / la Triple-Entente</td><td>les deux blocs d'alliances rivaux avant 1914</td></tr>
+<tr><td>une alliance défensive</td><td>un accord qui oblige à aider un allié <em>s'il est attaqué</em></td></tr>
+<tr><td>la course aux armements</td><td>la compétition entre États pour avoir l'armée et la marine les plus fortes</td></tr>
+<tr><td>le maillon faible</td><td>l'élément le plus fragile d'une chaîne (ici, l'Italie dans la Triple-Alliance)</td></tr>
+<tr><td>un ultimatum</td><td>une exigence accompagnée d'une menace, avec un délai pour répondre</td></tr>
+<tr><td>l'esprit de 1914</td><td>l'enthousiasme patriotique au moment de l'entrée en guerre</td></tr>
+<tr><td>la revanche</td><td>le désir de reprendre ce qu'on a perdu dans une guerre précédente</td></tr>
+<tr><td>les belligérants</td><td>les pays en guerre</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2 id="resume">Résumé</h2>
+<ul>
+<li>Causes profondes : <strong>rivalités coloniales</strong> (Allemagne contre Royaume-Uni et France), <strong>course aux armements</strong> (rivalité navale anglo-allemande), <strong>alliances défensives</strong> en deux blocs, <strong>nationalismes balkaniques</strong>.</li>
+<li>Triple-Alliance (1882, un seul traité) : Allemagne, Autriche-Hongrie, Italie. Triple-Entente (accords bilatéraux) : France, Royaume-Uni, Russie. La Russie protège la Serbie.</li>
+<li>Balkans = poudrière ; Empire ottoman = malade de l'Europe ; la Serbie veut unir les Slaves du Sud.</li>
+<li>Élément déclencheur : <strong>Sarajevo, 28 juin 1914</strong>, François-Ferdinand tué par Gavrilo Princip → ultimatum → alliances.</li>
+<li>Esprit de 1914 : enthousiasme de masse, illusion d'une guerre courte (Guillaume II : « rentrés avant que les feuilles ne tombent »).</li>
+</ul>
+</section>
+
+<section>
+<h2 id="quiz" data-toc="Quiz rapide">Quiz rapide</h2>
+<div class="quiz"><p class="q">Quelle association est correcte ?</p><div class="opts">
+<button type="button" class="opt" data-why="Le Royaume-Uni fait partie de l'Entente, pas de la Triple-Alliance.">Triple-Alliance : Allemagne, Autriche-Hongrie, Royaume-Uni</button>
+<button type="button" class="opt" data-ok data-why="Oui : France, Royaume-Uni et Russie, liés par des accords bilatéraux progressifs.">Triple-Entente : France, Royaume-Uni, Russie</button>
+<button type="button" class="opt" data-why="L'Italie fait partie de la Triple-Alliance (1882), pas de l'Entente, jusqu'en 1915.">Triple-Entente : France, Russie, Italie</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">Qui est « le malade de l'Europe » ?</p><div class="opts">
+<button type="button" class="opt" data-why="L'Autriche-Hongrie est menacée par les nationalismes, mais le surnom désigne l'autre empire.">L'Empire austro-hongrois</button>
+<button type="button" class="opt" data-ok data-why="Oui : l'Empire ottoman, en déclin, qui perd des territoires (voir la une de 1908).">L'Empire ottoman</button>
+<button type="button" class="opt" data-why="Le Maroc est le « malade » du dessin d'Algésiras, mais le surnom de la diapositive désigne l'Empire ottoman.">Le Maroc</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">D'après le tableau de la diapositive, quelle affirmation sur 1913 est vraie ?</p><div class="opts">
+<button type="button" class="opt" data-why="Non : l'Allemagne dépense 467 pour sa marine, le Royaume-Uni 945.">L'Allemagne dépense plus que le Royaume-Uni pour sa marine</button>
+<button type="button" class="opt" data-why="Non : pour l'armée, le Royaume-Uni passe de 581 à 576, pratiquement sans changement.">Le Royaume-Uni augmente fortement sa dépense pour l'armée</button>
+<button type="button" class="opt" data-ok data-why="Oui : 467 contre 231 en 1905, soit +102 %.">L'Allemagne a plus que doublé sa dépense navale depuis 1905</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">Pourquoi les alliances transforment-elles une crise locale en guerre continentale ?</p><div class="opts">
+<button type="button" class="opt" data-ok data-why="Oui : elles sont défensives et obligent les alliés d'un pays attaqué à intervenir, en chaîne.">Parce qu'elles obligent les alliés d'un pays attaqué à intervenir</button>
+<button type="button" class="opt" data-why="Non : elles ont été conçues pour maintenir un équilibre des forces, pas pour attaquer.">Parce qu'elles ont été créées pour préparer une attaque commune</button>
+<button type="button" class="opt" data-why="Non : la Triple-Alliance est un traité unique, l'Entente non. Et il n'existe pas de traité « européen ».">Parce que tous les pays avaient signé le même traité</button>
+</div><p class="fb" hidden></p></div>
+</section>
+
+<section>
+<h2 id="exercices" data-toc="Exercices de vérification">Exercices de vérification</h2>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l1">Facile</span> Exercice 1</div>
+<p>Classe chaque élément en <strong>cause profonde</strong> ou <strong>élément déclencheur</strong> : (a) la rivalité navale anglo-allemande ; (b) l'assassinat de François-Ferdinand ; (c) le nationalisme serbe ; (d) le système d'alliances ; (e) la concurrence coloniale en Afrique et en Asie.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Causes profondes : (a), (c), (d), (e). Élément déclencheur : (b). Le nationalisme serbe est une cause profonde même s'il est lié à l'attentat : il existe depuis des décennies, l'attentat est l'événement ponctuel.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l1">Facile</span> Exercice 2</div>
+<p>En quoi la Triple-Entente diffère-t-elle de la Triple-Alliance du point de vue <em>formel</em> ?</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>La Triple-Alliance naît d'un traité unique (1882). La Triple-Entente ne naît pas d'un traité unique d'alliance militaire : elle résulte d'une série d'accords bilatéraux progressifs entre le Royaume-Uni, la France et la Russie.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l2">Moyen</span> Exercice 3</div>
+<p>Avec les données du tableau, calcule pour la <strong>France</strong> la dépense totale en 1905 et en 1913, puis l'augmentation en pourcentage. Compare avec l'Allemagne.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>1905 : 603 + 254 = 857. 1913 : 766 + 412 = 1.178. Augmentation : (1.178 − 857) / 857 = 321 / 857 ≈ 0,375, soit <strong>+37 %</strong>. L'Allemagne fait +59 % (928 → 1.476) : elle accélère davantage et part déjà de plus haut.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l2">Moyen</span> Exercice 4</div>
+<p>Analyse la caricature de 1893 (<em>Lustige Blätter</em>) avec la méthode en quatre temps. Pourquoi est-elle utile pour comprendre 1914–1915 ?</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>1) Hebdomadaire satirique allemand, 1893. 2) L'Allemand et l'Autrichien avancent d'un bon pas, l'Italien reste très loin derrière ; la plaisanterie : il n'a même plus de sous pour la cantine. 3) L'Italie est vue comme le maillon faible et le partenaire pauvre, à cause de ses difficultés financières. 4) La caricature montre que la Triple-Alliance est fissurée de l'intérieur depuis des décennies. Cela aide à comprendre pourquoi l'Italie reste neutre en 1914 et rejoint l'Entente en 1915.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l3">Difficile</span> Exercice 5</div>
+<p>En 6 à 8 lignes, explique comment un « conflit local » devient une « guerre continentale », en nommant chaque maillon de la chaîne.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Le 28 juin 1914, à Sarajevo, un Bosnien d'origine serbe tue l'héritier du trône austro-hongrois. L'Autriche-Hongrie adresse un ultimatum à la Serbie : le conflit est encore local. La Russie, alliée de la Serbie, la soutient. L'Allemagne, liée à l'Autriche-Hongrie par la Triple-Alliance, entre en guerre contre la Russie, et donc contre la France, son alliée dans l'Entente. Pour frapper vite la France, elle envahit la Belgique neutre (plan Schlieffen), ce qui fait entrer le Royaume-Uni dans la guerre. Les alliances défensives, conçues pour garantir l'équilibre, ont transmis la crise d'un pays à l'autre.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l3">Difficile</span> Exercice 6</div>
+<p>Le titre du thème est « la der' des der' ». Explique pourquoi, mis à côté de la phrase de Guillaume II, il contient une ironie amère.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>En 1914, on part en pensant à une guerre courte (« rentrés avant que les feuilles ne tombent »), vécue avec enthousiasme. La guerre dure en réalité plus de quatre ans et se révèle si destructrice qu'elle fait naître l'espoir qu'elle soit « la dernière des dernières ». Le passage de l'enthousiasme initial au désir de « plus jamais ça » mesure à quel point la réalité a démenti les attentes.</p></div></div>
+</section>
+
+<section>
+<h2 id="liens" data-toc="Liens avec les autres leçons">Liens avec les autres leçons</h2>
+<ul>
+<li><strong>→ Leçon 2 :</strong> le plan Schlieffen explique le dernier maillon de la chaîne (Belgique → Royaume-Uni). C'est là que la guerre « courte » de 1914 s'enlise dans les tranchées.</li>
+<li><strong>→ Leçon 4 :</strong> le traité de Versailles déclare l'Allemagne <strong>seule responsable</strong> (article 231). Compare avec cette leçon, où les causes sont multiples et concernent tout le monde : c'est une bonne piste critique à l'examen. Versailles restitue l'Alsace-Lorraine à la France : la revanche est accomplie.</li>
+<li><strong>→ Leçon 5 :</strong> la propagande nationaliste qui prépare l'esprit de 1914 devient, pendant la guerre, un outil systématique.</li>
+<li><strong>→ Leçon 6 :</strong> la Triple-Alliance était défensive et l'Italie en était le « maillon faible » : d'où la neutralité de 1914 et le changement de camp de 1915.</li>
+</ul>
+</section>
+
+<script>
+(function(){
+var D={de:{c:'var(--de)',n:'Allemagne',a:[697,831,1009],m:[231,426,467]},fr:{c:'var(--fr)',n:'France',a:[603,698,766],m:[254,301,412]},uk:{c:'var(--uk)',n:'Royaume-Uni',a:[581,560,576],m:[676,825,945]}};
+var Y=[1905,1910,1913],C=['de','fr','uk'],K='tot',M='abs';
+var svg=document.getElementById('depenses-svg'),tab=document.getElementById('depenses-tab');
+function fmt(n,d){d=d||0;var s=Math.abs(n).toFixed(d).split('.');s[0]=s[0].replace(/\B(?=(\d{3})+(?!\d))/g,'.');return (n<0?'−':'')+s.join(',')}
+function raw(c,i){var d=D[c];return K==='army'?d.a[i]:K==='navy'?d.m[i]:d.a[i]+d.m[i]}
+function val(c,i){var v=raw(c,i);return M==='idx'?v/raw(c,0)*100:v}
+function draw(){
+ var W=Math.max(300,Math.round(svg.getBoundingClientRect().width)||640),H=W<520?250:300,L=W<520?44:56,R=6,T=22,B=34,max=0;svg.setAttribute('viewBox','0 0 '+W+' '+H);
+ C.forEach(function(c){Y.forEach(function(_,i){max=Math.max(max,val(c,i))})});
+ var step=M==='idx'?50:250;var top=Math.ceil(max*1.08/step)*step;
+ var s='';var ph=H-T-B;
+ for(var g=0;g<=top;g+=step){var y=T+ph-(g/top)*ph;s+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y+'" y2="'+y+'" style="stroke:var(--line)"/><text x="'+(L-8)+'" y="'+(y+4)+'" text-anchor="end" font-size="13" style="fill:var(--muted)">'+fmt(g)+'</text>'}
+ if(M==='idx'){var y0=T+ph-(100/top)*ph;s+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y0+'" y2="'+y0+'" stroke-dasharray="5 4" style="stroke:var(--muted)"/>'}
+ var gw=(W-L-R)/Y.length,bw=Math.min(46,gw/4.2),showV=bw>=34;
+ Y.forEach(function(yr,i){var gx=L+gw*i+gw/2;
+  C.forEach(function(c,k){var v=val(c,i),h=(v/top)*ph,x=gx+(k-1.5)*bw+(k*2-2)*2,y=T+ph-h;
+   s+='<rect x="'+x+'" y="'+y+'" width="'+bw+'" height="'+h+'" rx="3" style="fill:'+D[c].c+'"><title>'+D[c].n+' '+yr+' : '+fmt(v)+'</title></rect>';
+   if(showV)s+='<text x="'+(x+bw/2)+'" y="'+(y-5)+'" text-anchor="middle" font-size="12" style="fill:var(--fg)">'+fmt(v)+'</text>'});
+  s+='<text x="'+gx+'" y="'+(H-12)+'" text-anchor="middle" font-size="15" font-weight="700" style="fill:var(--fg)">'+yr+'</text>'});
+ svg.innerHTML=s;
+ var lab=K==='army'?'Armée':K==='navy'?'Marine':'Total (armée + marine)';
+ var t='<caption class="small" style="caption-side:bottom;text-align:left;padding-top:6px">'+(M==='idx'?'Indice : 1905 = 100 pour chaque pays.':'En millions de Goldmark.')+' Dernière colonne : évolution 1905→1913.</caption><tr><th>'+lab+'</th>'+Y.map(function(y){return '<th class="num">'+y+'</th>'}).join('')+'<th class="num">Évol.</th></tr>';
+ C.forEach(function(c){var a=raw(c,0),b=raw(c,2),p=(b-a)/a*100;
+  t+='<tr><td>'+D[c].n+'</td>'+Y.map(function(_,i){return '<td class="num">'+fmt(val(c,i))+'</td>'}).join('')+'<td class="num"><strong>'+(p>=0?'+':'')+fmt(p,1)+' %</strong></td></tr>'});
+ tab.innerHTML=t;
+}
+document.querySelectorAll('#depenses [data-k]').forEach(function(b){b.onclick=function(){K=b.dataset.k;document.querySelectorAll('#depenses [data-k]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});draw()}});
+document.querySelectorAll('#depenses [data-m]').forEach(function(b){b.onclick=function(){M=b.dataset.m;document.querySelectorAll('#depenses [data-m]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});draw()}});
+draw();
+var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(draw,150)});
+})();
+</script>
+
+<nav class="pager"><a class="prev" href="index.html"><small>◀ Retour au</small>Sommaire du cours</a><a class="next" href="lecon-2-etapes-1914-1917.html"><small>Leçon suivante ▶</small>2. Étapes 1914–1917</a></nav>
+</main>
+</div>
+<script>
+(function(){
+ var main=document.querySelector('main');
+ var hs=[].slice.call(main.querySelectorAll('h2[id]'));
+ function mk(){var ol=document.createElement('ol');hs.forEach(function(h){var li=document.createElement('li');var a=document.createElement('a');a.href='#'+h.id;a.textContent=h.getAttribute('data-toc')||h.textContent;li.appendChild(a);ol.appendChild(li)});return ol}
+ var side=document.querySelector('.toc-side'),mob=document.querySelector('.toc-mob');
+ if(hs.length){if(side)side.appendChild(mk());if(mob)mob.appendChild(mk())}else{if(side)side.remove();if(mob)mob.remove()}
+ if(mob)mob.addEventListener('click',function(e){if(e.target.tagName==='A')mob.removeAttribute('open')});
+ if(side&&'IntersectionObserver' in window){var links={};side.querySelectorAll('a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){side.querySelectorAll('a.on').forEach(function(x){x.classList.remove('on')});var l=links[e.target.id];if(l)l.classList.add('on')}})},{rootMargin:'0px 0px -75% 0px'});hs.forEach(function(h){io.observe(h)})}
+ document.querySelectorAll('.sol-btn').forEach(function(b){var s=b.nextElementSibling;b.setAttribute('aria-expanded','false');b.addEventListener('click',function(){var show=s.hidden;s.hidden=!show;b.textContent=show?'Masquer la solution':'Afficher la solution';b.setAttribute('aria-expanded',String(show))})});
+ document.querySelectorAll('.quiz').forEach(function(q){var opts=[].slice.call(q.querySelectorAll('.opt'));var fb=q.querySelector('.fb');
+  opts.forEach(function(o){o.addEventListener('click',function(){if(q.classList.contains('done'))return;q.classList.add('done');var good=o.hasAttribute('data-ok');
+   opts.forEach(function(x){x.disabled=true;if(x.hasAttribute('data-ok'))x.classList.add('ok')});if(!good)o.classList.add('ko');
+   fb.textContent='';var b=document.createElement('b');b.textContent=good?'Juste. ':'Pas tout à fait. ';fb.appendChild(b);fb.appendChild(document.createTextNode(o.getAttribute('data-why')||q.getAttribute('data-why')||''));fb.hidden=false;
+   var r=document.createElement('button');r.className='retry';r.type='button';r.textContent='Réessayer';r.onclick=function(){q.classList.remove('done');opts.forEach(function(x){x.disabled=false;x.classList.remove('ok','ko')});fb.hidden=true;r.remove()};fb.after(r)})})});
+ document.querySelectorAll('.stepper').forEach(function(st){var steps=[].slice.call(st.children).filter(function(c){return c.classList.contains('step')});var i=0;
+  var prog=document.createElement('div');prog.className='st-prog';prog.innerHTML='<i></i>';var t=st.querySelector('.st-title');if(t)t.after(prog);else st.prepend(prog);
+  var bar=document.createElement('div');bar.className='st-ctl';bar.innerHTML='<button type="button" class="st-prev">◀ Précédent</button><span class="st-n"></span><button type="button" class="st-next">Suivant ▶</button>';st.appendChild(bar);
+  function show(){steps.forEach(function(s,k){s.classList.toggle('on',k===i)});bar.querySelector('.st-n').textContent='Étape '+(i+1)+' sur '+steps.length;bar.querySelector('.st-prev').disabled=i===0;bar.querySelector('.st-next').disabled=i===steps.length-1;prog.firstChild.style.width=((i+1)/steps.length*100)+'%'}
+  bar.querySelector('.st-prev').onclick=function(){if(i>0){i--;show()}};bar.querySelector('.st-next').onclick=function(){if(i<steps.length-1){i++;show()}};show()});
+ document.querySelectorAll('.sorter').forEach(function(so){var items=[].slice.call(so.querySelectorAll('.sort-item'));var cats=JSON.parse(so.getAttribute('data-cats'));var sc=so.querySelector('.score');
+  function upd(){var done=items.filter(function(it){return it.dataset.done}).length,good=items.filter(function(it){return it.dataset.done==='ok'}).length;sc.textContent=done?('Score : '+good+' / '+done+' (sur '+items.length+')'):''}
+  items.forEach(function(it){var ctl=document.createElement('div');ctl.className='sort-ctl';var why=document.createElement('div');why.className='why';why.hidden=true;
+   cats.forEach(function(c){var b=document.createElement('button');b.type='button';b.textContent=c[1];b.setAttribute('aria-pressed','false');b.onclick=function(){ctl.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});var ok=it.getAttribute('data-a')===c[0];it.classList.toggle('ok',ok);it.classList.toggle('ko',!ok);it.dataset.done=ok?'ok':'ko';why.textContent=(ok?'Juste. ':'Non : ')+it.getAttribute('data-why');why.hidden=false;upd()};ctl.appendChild(b)});
+   it.appendChild(ctl);it.appendChild(why)});upd()});
+})();
+</script>
+</body>
+</html>

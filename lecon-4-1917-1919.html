@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>4. 1917 → Versailles · Grande Guerre</title>
+<style>
+*{box-sizing:border-box}
+:root{
+--bg:#faf9f6;--fg:#1c1c1e;--muted:#5d5d66;--card:#fff;--line:#e3e0d8;--accent:#1d4f7a;--accent-bg:#e7eff7;--link:#1d5fa0;
+--def:#1d5fa0;--def-bg:#e9f1fb;--src:#8a5a00;--src-bg:#fbf2df;--ex:#1d7445;--ex-bg:#e7f5ed;
+--warn:#b02a1f;--warn-bg:#fdebe9;--app:#6a3d9e;--app-bg:#f2ecfa;--note:#555a61;--note-bg:#eef0f2;
+--ana:#0d7480;--ana-bg:#e4f4f6;--q:#383896;--q-bg:#ebebfa;
+--ok:#1d7445;--ok-bg:#e7f5ed;--ko:#b02a1f;--ko-bg:#fdebe9;
+--de:#5a6474;--fr:#2c6db3;--uk:#c25a1c;--it:#2e8b57;--soft:#f2f0ea;
+}
+@media (prefers-color-scheme:dark){:root{
+--bg:#141518;--fg:#e9e9ec;--muted:#a3a3ad;--card:#1d1f24;--line:#33363e;--accent:#8fbbe6;--accent-bg:#1f2a36;--link:#8fbbe6;
+--def:#8fbbe6;--def-bg:#1b2633;--src:#e2b25c;--src-bg:#2c2416;--ex:#76cf9c;--ex-bg:#17281f;
+--warn:#f08a80;--warn-bg:#2f1a18;--app:#c5a6ef;--app-bg:#251d33;--note:#b9bec5;--note-bg:#24272c;
+--ana:#6fd0db;--ana-bg:#152a2d;--q:#aeaef5;--q-bg:#1f1f38;
+--ok:#76cf9c;--ok-bg:#17281f;--ko:#f08a80;--ko-bg:#2f1a18;
+--de:#9aa5b5;--fr:#6fa8e8;--uk:#f0955a;--it:#6fcf97;--soft:#22252b;
+}}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 clamp(17px,.95rem + .35vw,19px)/1.68 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;overflow-x:hidden}
+a{color:var(--link)}
+h1,h2,h3,h4{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;line-height:1.25}
+h1{font-size:clamp(1.7rem,1.2rem + 2vw,2.4rem);margin:.2em 0 .3em}
+h2{font-size:1.55rem;margin:2.4em 0 .6em;padding-top:.8em;border-top:2px solid var(--line)}
+h3{font-size:1.2rem;margin:1.7em 0 .4em}
+h4{font-size:1.05rem;margin:1.1em 0 .3em}
+p{margin:.6em 0}
+ul,ol{padding-left:1.3em}
+li{margin:.25em 0}
+.cit{font-style:italic}
+strong{font-weight:700}
+.top{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--line);font-size:.92rem}
+.top a{text-decoration:none;font-weight:600;white-space:nowrap}
+.top .crumb{color:var(--muted);white-space:nowrap}
+.top .sp{flex:1}
+.top .nav a{padding:4px 10px;border:1px solid var(--line);border-radius:999px;margin-left:4px}
+.layout{max-width:1180px;margin:0 auto;padding:0 16px}
+main{max-width:780px;margin:0 auto;padding-bottom:60px;min-width:0}
+.toc-side{display:none}
+@media (min-width:1120px){
+ .layout{display:grid;grid-template-columns:250px minmax(0,780px);gap:48px;justify-content:center}
+ main{margin:0}
+ .toc-side{display:block;position:sticky;top:70px;align-self:start;max-height:calc(100vh - 90px);overflow:auto;padding-top:34px;font-size:.88rem}
+ .toc-mob{display:none}
+}
+.toc-h{font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:.78rem;margin-bottom:6px}
+.toc-side ol,.toc-mob ol{list-style:none;padding:0;margin:0}
+.toc-side a,.toc-mob a{display:block;padding:4px 10px;border-left:3px solid transparent;text-decoration:none;color:var(--fg)}
+.toc-side a.on{border-left-color:var(--accent);background:var(--accent-bg);color:var(--accent);font-weight:600}
+.toc-mob{margin:16px 0;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.toc-mob summary{cursor:pointer;padding:12px 16px;font-weight:700}
+.toc-mob ol{padding:0 6px 10px}
+.hero{padding:30px 0 6px}
+.kicker{color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.07em;font-weight:600}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+.box{--c:var(--note);--cbg:var(--note-bg);border-left:5px solid var(--c);background:var(--cbg);border-radius:10px;padding:12px 16px;margin:18px 0}
+.box>.lbl{font-size:.74rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--c);margin-bottom:2px}
+.box>:last-child{margin-bottom:0}
+.box.def{--c:var(--def);--cbg:var(--def-bg)}
+.box.src{--c:var(--src);--cbg:var(--src-bg)}
+.box.ex{--c:var(--ex);--cbg:var(--ex-bg)}
+.box.warn{--c:var(--warn);--cbg:var(--warn-bg)}
+.box.app{--c:var(--app);--cbg:var(--app-bg)}
+.box.note{--c:var(--note);--cbg:var(--note-bg)}
+.box.ana{--c:var(--ana);--cbg:var(--ana-bg)}
+.box.q{--c:var(--q);--cbg:var(--q-bg)}
+.box.intu{--c:var(--accent);--cbg:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);font-size:1.06em}
+blockquote{margin:10px 0;padding:6px 14px;border-left:3px solid var(--line);color:var(--fg);font-family:Georgia,serif}
+blockquote .tr{display:block;color:var(--muted);font-family:system-ui,sans-serif;font-size:.92em;margin-top:4px}
+.tblwrap{overflow-x:auto;margin:14px 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.93em;background:var(--card)}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tl{list-style:none;padding:0;margin:14px 0 14px 6px;border-left:3px solid var(--line)}
+.tl li{position:relative;padding:4px 0 10px 18px}
+.tl li::before{content:"";position:absolute;left:-8px;top:12px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl .d{display:block;font-weight:700;color:var(--accent);font-size:.9em}
+.tl li.it::before{background:var(--it)}
+.tl li.it .d{color:var(--it)}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:1px 7px;border-radius:999px;background:var(--soft);color:var(--muted);vertical-align:middle;margin-left:4px}
+.ex-card{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:16px 0}
+.ex-h{font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lvl{font-size:.72rem;font-weight:800;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+.lvl.l1{background:var(--ok-bg);color:var(--ok)}
+.lvl.l2{background:var(--src-bg);color:var(--src)}
+.lvl.l3{background:var(--ko-bg);color:var(--ko)}
+button{font:inherit;cursor:pointer}
+.sol-btn,.retry,.st-ctl button,.seg button,.calc button,.sort-ctl button{border:1px solid var(--accent);background:var(--accent-bg);color:var(--accent);border-radius:8px;padding:7px 14px;font-weight:600;font-size:.92em;min-height:40px}
+.sol-btn:hover{filter:brightness(.97)}
+.sol{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--ok-bg);border-left:4px solid var(--ok)}
+.sol>:first-child{margin-top:0}.sol>:last-child{margin-bottom:0}
+.quiz{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:14px 0}
+.quiz .q{font-weight:600;margin-top:0}
+.quiz .opts{display:grid;gap:8px}
+.opt{text-align:left;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:9px;padding:10px 12px;min-height:44px}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt.ok{background:var(--ok-bg);border-color:var(--ok);color:var(--fg)}
+.opt.ok::after{content:"  ✓";color:var(--ok);font-weight:800}
+.opt.ko{background:var(--ko-bg);border-color:var(--ko)}
+.opt.ko::after{content:"  ✗";color:var(--ko);font-weight:800}
+.opt:disabled{cursor:default;opacity:1}
+.fb{margin:10px 0 8px;padding:10px 12px;border-radius:9px;background:var(--soft)}
+.quiz .opts.row{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+.stepper{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:18px 0}
+.stepper>.st-title{font-weight:700;margin:0 0 8px}
+.st-prog{height:6px;background:var(--soft);border-radius:999px;overflow:hidden;margin-bottom:10px}
+.st-prog i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.stepper .step{display:none}
+.stepper .step.on{display:block;animation:fade .25s}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.stepper .step h4{margin-top:4px}
+.st-ctl{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px;flex-wrap:wrap}
+.st-ctl button:disabled{opacity:.4;cursor:default}
+.st-n{color:var(--muted);font-size:.9em}
+@media (max-width:480px){.st-ctl .st-n{order:-1;flex-basis:100%;text-align:center}}
+.seg{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.seg button[aria-pressed=true],.calc button[aria-pressed=true],.sort-ctl button[aria-pressed=true]{background:var(--accent);color:var(--card)}
+.widget{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:18px 0}
+.widget svg{width:100%;height:auto;display:block}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.88em;color:var(--muted)}
+.legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--sw)}
+.small{font-size:.88em;color:var(--muted)}
+.calc{display:flex;flex-wrap:wrap;gap:6px}
+.calc-out{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--soft);min-height:3em}
+.big{font-size:1.5em;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:48px}
+.pager a{display:block;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--fg)}
+.pager a small{display:block;color:var(--muted)}
+.pager a.next{text-align:right;grid-column:2}
+.cards{display:grid;gap:12px;margin:16px 0}
+.cards a{display:block;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--fg)}
+.cards a:hover{border-color:var(--accent)}
+.cards .n{font-weight:800;color:var(--accent);font-size:.85em;text-transform:uppercase;letter-spacing:.06em}
+.cards .t{font-family:Georgia,serif;font-size:1.2em;font-weight:700;display:block;margin:2px 0}
+.cards .d{color:var(--muted);font-size:.93em}
+.legend-boxes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.legend-boxes .box{margin:0;padding:8px 12px;font-size:.9em}
+.hot{cursor:pointer}
+.hot circle{fill:var(--accent);stroke:var(--card);stroke-width:2}
+.hot text{fill:var(--card);font:700 13px system-ui,sans-serif;pointer-events:none}
+.hot.on circle{fill:var(--warn)}
+svg text{font-family:system-ui,sans-serif}
+.sort-item{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0;background:var(--bg)}
+.sort-item.ok{border-color:var(--ok);background:var(--ok-bg)}
+.sort-item.ko{border-color:var(--ko);background:var(--ko-bg)}
+.sort-item .why{margin-top:6px;font-size:.92em}
+.score{font-weight:700;margin-top:10px}
+.sort-item .sort-ctl{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.sort-item .sort-ctl button{font-size:.85em;padding:6px 8px;line-height:1.25}
+.cycle{display:flex;align-items:center;gap:8px;margin:10px 0}
+.cyc{flex:1 1 0;border:1px solid var(--accent);background:var(--accent-bg);border-radius:10px;padding:10px 12px;font-weight:600;text-align:center}
+.cyc.loop{background:transparent;border-style:dashed;font-weight:500;color:var(--muted)}
+.cyc-ar{color:var(--accent);font-weight:800;font-size:1.3em;flex:0 0 auto}
+@media (max-width:640px){.cycle{flex-direction:column;align-items:stretch}.cyc-ar{text-align:center;transform:rotate(90deg)}}
+.hot-btns{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:10px}
+.hot-btns button{border:1px solid var(--accent);background:var(--accent-bg);color:var(--accent);border-radius:8px;font-weight:700;min-height:42px}
+.hot-btns button[aria-pressed=true]{background:var(--accent);color:var(--card)}
+@media print{.top,.toc-side,.toc-mob,.pager{display:none}.sol{display:block!important}.stepper .step{display:block}}
+</style>
+</head>
+<body>
+<header class="top"><a class="home" href="index.html">☰ Sommaire</a><span class="crumb">Leçon 4/6</span><span class="sp"></span><span class="nav"><a href="lecon-3-verdun.html" title="Verdun (1916)">◀ 3</a><a href="lecon-5-guerre-totale.html" title="La guerre totale">5 ▶</a></span></header>
+<div class="layout">
+<aside class="toc-side" aria-label="Sections"><div class="toc-h">Dans cette page</div></aside>
+<main>
+<div class="hero"><div class="kicker">Diapositives XIII (4) · Leçon 4 sur 6</div><h1>1917, l'année décisive — du tournant à Versailles</h1><p class="sub">Révolutions russes, mutineries, États-Unis, fin de la guerre, armistice et traité de Versailles.</p></div>
+<details class="toc-mob"><summary>Sections de la page</summary></details>
+<section>
+<h2 id="intuition">Intuition</h2>
+<div class="box intu"><div class="lbl">En 4 lignes</div>
+<p>En 1917, la balance de la guerre bascule. La Russie s'effondre en deux révolutions et sort du conflit. Les armées, épuisées, se mutinent. Les États-Unis entrent en guerre avec des ressources énormes. L'Allemagne, libérée du front de l'Est, tente une dernière offensive au printemps 1918, échoue et s'effondre : l'empereur abdique le 9 novembre et l'armistice est signé le 11 novembre 1918. La paix de Versailles (1919) n'est pas la paix « juste » voulue par Wilson, mais la paix punitive voulue par la France et le Royaume-Uni.</p>
+</div>
+<p>Deux distinctions structurent toute la leçon : <strong>armistice ≠ traité de paix</strong>, et <strong>paix juste (Wilson) ≠ paix punitive (France et Royaume-Uni)</strong>.</p>
+</section>
+
+<section>
+<h2 id="pas-a-pas" data-toc="Explication pas à pas">Explication pas à pas</h2>
+
+<h3>A. Pourquoi 1917 est « l'année décisive »</h3>
+<p>Les diapositives présentent trois faits. Vois-les comme trois poids posés sur une balance :</p>
+
+<h4>1. La Russie sort de la guerre</h4>
+<p>« Les révolutions de <strong>février</strong> et d'<strong>octobre 1917</strong> ont bouleversé la Russie, renversant le <strong>tsarisme</strong> et portant les <strong>bolcheviks</strong> (communistes) au pouvoir. » Leur chef, <strong>Lénine</strong>, « a négocié le <strong>traité de Brest-Litovsk</strong> (<strong>mars 1918</strong>), qui a libéré l'Allemagne du front de l'Est ».</p>
+<p><em>Effet sur la balance :</em> l'Entente perd un allié immense et l'Allemagne peut transférer ses troupes à l'ouest. Pour la première fois depuis 1914, elle ne combat plus que sur un seul front.</p>
+
+<h4>2. Les mutineries et la crise du moral</h4>
+<p>« Nombreux soldats français se mutinent, épuisés par trois ans de guerre. Des crises similaires touchent d'autres armées, révélant la <strong>lassitude générale des peuples</strong>. »</p>
+<p><em>Effet :</em> c'est le prix humain de la guerre d'usure (<a href="lecon-3-verdun.html">leçon 3</a>). L'ennemi n'est plus seulement en face : c'est aussi l'épuisement.</p>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>Les mutineries françaises éclatent au printemps 1917, après l'échec de l'offensive du Chemin des Dames, dirigée par le général Nivelle (celui de Verdun). Soissons, citée dans la première lettre analysée plus bas, se trouve dans ce secteur.</p>
+</div>
+
+<h4>3. Les États-Unis entrent en guerre</h4>
+<p>« Face à la <strong>guerre sous-marine à outrance</strong> allemande, les États-Unis déclarent la guerre à l'Allemagne (<strong>7 avril 1917</strong>). » Leur intervention apporte à l'Entente « des ressources <strong>humaines, économiques et matérielles décisives</strong> ».</p>
+<p><em>Effet :</em> cela compense largement la perte de la Russie. Mais il faut du temps pour que les soldats américains arrivent en masse, et c'est sur ce délai que l'Allemagne va parier.</p>
+
+<div class="box ex"><div class="lbl">Le raisonnement en une ligne</div>
+<p>Russie dehors (− Entente, + Allemagne) · moral en miettes (pour tous) · États-Unis dedans (++ Entente, mais avec retard) → l'Allemagne a une courte fenêtre pour gagner avant l'arrivée des Américains. C'est exactement l'offensive de 1918.</p>
+</div>
+
+<h3>B. 1918 : la fin de la guerre</h3>
+<div class="stepper">
+<p class="st-title">De 1917 à Versailles, étape par étape</p>
+<div class="step"><h4>Février et octobre 1917 · Russie</h4><p>Le tsarisme tombe, puis les bolcheviks de Lénine prennent le pouvoir.</p></div>
+<div class="step"><h4>7 avril 1917 · États-Unis</h4><p>Ils déclarent la guerre à l'Allemagne, en réponse à la guerre sous-marine à outrance.</p></div>
+<div class="step"><h4>1917 · Mutineries</h4><p>De nombreux soldats français se mutinent ; des crises semblables touchent d'autres armées.</p></div>
+<div class="step"><h4>Mars 1918 · Brest-Litovsk</h4><p>La Russie signe la paix avec l'Allemagne. Le front de l'Est se ferme.</p></div>
+<div class="step"><h4>Printemps 1918 · La dernière offensive allemande</h4><p>« Libérée du front est, l'Allemagne lance une ultime offensive à l'ouest pour tenter une victoire rapide <strong>avant l'arrivée massive des troupes américaines</strong>. » L'offensive échoue face à la résistance alliée. « Conscients de la défaite militaire imminente, les chefs de l'armée demandèrent au gouvernement d'entamer des négociations de paix. »</p></div>
+<div class="step"><h4>9 novembre 1918 · L'empereur abdique</h4><p>Guillaume II est « contraint d'abdiquer et de s'exiler aux <strong>Pays-Bas</strong> ». Une république, la future <strong>République de Weimar</strong>, est proclamée en Allemagne. Simultanément, l'<strong>Autriche-Hongrie se désagrège</strong> sous la pression des nationalités et l'<strong>Empire ottoman capitule</strong>.</p></div>
+<div class="step"><h4>11 novembre 1918 · Armistice de Rethondes</h4><p>Signé dans un wagon, dans la <strong>clairière de Compiègne</strong> ; la délégation alliée sort du wagon vers <strong>5 h 30 du matin</strong>, après la signature. L'armistice met fin aux combats. L'Allemagne, « épuisée et en pleine révolution intérieure », accepte des conditions très dures, « préfigurant les négociations du traité de Versailles ».</p></div>
+<div class="step"><h4>1919 · La conférence de la paix</h4><p>Deux visions s'affrontent : Wilson (paix juste) contre la France et le Royaume-Uni (paix punitive). Ce sont la France et le Royaume-Uni qui l'emportent.</p></div>
+<div class="step"><h4>Juin 1919 · Traité de Versailles</h4><p>L'Allemagne est déclarée seule responsable (article 231) et subit pertes territoriales, démilitarisation et réparations.</p></div>
+</div>
+
+<div class="box def"><div class="lbl">Notion clé · armistice et traité</div>
+<ul>
+<li><strong>Un armistice</strong> est un accord pour <strong>arrêter les combats</strong>. Il est militaire et immédiat. Rethondes, 11 novembre 1918.</li>
+<li><strong>Un traité de paix</strong> est un accord qui <strong>fixe les conditions</strong> de l'après-guerre (frontières, armées, paiements, responsabilités). Il est politique et arrive après des mois de négociations. Versailles, juin 1919.</li>
+</ul>
+</div>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>L'armistice, signé vers 5 h 30, entre en vigueur à <strong>11 heures</strong> le 11 novembre : la fameuse « onzième heure du onzième jour du onzième mois ». Ne confonds pas l'heure de la signature (diapositive) avec l'heure du cessez-le-feu.</p>
+</div>
+<div class="box note"><div class="lbl">Note sur le matériel</div>
+<p>Le résumé joint écrit que l'armistice est « signé [...] à 5 h 30 du matin ». La légende de la photo dit plus précisément que la délégation alliée <em>sort du wagon</em> vers 5 h 30, après la signature. La nuance est mince, mais la diapositive est plus exacte.</p>
+</div>
+
+<h3>C. La paix : deux visions face à face</h3>
+<div class="tblwrap"><table>
+<tr><th></th><th>Woodrow Wilson (États-Unis)</th><th>France et Royaume-Uni</th></tr>
+<tr><td>Objectif</td><td>« Une paix fondée sur la <strong>justice</strong> et la <strong>réconciliation</strong>, <strong>sans esprit de vengeance</strong> envers l'Allemagne »</td><td>« Avant tout <strong>punir</strong> l'Allemagne et s'assurer qu'elle ne puisse <strong>plus jamais</strong> représenter une menace militaire »</td></tr>
+<tr><td>Programme</td><td>Les <strong>Quatorze points</strong> : des principes « plus modérés et progressistes », surtout la création d'une organisation internationale de sécurité collective, la <strong>Société des Nations</strong> (SDN)</td><td>Des conditions dures : territoires, armée, réparations, culpabilité</td></tr>
+<tr><td>Pourquoi</td><td>Éviter que la paix ne crée de nouvelles rancœurs</td><td>La France « avait subi d'énormes destructions sur son propre sol » (le front occidental passait chez elle)</td></tr>
+<tr><td>Qui l'emporte</td><td colspan="2">« Ce sont finalement <strong>la France et le Royaume-Uni</strong> qui ont imposé leurs conditions. »</td></tr>
+</table></div>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>Wilson « perd » sur l'esprit de la paix, mais la <strong>Société des Nations est quand même créée</strong> (1920). Paradoxe : les États-Unis n'y adhéreront pas, car le Sénat américain ne ratifie pas le traité. Le résumé joint ajoute parmi les principes de Wilson le « droit des peuples à disposer d'eux-mêmes » : c'est historiquement exact, mais ce n'est pas dans les diapositives.</p>
+</div>
+
+<h3>D. Le traité de Versailles (juin 1919)</h3>
+<p>L'Allemagne est « considérée comme <strong>seule responsable</strong> du conflit (<strong>article 231</strong>, dit “<strong>clause de culpabilité</strong>”) ». Elle subit des conditions extrêmement dures :</p>
+<div class="tblwrap"><table>
+<tr><th>Type</th><th>Clause (d'après la diapositive)</th></tr>
+<tr><td>Responsabilité</td><td>Article 231 : l'Allemagne seule responsable de la guerre</td></tr>
+<tr><td>Territoires</td><td><strong>Alsace-Lorraine restituée à la France</strong> ; <strong>corridor de Dantzig</strong> cédé à la Pologne</td></tr>
+<tr><td>Armée</td><td>« Limitation drastique » à <strong>100.000 hommes</strong></td></tr>
+<tr><td>Démilitarisation</td><td>La <strong>Rhénanie</strong> doit être démilitarisée</td></tr>
+<tr><td>Argent</td><td>Versement de « très lourdes <strong>réparations</strong> de guerre »</td></tr>
+</table></div>
+<p>Le résumé joint ajoute que les Allemands vivent le traité non comme une paix négociée mais comme un « <strong>Diktat</strong> », une paix imposée. Le mot n'est pas dans les diapositives, mais l'idée oui : la caricature de 1931 la montre (plus bas).</p>
+<div class="box warn"><div class="lbl">Attention · pourquoi « restituée » ?</div>
+<p>L'Alsace-Lorraine est <em>restituée</em> parce qu'elle appartenait auparavant à la France. L'Allemagne l'avait prise en 1871 (approfondissement, voir <a href="lecon-1-origines.html">leçon 1</a>). C'est l'objectif de la revanche française enfin atteint.</p>
+</div>
+</section>
+
+<section>
+<h2 id="analogies">Analogies</h2>
+<div class="box ana"><div class="lbl">Analogie · le coup de sifflet et la commission de discipline</div>
+<p>L'<strong>armistice</strong>, c'est le coup de sifflet final de l'arbitre : le match s'arrête. Le <strong>traité</strong>, c'est la commission de discipline qui se réunit des semaines plus tard : elle décide des suspensions, des amendes, de qui est fautif. Le coup de sifflet ne dit rien des sanctions.</p>
+</div>
+<div class="box ana"><div class="lbl">Analogie · deux voisins après un incendie</div>
+<p>Après un incendie parti d'une dispute entre voisins, un médiateur (Wilson) propose des règles communes pour que cela ne se reproduise pas et une assemblée de copropriété pour régler les conflits (la Société des Nations). Le voisin dont la maison a brûlé (la France) veut que le coupable paie tout et n'ait plus jamais le droit d'avoir des allumettes chez lui. C'est le second qui l'emporte. Mais un voisin humilié et endetté reste un voisin en colère : c'est le risque que rend visible la caricature de 1931.</p>
+</div>
+<div class="box ana"><div class="lbl">Analogie · Brest-Litovsk</div>
+<p>Pour l'Allemagne, Brest-Litovsk revient à libérer une main dans un corps-à-corps contre deux adversaires. Avec les deux mains contre un seul ennemi, elle tente le coup décisif (printemps 1918), mais pendant ce temps l'autre reçoit des renforts (les États-Unis).</p>
+</div>
+</section>
+
+<section>
+<h2 id="sources" data-toc="Sources analysées">Sources analysées (exemples traités)</h2>
+
+<div class="box src"><div class="lbl">Source 1 · « Le camarade Lénine nettoie la terre de ses scories », affiche soviétique, novembre 1920</div>
+<p><strong>Ce qu'on voit :</strong> Lénine, debout sur le globe terrestre, balaie des personnages qui tombent : deux souverains avec couronne et manteau, un religieux, un capitaliste ventru accroché à un sac d'argent.</p>
+<p><strong>Sens :</strong> la révolution se présente comme un « nettoyage » du monde, débarrassé des monarques, du clergé et des capitalistes. C'est une propagande bolchevique, et la cible n'est pas seulement la Russie : c'est le <em>globe</em>.</p>
+<p><strong>Lien :</strong> la chute du tsarisme en 1917 est aussi la chute d'un ordre ancien. En 1918, l'empereur allemand et l'Autriche-Hongrie tombent à leur tour.</p>
+</div>
+
+<div class="box src"><div class="lbl">Source 2 · Deux lettres sur les mutineries, 1917</div>
+<p><strong>Lettre d'Émile Jourdan, soldat français :</strong></p>
+<blockquote>« Certains bruits ont couru ces jours-ci que plusieurs régiments s'étaient mutinés et qu'il s'était produit à Soissons des faits très regrettables ayant trait à la discipline de l'armée. Le moral du poilu baisse, gare que l'orage éclate. »</blockquote>
+<p><strong>Lettre du général Taufflieb :</strong></p>
+<blockquote>« À la sortie de Terny, en traversant un bois, quelques coups de sifflets étaient partis de la colonne : au même moment tous les hommes s'étaient enfoncés dans le bois. Malgré les rappels de leurs sous-officiers, le bataillon avait disparu complètement. On ne savait pas quelle direction il avait prise. »</blockquote>
+<p><strong>Analyse comparée :</strong></p>
+<div class="tblwrap"><table>
+<tr><th></th><th>Jourdan</th><th>Taufflieb</th></tr>
+<tr><td>Qui écrit</td><td>Un simple soldat (vu d'en bas)</td><td>Un général (vu d'en haut)</td></tr>
+<tr><td>Ce qu'il sait</td><td>Des rumeurs (« certains bruits ont couru »)</td><td>Un fait précis dont il a été témoin</td></tr>
+<tr><td>Ton</td><td>Avertissement : la tension va éclater</td><td>Constat d'une perte de contrôle</td></tr>
+<tr><td>Ce qu'elle montre</td><td>Le moral qui s'effondre</td><td>Une forme concrète de refus collectif : un bataillon entier qui disparaît, organisé par un signal (les coups de sifflet)</td></tr>
+</table></div>
+<p><strong>Lien :</strong> ces lettres sont la preuve directe de la « crise du moral » de la diapositive. Le fait que Jourdan ne connaisse que des « bruits » laisse penser que les nouvelles circulaient mal : la censure est l'un des instruments de la guerre totale (<a href="lecon-5-guerre-totale.html">leçon 5</a>). Ce dernier lien est ma lecture, pas celle de la diapositive.</p>
+</div>
+
+<div class="box src"><div class="lbl">Source 3 · Cliché officiel de l'armistice de Rethondes, 11 novembre 1918</div>
+<p><strong>Ce qu'on voit :</strong> la délégation alliée, en uniforme, pose devant le wagon vers 5 h 30 du matin, juste après la signature. Une seconde photo montre le « wagon de l'Armistice » aujourd'hui, entouré des drapeaux des Alliés, au Mémorial de l'Armistice.</p>
+<p><strong>Sens :</strong> la fin des combats a lieu dans un lieu improvisé et symbolique, un wagon dans une clairière. Le wagon devient ensuite lui-même un objet de mémoire.</p>
+</div>
+
+<div class="box src"><div class="lbl">Source 4 · « Supprimez ce fardeau et le monde sera guéri », caricature, 1931</div>
+<p><strong>Ce qu'on voit :</strong> un énorme rocher marqué <strong>VERSAILLES</strong> écrase une masse d'hommes courbés et épuisés. Sur le rocher appuient deux pieds pris dans une armure. La légende est en <strong>cinq langues</strong> (anglais, allemand, français, espagnol, italien).</p>
+<p><strong>Sens :</strong> le traité est représenté comme un poids qui écrase le peuple (allemand) et, selon le titre, empêche le <em>monde entier</em> de guérir. Les pieds en armure évoquent la force militaire des vainqueurs qui maintient le rocher.</p>
+<p><strong>Deux détails à remarquer :</strong></p>
+<ul>
+<li><strong>La date, 1931 :</strong> douze ans après, la rancœur est toujours vive.</li>
+<li><strong>Les cinq langues :</strong> le dessin s'adresse à l'opinion publique internationale, pas seulement aux Allemands. C'est une propagande contre le traité.</li>
+</ul>
+<p><strong>Lien :</strong> le sentiment d'humiliation que le résumé appelle « Diktat ».</p>
+</div>
+
+<div class="box note"><div class="lbl">Note sur le matériel</div>
+<p>Une diapositive renvoie à une image de la <em>Domenica del Corriere</em> de 1917 sur l'entrée en guerre des États-Unis, mais seulement par un lien (photothèque Gilardi). L'image n'est pas dans le matériel : je ne peux pas l'analyser.</p>
+</div>
+</section>
+
+<section>
+<h2 id="examen" data-toc="Répondre à l'examen">Répondre à l'examen</h2>
+<div class="box q"><div class="lbl">Question 1</div>
+<p>« Pourquoi 1917 est-elle considérée comme l'année décisive ? »</p>
+</div>
+<p><strong>Idée :</strong> trois faits qui modifient le rapport de forces, puis la conséquence en 1918.</p>
+<ol>
+<li><strong>Russie :</strong> révolutions de février et d'octobre → bolcheviks, Lénine → Brest-Litovsk (mars 1918) → l'Allemagne est libre à l'est.</li>
+<li><strong>Moral :</strong> mutineries françaises (lettres de Jourdan et de Taufflieb), lassitude générale.</li>
+<li><strong>États-Unis :</strong> 7 avril 1917, à cause de la guerre sous-marine à outrance → ressources décisives pour l'Entente.</li>
+<li><strong>Conséquence :</strong> l'Allemagne tente une dernière offensive avant l'arrivée des Américains → échec → abdication (9 novembre) → armistice (11 novembre 1918).</li>
+</ol>
+<div class="box ex"><div class="lbl">Réponse modèle (question 1, version courte)</div>
+<p>L'année 1917 est décisive parce qu'elle modifie le rapport de forces. En Russie, les révolutions de février et d'octobre renversent le tsarisme et portent les bolcheviks au pouvoir ; Lénine négocie le traité de Brest-Litovsk (mars 1918), qui libère l'Allemagne du front de l'Est. Dans le même temps, l'épuisement des soldats provoque des mutineries, notamment dans l'armée française, signe de la lassitude générale des peuples. Enfin, face à la guerre sous-marine à outrance, les États-Unis déclarent la guerre à l'Allemagne le 7 avril 1917 et apportent à l'Entente des ressources humaines, économiques et matérielles décisives. L'Allemagne tente alors une dernière offensive au printemps 1918, avant l'arrivée massive des Américains, mais elle échoue : l'empereur abdique le 9 novembre et l'armistice est signé à Rethondes le 11 novembre 1918.</p>
+</div>
+<div class="box q"><div class="lbl">Question 2</div>
+<p>« Pourquoi le traité de Versailles est-il perçu comme une humiliation par l'Allemagne ? »</p>
+</div>
+<ol>
+<li><strong>Le contexte :</strong> deux visions, celle de Wilson (Quatorze points, SDN) et la vision punitive de la France et du Royaume-Uni. La seconde l'emporte.</li>
+<li><strong>La culpabilité :</strong> article 231, l'Allemagne <em>seule</em> responsable.</li>
+<li><strong>Les pertes :</strong> l'Alsace-Lorraine, le corridor de Dantzig.</li>
+<li><strong>La faiblesse imposée :</strong> armée de 100.000 hommes, Rhénanie démilitarisée.</li>
+<li><strong>Le coût :</strong> de très lourdes réparations.</li>
+<li><strong>La perception :</strong> une paix imposée et non négociée (« Diktat ») ; la caricature de 1931 le montre encore douze ans plus tard.</li>
+</ol>
+<div class="box ex"><div class="lbl">Réponse modèle (question 2, version courte)</div>
+<p>À la conférence de la paix, deux visions s'affrontent : celle du président américain Wilson, qui propose avec ses Quatorze points une paix juste, sans esprit de vengeance, et la création de la Société des Nations ; et celle de la France et du Royaume-Uni, qui veulent punir l'Allemagne et la rendre inoffensive. C'est la seconde qui l'emporte. Par l'article 231, le traité de Versailles (juin 1919) déclare l'Allemagne seule responsable de la guerre. Il lui impose des pertes territoriales (l'Alsace-Lorraine est restituée à la France, le corridor de Dantzig est cédé à la Pologne), limite son armée à 100.000 hommes, démilitarise la Rhénanie et exige de très lourdes réparations. Les Allemands le vivent comme une paix imposée et humiliante, comme le montre encore en 1931 la caricature du rocher « Versailles » qui écrase le peuple.</p>
+</div>
+</section>
+
+<section>
+<h2 id="erreurs">Erreurs fréquentes</h2>
+<div class="box warn"><div class="lbl">Pièges</div>
+<ul>
+<li><strong>Brest-Litovsk en 1917.</strong> Les révolutions sont de 1917, le traité date de <strong>mars 1918</strong>.</li>
+<li><strong>Une seule révolution russe.</strong> Il y en a <strong>deux</strong> : février (chute du tsar) et octobre (prise du pouvoir par les bolcheviks).</li>
+<li><strong>Les États-Unis sauvent la situation dès 1917.</strong> Ils entrent en guerre en avril 1917, mais leur poids se fait sentir en 1918. L'Allemagne attaque justement avant leur « arrivée massive ».</li>
+<li><strong>Armistice = traité.</strong> Rethondes (11 novembre 1918) arrête les combats ; Versailles (juin 1919) fixe les conditions.</li>
+<li><strong>Rethondes et Compiègne, deux lieux différents.</strong> C'est le même endroit : le wagon se trouve dans la clairière de Compiègne, près de Rethondes.</li>
+<li><strong>L'abdication après l'armistice.</strong> Non : abdication le <strong>9</strong>, armistice le <strong>11</strong> novembre.</li>
+<li><strong>« Wilson a imposé la paix. »</strong> Non : ce sont la France et le Royaume-Uni qui l'ont emporté.</li>
+<li><strong>Confondre les armistices.</strong> <strong>Villa Giusti</strong> (novembre 1918) met fin aux combats sur le front italien contre l'Autriche-Hongrie (<a href="lecon-6-italie.html">leçon 6</a>) ; <strong>Rethondes</strong> met fin à la guerre avec l'Allemagne.</li>
+<li><strong>Article 231</strong> = clause de culpabilité. Ne le confonds pas avec la limitation de l'armée à 100.000 hommes.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2 id="vocabulaire" data-toc="Vocabulaire clé">Vocabulaire clé</h2>
+<div class="tblwrap"><table>
+<tr><th>Terme</th><th>Sens</th></tr>
+<tr><td>le tsarisme</td><td>le régime de l'empereur (tsar) de Russie</td></tr>
+<tr><td>les bolcheviks</td><td>les communistes russes dirigés par Lénine</td></tr>
+<tr><td>une mutinerie</td><td>un refus collectif d'obéir de la part de soldats</td></tr>
+<tr><td>la lassitude</td><td>la fatigue morale, le découragement</td></tr>
+<tr><td>la guerre sous-marine à outrance</td><td>des attaques de sous-marins sans limite, y compris contre les navires neutres et marchands</td></tr>
+<tr><td>abdiquer</td><td>renoncer au trône</td></tr>
+<tr><td>un armistice</td><td>un accord qui arrête les combats</td></tr>
+<tr><td>un traité de paix</td><td>un accord qui fixe les conditions de l'après-guerre</td></tr>
+<tr><td>les Quatorze points</td><td>le programme de paix de Wilson</td></tr>
+<tr><td>la Société des Nations (SDN)</td><td>l'organisation internationale de sécurité collective proposée par Wilson</td></tr>
+<tr><td>la sécurité collective</td><td>le principe selon lequel les États se protègent ensemble contre un agresseur</td></tr>
+<tr><td>la clause de culpabilité</td><td>l'article 231 : l'Allemagne seule responsable de la guerre</td></tr>
+<tr><td>les réparations</td><td>les sommes que le vaincu doit payer pour les dégâts de la guerre</td></tr>
+<tr><td>démilitariser</td><td>interdire toute présence militaire dans une région</td></tr>
+<tr><td>un Diktat</td><td>une paix imposée sans négociation (mot du résumé, pas des diapositives)</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2 id="resume">Résumé</h2>
+<ul>
+<li><strong>1917</strong> : révolutions russes (février, octobre) · mutineries · entrée en guerre des États-Unis (7 avril).</li>
+<li><strong>Mars 1918</strong> : Brest-Litovsk, l'Allemagne est libre à l'est.</li>
+<li><strong>Printemps 1918</strong> : dernière offensive allemande, qui échoue → les chefs militaires demandent de négocier.</li>
+<li><strong>9 novembre 1918</strong> : Guillaume II abdique (exil aux Pays-Bas), la république est proclamée (future Weimar) ; l'Autriche-Hongrie se désagrège, l'Empire ottoman capitule.</li>
+<li><strong>11 novembre 1918</strong> : armistice de Rethondes (clairière de Compiègne ; délégation alliée sortie vers 5 h 30).</li>
+<li><strong>1919</strong> : Wilson (paix juste, Quatorze points, SDN) contre France et Royaume-Uni (paix punitive) → ces derniers l'emportent.</li>
+<li><strong>Versailles, juin 1919</strong> : article 231, Alsace-Lorraine, Dantzig, 100.000 hommes, Rhénanie, réparations.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="quiz" data-toc="Quiz rapide">Quiz rapide</h2>
+<p class="small">D'abord, une vérification rapide : ces clauses figurent-elles dans le traité de Versailles, d'après les diapositives ?</p>
+<div class="quiz"><p class="q">Armée allemande limitée à 100.000 hommes</p><div class="opts row">
+<button type="button" class="opt" data-ok data-why="Oui, c'est l'une des clauses militaires.">Oui</button>
+<button type="button" class="opt" data-why="Si, elle est bien sur la diapositive.">Non</button>
+</div><p class="fb" hidden></p></div>
+<div class="quiz"><p class="q">L'Allemagne cède la Rhénanie à la France</p><div class="opts row">
+<button type="button" class="opt" data-why="Attention : la Rhénanie doit être démilitarisée, pas cédée. C'est l'Alsace-Lorraine qui revient à la France.">Oui</button>
+<button type="button" class="opt" data-ok data-why="Exact : la Rhénanie est démilitarisée. C'est l'Alsace-Lorraine qui est restituée à la France.">Non</button>
+</div><p class="fb" hidden></p></div>
+<div class="quiz"><p class="q">Corridor de Dantzig cédé à la Pologne</p><div class="opts row">
+<button type="button" class="opt" data-ok data-why="Oui, c'est une perte territoriale citée par la diapositive.">Oui</button>
+<button type="button" class="opt" data-why="Si, elle figure parmi les pertes territoriales de la diapositive.">Non</button>
+</div><p class="fb" hidden></p></div>
+<div class="quiz"><p class="q">La création de la Société des Nations est une clause punitive contre l'Allemagne</p><div class="opts row">
+<button type="button" class="opt" data-why="La SDN est la proposition de Wilson pour la sécurité collective, pas une punition.">Oui</button>
+<button type="button" class="opt" data-ok data-why="Exact : la SDN vient de la vision « juste » de Wilson, pas de la vision punitive.">Non</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">Pourquoi l'Allemagne lance-t-elle l'offensive du printemps 1918 ?</p><div class="opts">
+<button type="button" class="opt" data-why="La Russie est déjà sortie de la guerre.">Pour prévenir une attaque russe</button>
+<button type="button" class="opt" data-ok data-why="Oui : libérée du front de l'Est, elle veut gagner avant l'arrivée massive des Américains.">Pour gagner avant l'arrivée massive des troupes américaines</button>
+<button type="button" class="opt" data-why="L'empereur abdique après l'échec de l'offensive, pas avant.">Parce que l'empereur avait abdiqué</button>
+</div><p class="fb" hidden></p></div>
+</section>
+
+<section>
+<h2 id="exercices" data-toc="Exercices de vérification">Exercices de vérification</h2>
+<div class="ex-card"><div class="ex-h"><span class="lvl l1">Facile</span> Exercice 1</div>
+<p>Range dans l'ordre : armistice de Rethondes · Brest-Litovsk · entrée en guerre des États-Unis · abdication de Guillaume II · traité de Versailles · révolution de février.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Révolution de février (1917) → États-Unis (7 avril 1917) → Brest-Litovsk (mars 1918) → abdication (9 novembre 1918) → Rethondes (11 novembre 1918) → Versailles (juin 1919).</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l1">Facile</span> Exercice 2</div>
+<p>Quelle est la différence entre l'armistice de Rethondes et le traité de Versailles ?</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>L'armistice (11 novembre 1918, wagon dans la clairière de Compiègne) arrête les combats. Le traité (juin 1919) fixe les conditions de la paix : culpabilité, territoires, armée, réparations. L'armistice « préfigure » les conditions dures du traité, mais ne les fixe pas.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l2">Moyen</span> Exercice 3</div>
+<p>Explique le lien entre la guerre sous-marine allemande (leçon 2) et l'année 1917.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Dès 1914–1916, la guerre sous-marine contre les navires marchands crée des tensions avec les États-Unis, encore neutres. Quand l'Allemagne la mène « à outrance », les États-Unis lui déclarent la guerre (7 avril 1917) et apportent à l'Entente des ressources humaines, économiques et matérielles décisives. Un choix tactique allemand se transforme en désavantage stratégique.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l2">Moyen</span> Exercice 4</div>
+<p>Compare les deux lettres sur les mutineries : qui écrit, que sait-il, que montre chacune ?</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Jourdan est un soldat : il rapporte des <em>rumeurs</em> sur des régiments mutinés et des faits graves à Soissons, et avertit que le moral baisse (« gare que l'orage éclate »). Taufflieb est un général : il raconte un fait précis, un bataillon entier qui, sur un signal de coups de sifflet, disparaît dans un bois malgré les rappels. Ensemble, elles montrent la crise vue d'en bas (le moral) et d'en haut (la perte de contrôle).</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l3">Difficile</span> Exercice 5</div>
+<p>Le traité de Versailles est la victoire d'une « vision ». Explique laquelle, pourquoi elle l'a emporté, et ce qui reste malgré tout de l'autre.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>La vision punitive de la France et du Royaume-Uni l'emporte : punir l'Allemagne et l'empêcher de redevenir une menace. Elle l'emporte notamment parce que la France a subi d'énormes destructions sur son sol et veut des garanties et des réparations. De la vision de Wilson (Quatorze points, paix sans vengeance), il reste surtout l'idée d'une organisation de sécurité collective, la Société des Nations. Qu'elle ait effectivement été créée en 1920 est un approfondissement, pas une information des diapositives.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l3">Difficile</span> Exercice 6</div>
+<p>Mets l'article 231 en relation avec les causes de la guerre étudiées dans la leçon 1. Te semble-t-il cohérent avec ces causes ? Argumente.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>L'article 231 attribue la responsabilité à la seule Allemagne. Or, dans la leçon 1, les causes sont multiples et partagées : rivalités coloniales entre plusieurs puissances, course aux armements générale (même si l'Allemagne accélère le plus), alliances défensives qui entraînent tout le monde, nationalismes balkaniques, ultimatum autrichien. On peut donc soutenir que le « coupable unique » est un choix politique des vainqueurs plus qu'une conclusion historique. Cela aide à comprendre pourquoi les Allemands ont vécu le traité comme injuste. Attention : c'est un raisonnement critique construit à partir du matériel, pas une phrase des diapositives. Présente-le comme tel.</p></div></div>
+</section>
+
+<section>
+<h2 id="liens" data-toc="Liens avec les autres leçons">Liens avec les autres leçons</h2>
+<ul>
+<li><strong>← Leçon 1 :</strong> l'Alsace-Lorraine boucle la boucle de la revanche ; l'article 231 est à comparer avec la multiplicité des causes.</li>
+<li><strong>← Leçon 2 :</strong> guerre sous-marine → États-Unis ; front de l'Est → Brest-Litovsk.</li>
+<li><strong>← Leçon 3 :</strong> l'usure de Verdun mène aux mutineries de 1917.</li>
+<li><strong>→ Leçon 5 :</strong> la censure et la propagande expliquent pourquoi, sur les mutineries, seules des « rumeurs » circulent.</li>
+<li><strong>→ Leçon 6 :</strong> 1917 est aussi l'année de Caporetto ; 1918, celle de Vittorio Veneto et de Villa Giusti. L'Autriche-Hongrie « se désagrège sous la pression des nationalités », un processus qui facilite la victoire italienne.</li>
+</ul>
+</section>
+
+<nav class="pager"><a class="prev" href="lecon-3-verdun.html"><small>◀ Leçon précédente</small>3. Verdun (1916)</a><a class="next" href="lecon-5-guerre-totale.html"><small>Leçon suivante ▶</small>5. Guerre totale</a></nav>
+</main>
+</div>
+<script>
+(function(){
+ var main=document.querySelector('main');
+ var hs=[].slice.call(main.querySelectorAll('h2[id]'));
+ function mk(){var ol=document.createElement('ol');hs.forEach(function(h){var li=document.createElement('li');var a=document.createElement('a');a.href='#'+h.id;a.textContent=h.getAttribute('data-toc')||h.textContent;li.appendChild(a);ol.appendChild(li)});return ol}
+ var side=document.querySelector('.toc-side'),mob=document.querySelector('.toc-mob');
+ if(hs.length){if(side)side.appendChild(mk());if(mob)mob.appendChild(mk())}else{if(side)side.remove();if(mob)mob.remove()}
+ if(mob)mob.addEventListener('click',function(e){if(e.target.tagName==='A')mob.removeAttribute('open')});
+ if(side&&'IntersectionObserver' in window){var links={};side.querySelectorAll('a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){side.querySelectorAll('a.on').forEach(function(x){x.classList.remove('on')});var l=links[e.target.id];if(l)l.classList.add('on')}})},{rootMargin:'0px 0px -75% 0px'});hs.forEach(function(h){io.observe(h)})}
+ document.querySelectorAll('.sol-btn').forEach(function(b){var s=b.nextElementSibling;b.setAttribute('aria-expanded','false');b.addEventListener('click',function(){var show=s.hidden;s.hidden=!show;b.textContent=show?'Masquer la solution':'Afficher la solution';b.setAttribute('aria-expanded',String(show))})});
+ document.querySelectorAll('.quiz').forEach(function(q){var opts=[].slice.call(q.querySelectorAll('.opt'));var fb=q.querySelector('.fb');
+  opts.forEach(function(o){o.addEventListener('click',function(){if(q.classList.contains('done'))return;q.classList.add('done');var good=o.hasAttribute('data-ok');
+   opts.forEach(function(x){x.disabled=true;if(x.hasAttribute('data-ok'))x.classList.add('ok')});if(!good)o.classList.add('ko');
+   fb.textContent='';var b=document.createElement('b');b.textContent=good?'Juste. ':'Pas tout à fait. ';fb.appendChild(b);fb.appendChild(document.createTextNode(o.getAttribute('data-why')||q.getAttribute('data-why')||''));fb.hidden=false;
+   var r=document.createElement('button');r.className='retry';r.type='button';r.textContent='Réessayer';r.onclick=function(){q.classList.remove('done');opts.forEach(function(x){x.disabled=false;x.classList.remove('ok','ko')});fb.hidden=true;r.remove()};fb.after(r)})})});
+ document.querySelectorAll('.stepper').forEach(function(st){var steps=[].slice.call(st.children).filter(function(c){return c.classList.contains('step')});var i=0;
+  var prog=document.createElement('div');prog.className='st-prog';prog.innerHTML='<i></i>';var t=st.querySelector('.st-title');if(t)t.after(prog);else st.prepend(prog);
+  var bar=document.createElement('div');bar.className='st-ctl';bar.innerHTML='<button type="button" class="st-prev">◀ Précédent</button><span class="st-n"></span><button type="button" class="st-next">Suivant ▶</button>';st.appendChild(bar);
+  function show(){steps.forEach(function(s,k){s.classList.toggle('on',k===i)});bar.querySelector('.st-n').textContent='Étape '+(i+1)+' sur '+steps.length;bar.querySelector('.st-prev').disabled=i===0;bar.querySelector('.st-next').disabled=i===steps.length-1;prog.firstChild.style.width=((i+1)/steps.length*100)+'%'}
+  bar.querySelector('.st-prev').onclick=function(){if(i>0){i--;show()}};bar.querySelector('.st-next').onclick=function(){if(i<steps.length-1){i++;show()}};show()});
+ document.querySelectorAll('.sorter').forEach(function(so){var items=[].slice.call(so.querySelectorAll('.sort-item'));var cats=JSON.parse(so.getAttribute('data-cats'));var sc=so.querySelector('.score');
+  function upd(){var done=items.filter(function(it){return it.dataset.done}).length,good=items.filter(function(it){return it.dataset.done==='ok'}).length;sc.textContent=done?('Score : '+good+' / '+done+' (sur '+items.length+')'):''}
+  items.forEach(function(it){var ctl=document.createElement('div');ctl.className='sort-ctl';var why=document.createElement('div');why.className='why';why.hidden=true;
+   cats.forEach(function(c){var b=document.createElement('button');b.type='button';b.textContent=c[1];b.setAttribute('aria-pressed','false');b.onclick=function(){ctl.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});var ok=it.getAttribute('data-a')===c[0];it.classList.toggle('ok',ok);it.classList.toggle('ko',!ok);it.dataset.done=ok?'ok':'ko';why.textContent=(ok?'Juste. ':'Non : ')+it.getAttribute('data-why');why.hidden=false;upd()};ctl.appendChild(b)});
+   it.appendChild(ctl);it.appendChild(why)});upd()});
+})();
+</script>
+</body>
+</html>

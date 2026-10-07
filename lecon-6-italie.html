@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>6. L'Italie · Grande Guerre</title>
+<style>
+*{box-sizing:border-box}
+:root{
+--bg:#faf9f6;--fg:#1c1c1e;--muted:#5d5d66;--card:#fff;--line:#e3e0d8;--accent:#1d4f7a;--accent-bg:#e7eff7;--link:#1d5fa0;
+--def:#1d5fa0;--def-bg:#e9f1fb;--src:#8a5a00;--src-bg:#fbf2df;--ex:#1d7445;--ex-bg:#e7f5ed;
+--warn:#b02a1f;--warn-bg:#fdebe9;--app:#6a3d9e;--app-bg:#f2ecfa;--note:#555a61;--note-bg:#eef0f2;
+--ana:#0d7480;--ana-bg:#e4f4f6;--q:#383896;--q-bg:#ebebfa;
+--ok:#1d7445;--ok-bg:#e7f5ed;--ko:#b02a1f;--ko-bg:#fdebe9;
+--de:#5a6474;--fr:#2c6db3;--uk:#c25a1c;--it:#2e8b57;--soft:#f2f0ea;
+}
+@media (prefers-color-scheme:dark){:root{
+--bg:#141518;--fg:#e9e9ec;--muted:#a3a3ad;--card:#1d1f24;--line:#33363e;--accent:#8fbbe6;--accent-bg:#1f2a36;--link:#8fbbe6;
+--def:#8fbbe6;--def-bg:#1b2633;--src:#e2b25c;--src-bg:#2c2416;--ex:#76cf9c;--ex-bg:#17281f;
+--warn:#f08a80;--warn-bg:#2f1a18;--app:#c5a6ef;--app-bg:#251d33;--note:#b9bec5;--note-bg:#24272c;
+--ana:#6fd0db;--ana-bg:#152a2d;--q:#aeaef5;--q-bg:#1f1f38;
+--ok:#76cf9c;--ok-bg:#17281f;--ko:#f08a80;--ko-bg:#2f1a18;
+--de:#9aa5b5;--fr:#6fa8e8;--uk:#f0955a;--it:#6fcf97;--soft:#22252b;
+}}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 clamp(17px,.95rem + .35vw,19px)/1.68 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;overflow-x:hidden}
+a{color:var(--link)}
+h1,h2,h3,h4{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;line-height:1.25}
+h1{font-size:clamp(1.7rem,1.2rem + 2vw,2.4rem);margin:.2em 0 .3em}
+h2{font-size:1.55rem;margin:2.4em 0 .6em;padding-top:.8em;border-top:2px solid var(--line)}
+h3{font-size:1.2rem;margin:1.7em 0 .4em}
+h4{font-size:1.05rem;margin:1.1em 0 .3em}
+p{margin:.6em 0}
+ul,ol{padding-left:1.3em}
+li{margin:.25em 0}
+.cit{font-style:italic}
+strong{font-weight:700}
+.top{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--line);font-size:.92rem}
+.top a{text-decoration:none;font-weight:600;white-space:nowrap}
+.top .crumb{color:var(--muted);white-space:nowrap}
+.top .sp{flex:1}
+.top .nav a{padding:4px 10px;border:1px solid var(--line);border-radius:999px;margin-left:4px}
+.layout{max-width:1180px;margin:0 auto;padding:0 16px}
+main{max-width:780px;margin:0 auto;padding-bottom:60px;min-width:0}
+.toc-side{display:none}
+@media (min-width:1120px){
+ .layout{display:grid;grid-template-columns:250px minmax(0,780px);gap:48px;justify-content:center}
+ main{margin:0}
+ .toc-side{display:block;position:sticky;top:70px;align-self:start;max-height:calc(100vh - 90px);overflow:auto;padding-top:34px;font-size:.88rem}
+ .toc-mob{display:none}
+}
+.toc-h{font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:.78rem;margin-bottom:6px}
+.toc-side ol,.toc-mob ol{list-style:none;padding:0;margin:0}
+.toc-side a,.toc-mob a{display:block;padding:4px 10px;border-left:3px solid transparent;text-decoration:none;color:var(--fg)}
+.toc-side a.on{border-left-color:var(--accent);background:var(--accent-bg);color:var(--accent);font-weight:600}
+.toc-mob{margin:16px 0;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.toc-mob summary{cursor:pointer;padding:12px 16px;font-weight:700}
+.toc-mob ol{padding:0 6px 10px}
+.hero{padding:30px 0 6px}
+.kicker{color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.07em;font-weight:600}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+.box{--c:var(--note);--cbg:var(--note-bg);border-left:5px solid var(--c);background:var(--cbg);border-radius:10px;padding:12px 16px;margin:18px 0}
+.box>.lbl{font-size:.74rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--c);margin-bottom:2px}
+.box>:last-child{margin-bottom:0}
+.box.def{--c:var(--def);--cbg:var(--def-bg)}
+.box.src{--c:var(--src);--cbg:var(--src-bg)}
+.box.ex{--c:var(--ex);--cbg:var(--ex-bg)}
+.box.warn{--c:var(--warn);--cbg:var(--warn-bg)}
+.box.app{--c:var(--app);--cbg:var(--app-bg)}
+.box.note{--c:var(--note);--cbg:var(--note-bg)}
+.box.ana{--c:var(--ana);--cbg:var(--ana-bg)}
+.box.q{--c:var(--q);--cbg:var(--q-bg)}
+.box.intu{--c:var(--accent);--cbg:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);font-size:1.06em}
+blockquote{margin:10px 0;padding:6px 14px;border-left:3px solid var(--line);color:var(--fg);font-family:Georgia,serif}
+blockquote .tr{display:block;color:var(--muted);font-family:system-ui,sans-serif;font-size:.92em;margin-top:4px}
+.tblwrap{overflow-x:auto;margin:14px 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.93em;background:var(--card)}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tl{list-style:none;padding:0;margin:14px 0 14px 6px;border-left:3px solid var(--line)}
+.tl li{position:relative;padding:4px 0 10px 18px}
+.tl li::before{content:"";position:absolute;left:-8px;top:12px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl .d{display:block;font-weight:700;color:var(--accent);font-size:.9em}
+.tl li.it::before{background:var(--it)}
+.tl li.it .d{color:var(--it)}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:1px 7px;border-radius:999px;background:var(--soft);color:var(--muted);vertical-align:middle;margin-left:4px}
+.ex-card{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:16px 0}
+.ex-h{font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lvl{font-size:.72rem;font-weight:800;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+.lvl.l1{background:var(--ok-bg);color:var(--ok)}
+.lvl.l2{background:var(--src-bg);color:var(--src)}
+.lvl.l3{background:var(--ko-bg);color:var(--ko)}
+button{font:inherit;cursor:pointer}
+.sol-btn,.retry,.st-ctl button,.seg button,.calc button,.sort-ctl button{border:1px solid var(--accent);background:var(--accent-bg);color:var(--accent);border-radius:8px;padding:7px 14px;font-weight:600;font-size:.92em;min-height:40px}
+.sol-btn:hover{filter:brightness(.97)}
+.sol{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--ok-bg);border-left:4px solid var(--ok)}
+.sol>:first-child{margin-top:0}.sol>:last-child{margin-bottom:0}
+.quiz{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:14px 0}
+.quiz .q{font-weight:600;margin-top:0}
+.quiz .opts{display:grid;gap:8px}
+.opt{text-align:left;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:9px;padding:10px 12px;min-height:44px}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt.ok{background:var(--ok-bg);border-color:var(--ok);color:var(--fg)}
+.opt.ok::after{content:"  ✓";color:var(--ok);font-weight:800}
+.opt.ko{background:var(--ko-bg);border-color:var(--ko)}
+.opt.ko::after{content:"  ✗";color:var(--ko);font-weight:800}
+.opt:disabled{cursor:default;opacity:1}
+.fb{margin:10px 0 8px;padding:10px 12px;border-radius:9px;background:var(--soft)}
+.quiz .opts.row{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+.stepper{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:18px 0}
+.stepper>.st-title{font-weight:700;margin:0 0 8px}
+.st-prog{height:6px;background:var(--soft);border-radius:999px;overflow:hidden;margin-bottom:10px}
+.st-prog i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.stepper .step{display:none}
+.stepper .step.on{display:block;animation:fade .25s}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.stepper .step h4{margin-top:4px}
+.st-ctl{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px;flex-wrap:wrap}
+.st-ctl button:disabled{opacity:.4;cursor:default}
+.st-n{color:var(--muted);font-size:.9em}
+@media (max-width:480px){.st-ctl .st-n{order:-1;flex-basis:100%;text-align:center}}
+.seg{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.seg button[aria-pressed=true],.calc button[aria-pressed=true],.sort-ctl button[aria-pressed=true]{background:var(--accent);color:var(--card)}
+.widget{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:18px 0}
+.widget svg{width:100%;height:auto;display:block}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.88em;color:var(--muted)}
+.legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--sw)}
+.small{font-size:.88em;color:var(--muted)}
+.calc{display:flex;flex-wrap:wrap;gap:6px}
+.calc-out{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--soft);min-height:3em}
+.big{font-size:1.5em;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:48px}
+.pager a{display:block;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--fg)}
+.pager a small{display:block;color:var(--muted)}
+.pager a.next{text-align:right;grid-column:2}
+.cards{display:grid;gap:12px;margin:16px 0}
+.cards a{display:block;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--fg)}
+.cards a:hover{border-color:var(--accent)}
+.cards .n{font-weight:800;color:var(--accent);font-size:.85em;text-transform:uppercase;letter-spacing:.06em}
+.cards .t{font-family:Georgia,serif;font-size:1.2em;font-weight:700;display:block;margin:2px 0}
+.cards .d{color:var(--muted);font-size:.93em}
+.legend-boxes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.legend-boxes .box{margin:0;padding:8px 12px;font-size:.9em}
+.hot{cursor:pointer}
+.hot circle{fill:var(--accent);stroke:var(--card);stroke-width:2}
+.hot text{fill:var(--card);font:700 13px system-ui,sans-serif;pointer-events:none}
+.hot.on circle{fill:var(--warn)}
+svg text{font-family:system-ui,sans-serif}
+.sort-item{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0;background:var(--bg)}
+.sort-item.ok{border-color:var(--ok);background:var(--ok-bg)}
+.sort-item.ko{border-color:var(--ko);background:var(--ko-bg)}
+.sort-item .why{margin-top:6px;font-size:.92em}
+.score{font-weight:700;margin-top:10px}
+.sort-item .sort-ctl{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.sort-item .sort-ctl button{font-size:.85em;padding:6px 8px;line-height:1.25}
+.cycle{display:flex;align-items:center;gap:8px;margin:10px 0}
+.cyc{flex:1 1 0;border:1px solid var(--accent);background:var(--accent-bg);border-radius:10px;padding:10px 12px;font-weight:600;text-align:center}
+.cyc.loop{background:transparent;border-style:dashed;font-weight:500;color:var(--muted)}
+.cyc-ar{color:var(--accent);font-weight:800;font-size:1.3em;flex:0 0 auto}
+@media (max-width:640px){.cycle{flex-direction:column;align-items:stretch}.cyc-ar{text-align:center;transform:rotate(90deg)}}
+.hot-btns{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:10px}
+.hot-btns button{border:1px solid var(--accent);background:var(--accent-bg);color:var(--accent);border-radius:8px;font-weight:700;min-height:42px}
+.hot-btns button[aria-pressed=true]{background:var(--accent);color:var(--card)}
+@media print{.top,.toc-side,.toc-mob,.pager{display:none}.sol{display:block!important}.stepper .step{display:block}}
+</style>
+</head>
+<body>
+<header class="top"><a class="home" href="index.html">☰ Sommaire</a><span class="crumb">Leçon 6/6</span><span class="sp"></span><span class="nav"><a href="lecon-5-guerre-totale.html" title="La guerre totale">◀ 5</a></span></header>
+<div class="layout">
+<aside class="toc-side" aria-label="Sections"><div class="toc-h">Dans cette page</div></aside>
+<main>
+<div class="hero"><div class="kicker">Diapositives XIII (6) · Leçon 6 sur 6</div><h1>L'Italie dans la Grande Guerre</h1><p class="sub">De l'entrée tardive à la « victoire mutilée » : neutralité, pacte de Londres, Caporetto, Vittorio Veneto.</p></div>
+<details class="toc-mob"><summary>Sections de la page</summary></details>
+<section>
+<h2 id="intuition">Intuition</h2>
+<div class="box intu"><div class="lbl">En 4 lignes</div>
+<p>En 1914, l'Italie est l'alliée de l'Allemagne et de l'Autriche-Hongrie, mais elle reste neutre. Un an plus tard, elle entre en guerre dans l'autre camp, parce que l'Entente lui promet en secret des territoires. La guerre se révèle terrible : des offensives inutiles sur l'Isonzo, puis la déroute de Caporetto en 1917. En 1918, l'Italie gagne à Vittorio Veneto, mais à la paix elle n'obtient pas tout ce qu'on lui avait promis. D'où l'expression « victoire mutilée » : une victoire vécue comme une humiliation.</p>
+</div>
+<p>Le titre de la diapositive résume le parcours : « de l'entrée tardive à la “victoire mutilée” ». Le fil de la leçon, c'est l'écart entre <strong>ce qu'on promet</strong> à l'Italie (1915) et <strong>ce qu'elle obtient</strong> (1919).</p>
+</section>
+
+<section>
+<h2 id="pas-a-pas" data-toc="Explication pas à pas">Explication pas à pas</h2>
+
+<h3>1. 1914 : la neutralité</h3>
+<p>« Liée à l'Autriche-Hongrie et à l'Allemagne par la Triple Alliance, l'Italie choisit initialement la <strong>neutralité</strong> en 1914. »</p>
+<p>Pourquoi peut-elle le faire sans trahir l'alliance ? La réponse est dans le paquet (2) : le pacte « prévoyait une assistance <strong>en cas d'attaque contre</strong> l'une des deux puissances (alors qu'en réalité, <strong>les deux ont attaqué</strong>) ». L'alliance est <strong>défensive</strong> ; comme ce sont ses alliés qui attaquent, l'Italie n'est pas obligée d'intervenir (<a href="lecon-1-origines.html#pas-a-pas">leçon 1</a>).</p>
+
+<h3>2. Le pays se divise : neutralistes contre interventionnistes</h3>
+<p>« Le pays se divise alors profondément » :</p>
+<div class="tblwrap"><table>
+<tr><th></th><th>Neutralistes</th><th>Interventionnistes</th></tr>
+<tr><td>Qui</td><td><strong>Catholiques</strong>, <strong>socialistes</strong> et une partie des <strong>libéraux</strong>, comme <strong>Giolitti</strong></td><td><strong>Nationalistes</strong> et une partie des <strong>intellectuels</strong>, dont <strong>Gabriele D'Annunzio</strong></td></tr>
+<tr><td>Ce qu'ils veulent</td><td>La <strong>non-intervention</strong></td><td>L'<strong>entrée en guerre</strong></td></tr>
+<tr><td>Pourquoi (d'après la diapositive)</td><td>—</td><td>Pour « <strong>achever l'unité nationale</strong> »</td></tr>
+</table></div>
+<p>Que veut dire « achever l'unité nationale » ? L'Italie s'est unifiée au XIX<sup>e</sup> siècle, mais des territoires peuplés en partie d'Italiens restent sous domination autrichienne, comme Trente et Trieste. Pour les interventionnistes, la guerre doit terminer l'œuvre de l'unification.</p>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>On appelle <strong>irrédentisme</strong> (de l'italien <em>irredento</em>, « non libéré ») le mouvement qui réclame ces « terres non libérées ». Les diapositives n'utilisent pas le mot, mais c'est le terme exact pour cette revendication.</p>
+</div>
+
+<div class="widget sorter" data-cats='[["n","Neutraliste"],["i","Interventionniste"]]'>
+<p style="margin-top:0"><strong>Exercice interactif : de quel côté ?</strong></p>
+<div class="sort-item" data-a="n" data-why="Les catholiques sont cités parmi les neutralistes.">Les catholiques</div>
+<div class="sort-item" data-a="i" data-why="Les nationalistes réclament l'entrée en guerre.">Les nationalistes</div>
+<div class="sort-item" data-a="n" data-why="Giolitti est l'exemple de libéral neutraliste cité par la diapositive.">Giovanni Giolitti</div>
+<div class="sort-item" data-a="i" data-why="D'Annunzio est l'intellectuel interventionniste par excellence (voir son discours de Quarto).">Gabriele D'Annunzio</div>
+<div class="sort-item" data-a="n" data-why="Les socialistes sont cités parmi les neutralistes.">Les socialistes</div>
+<div class="sort-item" data-a="i" data-why="Achever l'unité nationale est l'argument des interventionnistes.">« Il faut achever l'unité nationale. »</div>
+<div class="sort-item" data-a="n" data-why="La non-intervention est la position des neutralistes.">« Il faut rester en dehors du conflit. »</div>
+<div class="score" aria-live="polite"></div>
+</div>
+
+<h3>3. Le discours de D'Annunzio à Quarto (5 mai 1915)</h3>
+<p>La diapositive cite un extrait du discours, en italien. Le voici avec une traduction :</p>
+<blockquote lang="it">« Uomo [Garibaldi] egli fu, uomo tra uomini. [...] Diteci del suo coraggio. Apritevi il cuore, e mostrateci quel miracolo umano. [...] Questo luogo egli lo traversò, con le sue piante di marinaio lo stampò, bilanciando su la spalla la spada inguainata. [...] Disse: “Qui si fa l'Italia o si muore”. A lui che sta nel futuro, oggi dice la fede d'Italia: “Qui si rinasce e si fa un'Italia più grande”. »
+<span class="tr" lang="fr">« Ce fut un homme [Garibaldi], un homme parmi les hommes. [...] Parlez-nous de son courage. Ouvrez votre cœur et montrez-nous ce miracle humain. [...] Ce lieu, il l'a traversé, il l'a marqué de ses pieds de marin, l'épée au fourreau balancée sur l'épaule. [...] Il a dit : “Ici on fait l'Italie ou l'on meurt”. À lui qui est dans l'avenir, la foi de l'Italie dit aujourd'hui : “Ici on renaît et on fait une Italie plus grande”. » (traduction de ma part)</span></blockquote>
+<p>Lis-le comme une source (méthode en quatre temps) :</p>
+<ol>
+<li><strong>Qui, quand, où :</strong> Gabriele D'Annunzio, poète et figure de proue des interventionnistes, à Quarto, le 5 mai 1915. L'Italie n'est pas encore en guerre.</li>
+<li><strong>Ce qu'il dit :</strong> il célèbre Garibaldi, le héros de l'unification, et reprend sa phrase « Ici on fait l'Italie ou l'on meurt » pour la transformer en « Ici on renaît et on fait une Italie <strong>plus grande</strong> ».</li>
+<li><strong>Sens :</strong> la guerre est présentée comme la suite de l'unification. On ne « fait » plus l'Italie : on l'<em>agrandit</em>. C'est exactement l'argument « achever l'unité nationale ».</li>
+<li><strong>Lien :</strong> c'est un exemple de la « campagne interventionniste » de la diapositive suivante. Le discours utilise l'émotion (le courage, le « miracle humain », la foi) plus que des arguments.</li>
+</ol>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>Le lieu et la date ne sont pas choisis au hasard : c'est de Quarto, près de Gênes, que Garibaldi est parti avec l'expédition des Mille le 5 mai 1860, pour conquérir le royaume des Deux-Siciles. D'Annunzio parle exactement 55 ans plus tard, à l'inauguration d'un monument aux Mille. Le résumé joint reprend la dernière phrase en français : « Ici on renaît et on fait une Italie plus grande ».</p>
+</div>
+
+<h3>4. Avril–mai 1915 : le pacte de Londres et l'entrée en guerre</h3>
+<p>« En avril 1915, l'Italie signe <strong>secrètement</strong> le <strong>pacte de Londres</strong> avec l'Entente, qui promet d'importants gains territoriaux (<strong>Trentin, Trieste, Istrie, Dalmatie</strong>) en échange de son entrée en guerre. »</p>
+<p>Ensuite, « une intense <strong>campagne interventionniste</strong>, portée par des manifestations populaires enflammées, précipite le pays dans le conflit aux côtés de la France et du Royaume-Uni en <strong>mai 1915</strong>, contre l'<strong>Autriche-Hongrie</strong> ».</p>
+<p>Remarque l'ordre : <strong>d'abord</strong> le pacte secret (avril), <strong>ensuite</strong> la campagne dans la rue (dont le discours de Quarto, début mai), <strong>enfin</strong> l'entrée en guerre (mai). La décision diplomatique précède le grand débat public.</p>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>L'Italie déclare la guerre à l'Autriche-Hongrie le 23 mai 1915 (combats dès le 24). Elle ne déclare la guerre à l'Allemagne qu'en août 1916.</p>
+</div>
+
+<h3>5. 1915–1917 : Cadorna et l'Isonzo</h3>
+<p>« L'armée italienne, <strong>mal équipée et mal préparée</strong> à une guerre moderne, est dirigée par le général <strong>Cadorna</strong>, partisan d'une stratégie <strong>rigide et coûteuse</strong> fondée sur des <strong>offensives frontales répétées</strong> contre les lignes autrichiennes le long de l'<strong>Isonzo</strong>. » Résultat : « des pertes humaines considérables pour des gains territoriaux minimes, dans des conditions souvent <strong>comparables à celles du front occidental</strong> ».</p>
+<p>C'est la même logique que Verdun et la Somme (<a href="lecon-3-verdun.html">leçon 3</a>) : on attaque de face des positions fortifiées, on perd énormément d'hommes, on gagne très peu de terrain.</p>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>Entre juin 1915 et septembre 1917, Cadorna lance onze offensives sur l'Isonzo, appelées « batailles de l'Isonzo ». Caporetto est parfois comptée comme la douzième, cette fois à l'initiative de l'adversaire.</p>
+</div>
+
+<h3>6. Octobre 1917 : Caporetto</h3>
+<p>« <strong>Renforcées par des troupes allemandes</strong>, les forces austro-hongroises <strong>percent le front</strong> italien à Caporetto, provoquant une <strong>déroute totale</strong> de l'armée italienne, contrainte à une <strong>retraite désordonnée jusqu'au fleuve Piave</strong>. »</p>
+<ul>
+<li>C'est « la défaite la plus grave de l'armée royale italienne » pendant la guerre.</li>
+<li>La retraite est longue de <strong>130 km</strong>, « pour éviter l'effondrement total du front ».</li>
+<li>La défaite est « aggravée par une <strong>crise de moral profonde</strong> parmi les soldats ».</li>
+<li>Conséquence : le général <strong>Cadorna</strong> est <strong>remplacé par le général Diaz</strong>.</li>
+</ul>
+<p>Fais le lien avec la <a href="lecon-4-1917-1919.html">leçon 4</a> : 1917 est aussi l'année des mutineries françaises. La « crise de moral » touche toutes les armées.</p>
+
+<h3>7. Octobre–novembre 1918 : Vittorio Veneto et Villa Giusti</h3>
+<p>« Réorganisée sous le commandement du général <strong>Diaz</strong>, l'armée italienne lance une <strong>offensive décisive</strong> qui provoque l'effondrement définitif de l'armée austro-hongroise, <strong>déjà affaiblie par la désagrégation interne de l'Empire</strong>. » Cette victoire conduit à l'<strong>armistice de Villa Giusti</strong> (novembre 1918), qui met fin aux hostilités sur le front italien.</p>
+<p>Note la formule « déjà affaiblie » : la victoire italienne est réelle, mais elle profite aussi de l'effondrement d'un empire qui « se désagrège sous la pression des nationalités » (leçon 4).</p>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>L'armistice de Villa Giusti (près de Padoue) est signé le 3 novembre 1918 et entre en vigueur le 4 novembre, une semaine avant celui de Rethondes.</p>
+</div>
+
+<div class="widget" id="front">
+<p style="margin-top:0"><strong>Le front italien, étape par étape</strong> <span class="small">(schéma simplifié sur un seul axe ouest-est, distances approximatives)</span></p>
+<svg viewBox="0 0 640 210" role="img" aria-label="Schéma du déplacement du front italien entre l'Isonzo et le Piave, 1915-1918">
+<rect x="0" y="0" width="640" height="210" rx="8" style="fill:var(--soft)"/>
+<line x1="40" y1="120" x2="600" y2="120" stroke-width="2" style="stroke:var(--line)"/>
+<g font-size="21" font-weight="700" text-anchor="middle" style="fill:var(--fg)">
+<text x="130" y="154">Piave</text>
+<text x="540" y="154">Isonzo</text>
+</g>
+<g font-size="17" text-anchor="middle" style="fill:var(--muted)">
+<text x="160" y="180">Vittorio Veneto</text>
+<text x="545" y="180">Caporetto</text>
+</g>
+<line x1="130" y1="128" x2="540" y2="128" stroke-dasharray="4 4" style="stroke:var(--muted)"/>
+<text x="335" y="150" font-size="17" text-anchor="middle" style="fill:var(--muted)">≈ 130 km</text>
+<g id="front-arrow"></g>
+<rect id="front-line" x="0" y="40" width="8" height="90" rx="3" style="fill:var(--it);transition:x .6s"/>
+<text id="front-lbl" x="0" y="32" font-size="18" font-weight="700" text-anchor="middle" style="fill:var(--it)">front</text>
+</svg>
+<p class="small" style="margin:6px 0 0">À gauche, l'ouest (vers Venise) ; à droite, l'est (vers l'Autriche-Hongrie). Le trait vert est la ligne de front italienne ; les flèches grises sont les attaques austro-hongroises, les vertes les attaques italiennes.</p>
+<div class="calc-out" id="front-out" aria-live="polite"></div>
+<div class="st-ctl"><button type="button" id="front-prev">◀ Précédent</button><span class="st-n" id="front-n"></span><button type="button" id="front-next">Suivant ▶</button></div>
+</div>
+
+<h3>8. 1919 : la « victoire mutilée »</h3>
+<p>« Malgré cette victoire militaire, les accords de paix <strong>ne satisfont que partiellement</strong> les promesses du pacte de Londres, refusant notamment à l'Italie la <strong>Dalmatie</strong> et la ville de <strong>Fiume</strong>. »</p>
+<div class="tblwrap"><table>
+<tr><th>Territoire</th><th>Promis en 1915 ? (pacte de Londres)</th><th>Obtenu à la paix ?</th></tr>
+<tr><td>Trentin / Trente</td><td>Oui</td><td>Oui (affiche « Enfin ! », résumé joint)</td></tr>
+<tr><td>Trieste</td><td>Oui</td><td>Oui (affiche « Enfin ! », résumé joint)</td></tr>
+<tr><td>Istrie</td><td>Oui</td><td>Non précisé dans le matériel <span class="tag">voir approfondissement</span></td></tr>
+<tr><td>Dalmatie</td><td>Oui</td><td><strong>Non</strong> (diapositive)</td></tr>
+<tr><td>Fiume</td><td><strong>Non</strong> (absente de la liste des promesses) <span class="tag">voir note</span></td><td><strong>Non</strong> (diapositive)</td></tr>
+</table></div>
+<p>« Ce sentiment d'<strong>humiliation nationale</strong>, largement exploité par la propagande nationaliste (<strong>D'Annunzio a forgé l'expression “victoire mutilée”</strong>), alimente une profonde frustration dans l'opinion publique italienne, contribuant au <strong>climat de crise politique de l'après-guerre</strong>. »</p>
+<p>Décortique l'image : une victoire « mutilée », c'est une victoire à laquelle on a coupé un membre. L'Italie a gagné militairement, mais on l'a privée d'une partie de ce qu'elle estimait mériter. Le mot transforme une victoire en blessure.</p>
+<div class="box note"><div class="lbl">Note sur le matériel · Fiume et le pacte de Londres</div>
+<p>La diapositive dit que la paix « ne satisfait que partiellement les promesses du pacte de Londres, refusant notamment [...] la Dalmatie et la ville de Fiume ». Lue vite, la phrase laisse croire que Fiume faisait partie des promesses. Or la liste des promesses de la diapositive précédente (Trentin, Trieste, Istrie, Dalmatie) ne mentionne pas Fiume. Historiquement, le pacte de Londres ne promettait pas Fiume à l'Italie (approfondissement) : la ville a été revendiquée après la guerre. À l'examen, distingue bien les deux : la Dalmatie est une promesse non tenue ; Fiume est une revendication supplémentaire.</p>
+</div>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<ul>
+<li>D'Annunzio lance l'expression dès octobre 1918, dans un poème publié par le <em>Corriere della Sera</em> : « Vittoria nostra, non sarai mutilata » (« Notre victoire, tu ne seras pas mutilée »).</li>
+<li>En septembre 1919, D'Annunzio occupe Fiume avec des volontaires armés, contre l'avis du gouvernement italien.</li>
+<li>L'Istrie est finalement attribuée à l'Italie par le traité de Rapallo (1920), qui fait aussi de Fiume un État libre.</li>
+<li>Le « climat de crise politique de l'après-guerre » favorise la montée du fascisme : Mussolini arrive au pouvoir en 1922.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2 id="analogies">Analogies</h2>
+<div class="box ana"><div class="lbl">Analogie · le transfert du joueur</div>
+<p>Un joueur est sous contrat avec un club (la Triple-Alliance), mais son contrat ne l'oblige à jouer que si le club est attaqué. Le club rival (l'Entente) lui propose en secret un meilleur contrat avec de grosses primes (Trentin, Trieste, Istrie, Dalmatie). Il change de camp. À la fin de la saison, il gagne le championnat, mais le club ne lui verse qu'une partie des primes promises. Il se sent trahi et le crie partout : c'est la « victoire mutilée ».</p>
+<p><em>Limite de l'analogie :</em> un joueur ne paie pas son transfert de centaines de milliers de morts, et ce n'est pas lui seul qui décide : en 1915, l'Italie est profondément divisée.</p>
+</div>
+<div class="box ana"><div class="lbl">Analogie · la promesse écrite au crayon</div>
+<p>Le pacte de Londres est une promesse faite en secret, en temps de guerre, quand l'Entente a besoin d'alliés. À la paix, les conditions ont changé (l'Autriche-Hongrie s'est désagrégée, de nouveaux États sont nés, Wilson défend d'autres principes) : la promesse écrite « au crayon » est en partie effacée. Les deux derniers éléments sont des approfondissements.</p>
+</div>
+</section>
+
+<section>
+<h2 id="sources" data-toc="Sources analysées">Sources analysées (exemples traités)</h2>
+
+<div class="box src"><div class="lbl">Source 1 · Carte « Il Fronte italiano »</div>
+<p><strong>Ce qu'on voit :</strong> une carte du nord-est de l'Italie. La ligne de front, marquée de croix, suit d'abord la frontière autrichienne et l'Isonzo (Caporetto, Gorizia). Des flèches bleues partent de Caporetto vers l'ouest jusqu'au Piave. Deux symboles d'explosion marquent <strong>Caporetto</strong> et <strong>Vittorio Veneto</strong>. On lit aussi Trieste, Fiume et l'Istrie à l'est.</p>
+<p><strong>Sens :</strong> la carte rend visible l'ampleur de la retraite : de l'Isonzo jusqu'au Piave, soit environ 130 km. Vittorio Veneto se trouve tout près du Piave : la victoire de 1918 part de la ligne où l'armée s'était arrêtée après Caporetto.</p>
+<p><strong>Lien :</strong> Trieste et Fiume apparaissent juste à l'est du front : ce sont les territoires de la question de 1919.</p>
+</div>
+
+<div class="box src"><div class="lbl">Source 2 · Leopoldo Metlicovitz, affiche « Enfin ! » (« Finalmente !! »), 1918</div>
+<p><strong>Ce qu'on voit :</strong> d'après la légende de la diapositive, « une femme en robe rouge (Trieste) et une femme en robe verte (Trente) agenouillées devant une femme en robe blanche, coiffée d'une couronne et tenant une épée (Italie) ». Les deux femmes tendent les bras vers l'Italie. En bas, le titre « FINALMENTE !! ».</p>
+<p><strong>Sens :</strong> Trente et Trieste « rejoignent enfin » la mère patrie. Les couleurs rouge, vert et blanc reconstituent le drapeau italien : l'unité est accomplie.</p>
+<p><strong>Lien :</strong> c'est l'aboutissement de l'argument interventionniste « achever l'unité nationale ». Mais l'affiche ne montre que Trente et Trieste : ni la Dalmatie, ni Fiume.</p>
+</div>
+<div class="box note"><div class="lbl">Note sur le matériel</div>
+<p>Sur l'image, seule la femme en rouge est vraiment à genoux ; la femme en vert est debout derrière elle, penchée vers l'Italie. Détail mineur, mais si tu décris l'affiche, décris ce que tu vois. La légende traduit le titre italien « Finalmente !! » par « Enfin ! ».</p>
+</div>
+
+<div class="box src"><div class="lbl">Source 3 · Couverture d'<em>Il Ghibli</em>, journal de tranchées italien, 1<sup>er</sup> juin 1919</div>
+<p><strong>Ce qu'on voit :</strong> un soldat italien en uniforme gris-vert, casqué, l'air dur, enveloppé dans un drapeau tricolore. En haut, les armoiries de Fiume (un aigle) et la question : « A chi la Dalmazia ? » (« À qui la Dalmatie ? »), avec la réponse en gros : « A noi ! » (« À nous ! »). En bas, le slogan : « O Fiume o morte ! » (« Fiume ou la mort ! »).</p>
+<p><strong>Sens :</strong> les deux territoires refusés à l'Italie (la Dalmatie et Fiume) sont revendiqués sur un ton menaçant. Le soldat incarne l'armée victorieuse qui refuse une paix jugée injuste.</p>
+<p><strong>Regard critique :</strong> c'est un « journal de tranchées » publié en <strong>juin 1919</strong>, plusieurs mois après la fin des combats. Il montre que la frustration de la « victoire mutilée » se diffuse parmi les soldats eux-mêmes.</p>
+</div>
+
+<div class="box ex"><div class="lbl">Exemple traité · comparer « Enfin ! » (1918) et <em>Il Ghibli</em> (1919)</div>
+<ol>
+<li><strong>Date :</strong> 1918, à la victoire ; juin 1919, pendant les négociations de paix.</li>
+<li><strong>Ton :</strong> « Enfin ! » est un soulagement joyeux et solennel ; <em>Il Ghibli</em> est un défi agressif (« ou la mort ! »).</li>
+<li><strong>Territoires :</strong> « Enfin ! » montre ce que l'Italie <em>obtient</em> (Trente, Trieste) ; <em>Il Ghibli</em> montre ce qu'on lui <em>refuse</em> (Dalmatie, Fiume).</li>
+<li><strong>Conclusion :</strong> en quelques mois, on passe de la fierté de la victoire à la frustration de la « victoire mutilée ». Les deux documents ensemble illustrent toute la fin de la leçon.</li>
+</ol>
+</div>
+</section>
+
+<section>
+<h2 id="examen" data-toc="Répondre à l'examen">Répondre à l'examen</h2>
+<div class="box q"><div class="lbl">Question 1</div>
+<p>« Comment et pourquoi l'Italie passe-t-elle de la neutralité à la guerre (1914–1915) ? »</p>
+</div>
+<ol>
+<li><strong>1914 :</strong> neutralité, justifiée par le caractère défensif de la Triple-Alliance (ses alliés ont attaqué).</li>
+<li><strong>Division :</strong> neutralistes (catholiques, socialistes, libéraux comme Giolitti) contre interventionnistes (nationalistes, intellectuels comme D'Annunzio, « achever l'unité nationale »).</li>
+<li><strong>Avril 1915 :</strong> pacte de Londres, secret ; promesses de Trentin, Trieste, Istrie, Dalmatie.</li>
+<li><strong>Mai 1915 :</strong> campagne interventionniste (discours de Quarto, manifestations) → entrée en guerre contre l'Autriche-Hongrie, aux côtés de la France et du Royaume-Uni.</li>
+</ol>
+<div class="box ex"><div class="lbl">Réponse modèle (question 1, version courte)</div>
+<p>En 1914, l'Italie est liée à l'Allemagne et à l'Autriche-Hongrie par la Triple-Alliance, mais elle choisit la neutralité : l'alliance est défensive et ce sont ses alliés qui ont attaqué. Le pays se divise alors profondément. Les neutralistes (catholiques, socialistes et une partie des libéraux, comme Giolitti) refusent l'intervention, tandis que les interventionnistes (nationalistes et une partie des intellectuels, comme D'Annunzio) réclament la guerre pour achever l'unité nationale. En avril 1915, l'Italie signe secrètement le pacte de Londres, par lequel l'Entente lui promet le Trentin, Trieste, l'Istrie et la Dalmatie. Une intense campagne interventionniste, illustrée par le discours de D'Annunzio à Quarto le 5 mai 1915, précipite alors le pays dans la guerre : en mai 1915, l'Italie entre en guerre aux côtés de la France et du Royaume-Uni, contre l'Autriche-Hongrie.</p>
+</div>
+<div class="box q"><div class="lbl">Question 2</div>
+<p>« Pourquoi parle-t-on de “victoire mutilée” ? »</p>
+</div>
+<div class="box ex"><div class="lbl">Réponse modèle (question 2, version courte)</div>
+<p>L'Italie sort victorieuse de la guerre : après la déroute de Caporetto (octobre 1917), l'armée réorganisée par le général Diaz remporte la victoire décisive de Vittorio Veneto (octobre–novembre 1918), qui conduit à l'armistice de Villa Giusti. Pourtant, les accords de paix ne satisfont que partiellement les promesses du pacte de Londres de 1915 : l'Italie obtient Trente et Trieste, mais on lui refuse la Dalmatie, ainsi que la ville de Fiume, qu'elle revendique. Ce sentiment d'humiliation nationale est exploité par la propagande nationaliste ; D'Annunzio forge l'expression de « victoire mutilée », et des journaux de soldats comme <em>Il Ghibli</em> crient « Fiume ou la mort ! » en 1919. Cette frustration de l'opinion publique contribue au climat de crise politique de l'après-guerre.</p>
+</div>
+</section>
+
+<section>
+<h2 id="erreurs">Erreurs fréquentes</h2>
+<div class="box warn"><div class="lbl">Pièges</div>
+<ul>
+<li><strong>« L'Italie a trahi son alliance en 1914. »</strong> D'après les diapositives, sa neutralité est justifiée : l'alliance était défensive et ses alliés ont attaqué.</li>
+<li><strong>Le pacte de Londres était public.</strong> Non : il est signé <strong>secrètement</strong>, en avril 1915.</li>
+<li><strong>L'Italie entre en guerre contre l'Allemagne en mai 1915.</strong> D'après la diapositive, elle entre en guerre <strong>contre l'Autriche-Hongrie</strong>.</li>
+<li><strong>Giolitti interventionniste.</strong> Non : c'est un libéral <strong>neutraliste</strong>. D'Annunzio est l'interventionniste.</li>
+<li><strong>À Caporetto, ce sont les Italiens qui attaquent.</strong> Non : ce sont les Austro-Hongrois, <strong>renforcés par des troupes allemandes</strong>, qui percent le front.</li>
+<li><strong>La retraite s'arrête sur l'Isonzo.</strong> Non : elle va <strong>jusqu'au Piave</strong> (130 km). L'Isonzo, c'est là où était le front avant.</li>
+<li><strong>Cadorna gagne à Vittorio Veneto.</strong> Non : Cadorna est remplacé après Caporetto ; c'est <strong>Diaz</strong> qui commande à Vittorio Veneto.</li>
+<li><strong>Villa Giusti = Rethondes.</strong> Villa Giusti met fin aux combats <strong>sur le front italien</strong> ; Rethondes met fin à la guerre avec l'Allemagne.</li>
+<li><strong>La « victoire mutilée » est une défaite militaire.</strong> Non : c'est une victoire militaire vécue comme une humiliation <strong>diplomatique</strong>.</li>
+<li><strong>Fiume était promise par le pacte de Londres.</strong> Non, voir la note : seule la Dalmatie est une promesse non tenue.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2 id="vocabulaire" data-toc="Vocabulaire clé">Vocabulaire clé</h2>
+<div class="tblwrap"><table>
+<tr><th>Terme</th><th>Sens</th></tr>
+<tr><td>la neutralité</td><td>le fait de ne prendre parti pour aucun camp</td></tr>
+<tr><td>les neutralistes</td><td>ceux qui veulent que l'Italie reste en dehors de la guerre</td></tr>
+<tr><td>les interventionnistes</td><td>ceux qui veulent que l'Italie entre en guerre</td></tr>
+<tr><td>achever l'unité nationale</td><td>rattacher à l'Italie les territoires italiens encore autrichiens (Trente, Trieste)</td></tr>
+<tr><td>l'irrédentisme</td><td>la revendication des « terres non libérées » (mot hors diapositives)</td></tr>
+<tr><td>le pacte de Londres</td><td>l'accord secret d'avril 1915 entre l'Italie et l'Entente</td></tr>
+<tr><td>une offensive frontale</td><td>une attaque de face contre les lignes ennemies</td></tr>
+<tr><td>percer le front</td><td>passer à travers les lignes ennemies</td></tr>
+<tr><td>une déroute</td><td>une défaite suivie d'une fuite désordonnée</td></tr>
+<tr><td>la désagrégation</td><td>le fait de se défaire, de tomber en morceaux (ici, l'Empire austro-hongrois)</td></tr>
+<tr><td>les hostilités</td><td>les combats</td></tr>
+<tr><td>la victoire mutilée</td><td>expression de D'Annunzio : une victoire privée d'une partie de ses fruits</td></tr>
+<tr><td>un journal de tranchées</td><td>un journal écrit et diffusé par et pour les soldats</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2 id="resume">Résumé</h2>
+<ul>
+<li><strong>1914</strong> : neutralité (Triple-Alliance défensive, les alliés ont attaqué).</li>
+<li><strong>Division</strong> : neutralistes (catholiques, socialistes, Giolitti) contre interventionnistes (nationalistes, D'Annunzio : « achever l'unité nationale »).</li>
+<li><strong>Avril 1915</strong> : pacte de Londres secret → promesses : Trentin, Trieste, Istrie, Dalmatie.</li>
+<li><strong>Mai 1915</strong> : entrée en guerre contre l'Autriche-Hongrie, après une intense campagne interventionniste (discours de Quarto, 5 mai).</li>
+<li><strong>1915–1917</strong> : Cadorna, offensives frontales sur l'Isonzo, pertes énormes, gains minimes.</li>
+<li><strong>Octobre 1917</strong> : Caporetto, percée austro-allemande, retraite de 130 km jusqu'au Piave, Cadorna remplacé par Diaz.</li>
+<li><strong>Octobre–novembre 1918</strong> : Vittorio Veneto → armistice de Villa Giusti.</li>
+<li><strong>Paix</strong> : Trente et Trieste obtenus ; Dalmatie et Fiume refusées → « victoire mutilée » (D'Annunzio), frustration, crise politique d'après-guerre.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="quiz" data-toc="Quiz rapide">Quiz rapide</h2>
+<div class="quiz"><p class="q">Que promet le pacte de Londres à l'Italie, d'après la diapositive ?</p><div class="opts">
+<button type="button" class="opt" data-ok data-why="Oui : ce sont les quatre territoires cités par la diapositive.">Le Trentin, Trieste, l'Istrie et la Dalmatie</button>
+<button type="button" class="opt" data-why="Fiume ne figure pas dans la liste des promesses.">Trieste, Fiume et la Dalmatie</button>
+<button type="button" class="opt" data-why="Non : la Savoie et Nice n'ont rien à voir avec ce pacte.">La Savoie et Nice</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">Qui remplace Cadorna après Caporetto ?</p><div class="opts">
+<button type="button" class="opt" data-why="Nivelle est un général français (leçons 3 et 4).">Nivelle</button>
+<button type="button" class="opt" data-ok data-why="Oui : le général Diaz, qui réorganise l'armée et gagne à Vittorio Veneto.">Diaz</button>
+<button type="button" class="opt" data-why="Giolitti est un homme politique libéral, neutraliste.">Giolitti</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">Jusqu'où l'armée italienne recule-t-elle après Caporetto ?</p><div class="opts">
+<button type="button" class="opt" data-why="L'Isonzo est la ligne du front avant Caporetto.">Jusqu'à l'Isonzo</button>
+<button type="button" class="opt" data-ok data-why="Oui : une retraite de 130 km jusqu'au fleuve Piave.">Jusqu'au Piave</button>
+<button type="button" class="opt" data-why="Non, la retraite s'arrête bien avant.">Jusqu'à Rome</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">Qui a forgé l'expression « victoire mutilée » ?</p><div class="opts">
+<button type="button" class="opt" data-ok data-why="Oui, d'après la diapositive.">Gabriele D'Annunzio</button>
+<button type="button" class="opt" data-why="Wilson est le président américain des Quatorze points.">Woodrow Wilson</button>
+<button type="button" class="opt" data-why="Le général Diaz commande l'armée ; l'expression vient d'un poète.">Le général Diaz</button>
+</div><p class="fb" hidden></p></div>
+</section>
+
+<section>
+<h2 id="exercices" data-toc="Exercices de vérification">Exercices de vérification</h2>
+<div class="ex-card"><div class="ex-h"><span class="lvl l1">Facile</span> Exercice 1</div>
+<p>Range dans l'ordre : Caporetto · pacte de Londres · Villa Giusti · discours de Quarto · entrée en guerre de l'Italie · Vittorio Veneto.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Pacte de Londres (avril 1915) → discours de Quarto (5 mai 1915) → entrée en guerre (mai 1915) → Caporetto (octobre 1917) → Vittorio Veneto (octobre–novembre 1918) → Villa Giusti (novembre 1918).</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l1">Facile</span> Exercice 2</div>
+<p>Qui sont les neutralistes et les interventionnistes ? Que veulent les seconds ?</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Neutralistes : catholiques, socialistes et une partie des libéraux, comme Giolitti ; ils sont favorables à la non-intervention. Interventionnistes : nationalistes et une partie des intellectuels, dont D'Annunzio ; ils réclament l'entrée en guerre pour achever l'unité nationale.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l2">Moyen</span> Exercice 3</div>
+<p>Explique pourquoi la diapositive dit que les offensives de Cadorna se déroulent « dans des conditions souvent comparables à celles du front occidental ».</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Comme sur le front occidental (leçons 2 et 3), il s'agit d'offensives frontales répétées contre des lignes fortifiées, qui provoquent des pertes humaines considérables pour des gains territoriaux minimes. C'est la même guerre de position et d'usure, avec en plus une armée italienne mal équipée et mal préparée à une guerre moderne.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l2">Moyen</span> Exercice 4</div>
+<p>Dans le discours de Quarto, D'Annunzio transforme « Qui si fa l'Italia o si muore » en « Qui si rinasce e si fa un'Italia più grande ». Que révèle ce changement ?</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>La phrase de Garibaldi parlait de <em>faire</em> l'Italie (l'unification). D'Annunzio parle de faire une Italie <em>plus grande</em> : la guerre de 1915 est présentée comme la continuation et l'agrandissement de l'unification. Il relie la guerre au mythe du Risorgimento pour la rendre légitime et enthousiasmante, ce qui correspond à l'argument interventionniste « achever l'unité nationale ».</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l3">Difficile</span> Exercice 5</div>
+<p>Compare la « victoire mutilée » italienne et l'humiliation allemande après Versailles (leçon 4). Qu'ont-elles en commun, et quelle est la grande différence ?</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p><strong>Point commun :</strong> dans les deux cas, la paix est vécue comme une humiliation nationale, exploitée par la propagande (D'Annunzio en Italie ; la caricature « Supprimez ce fardeau » en 1931 pour l'Allemagne) et source de frustration dans l'après-guerre. <strong>Différence :</strong> l'Allemagne est <em>vaincue</em> et subit des conditions dures (article 231, territoires perdus, armée limitée, réparations), alors que l'Italie est <em>victorieuse</em> mais n'obtient pas tout ce qu'on lui avait promis. L'une se sent punie, l'autre se sent trahie.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l3">Difficile</span> Exercice 6</div>
+<p>« La victoire de Vittorio Veneto n'est pas seulement un mérite italien. » Discute cette affirmation à partir de la diapositive et de la leçon 4.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>D'un côté, la victoire est bien italienne : l'armée, réorganisée par Diaz après Caporetto, lance une offensive décisive qui provoque l'effondrement définitif de l'armée austro-hongroise. De l'autre, la diapositive précise que cette armée était « déjà affaiblie par la désagrégation interne de l'Empire », et la leçon 4 rappelle qu'en 1918 l'Autriche-Hongrie « se désagrège sous la pression des nationalités ». Conclusion nuancée : Vittorio Veneto est une vraie victoire militaire, mais elle frappe un empire déjà en train de s'effondrer.</p></div></div>
+</section>
+
+<section>
+<h2 id="liens" data-toc="Liens avec les autres leçons">Liens avec les autres leçons</h2>
+<ul>
+<li><strong>← Leçon 1 :</strong> l'Italie, « maillon faible » de la Triple-Alliance (caricature de 1893) ; la carte postale de Bertiglia la montre déjà dans le camp de l'Entente ; la photo du départ en train date de 1915.</li>
+<li><strong>← Leçon 2 :</strong> la neutralité de 1914 et l'entrée en guerre de 1915, attirée par le traité de Londres.</li>
+<li><strong>← Leçon 3 :</strong> l'Isonzo reproduit la logique d'usure de Verdun.</li>
+<li><strong>← Leçon 4 :</strong> Caporetto (1917) et les mutineries françaises révèlent la même crise du moral ; Villa Giusti et Rethondes sont deux armistices différents ; la « victoire mutilée » fait écho à l'humiliation allemande.</li>
+<li><strong>← Leçon 5 :</strong> la propagande nationaliste (« Enfin ! », <em>Il Ghibli</em>) continue après la guerre.</li>
+</ul>
+</section>
+
+<script>
+(function(){
+var X={isonzo:540,piave:130};
+var S=[
+ {x:540,t:'Mai 1915 · Entrée en guerre',d:'L\'Italie entre en guerre contre l\'Autriche-Hongrie. Le front s\'établit à l\'est, le long de l\'Isonzo.',a:null},
+ {x:530,t:'1915–1917 · Les offensives de Cadorna',d:'Offensives frontales répétées contre les lignes autrichiennes de l\'Isonzo : pertes considérables, gains minimes. Le front ne bouge presque pas.',a:{from:520,to:560,c:'var(--it)'}},
+ {x:540,t:'Octobre 1917 · Caporetto',d:'Renforcées par des troupes allemandes, les forces austro-hongroises percent le front à Caporetto. C\'est la déroute.',a:{from:560,to:420,c:'var(--de)'}},
+ {x:130,t:'Fin 1917 · Retraite jusqu\'au Piave',d:'L\'armée italienne recule d\'environ 130 km jusqu\'au Piave pour éviter l\'effondrement total du front. Cadorna est remplacé par Diaz.',a:{from:520,to:150,c:'var(--de)'}},
+ {x:130,t:'Fin 1917–1918 · Le front tient',d:'Le front se stabilise sur le Piave, où l\'armée est réorganisée sous le commandement de Diaz. (Les diapositives ne détaillent pas cette période.)',a:null},
+ {x:250,t:'Octobre–novembre 1918 · Vittorio Veneto',d:'Offensive décisive de Diaz : l\'armée austro-hongroise, déjà affaiblie par la désagrégation de l\'Empire, s\'effondre définitivement.',a:{from:150,to:340,c:'var(--it)'}},
+ {x:250,t:'Novembre 1918 · Armistice de Villa Giusti',d:'Fin des hostilités sur le front italien. La position du trait ici n\'a pas de valeur géographique précise : le schéma montre seulement le sens du mouvement.',a:null}
+];
+var i=0,line=document.getElementById('front-line'),lbl=document.getElementById('front-lbl'),arr=document.getElementById('front-arrow'),out=document.getElementById('front-out'),n=document.getElementById('front-n'),pv=document.getElementById('front-prev'),nx=document.getElementById('front-next');
+function draw(){var s=S[i];line.setAttribute('x',s.x-4);lbl.setAttribute('x',s.x);
+ arr.innerHTML='';if(s.a){var y=85,dir=s.a.to>s.a.from?1:-1;arr.innerHTML='<line x1="'+s.a.from+'" y1="'+y+'" x2="'+s.a.to+'" y2="'+y+'" stroke-width="6" style="stroke:'+s.a.c+'" opacity=".75"/><path d="M'+s.a.to+' '+(y-10)+' L'+(s.a.to+dir*16)+' '+y+' L'+s.a.to+' '+(y+10)+' z" style="fill:'+s.a.c+'" opacity=".75"/>'}
+ out.innerHTML='<strong>'+s.t+'</strong><br>'+s.d;n.textContent='Étape '+(i+1)+' sur '+S.length;pv.disabled=i===0;nx.disabled=i===S.length-1}
+pv.onclick=function(){if(i>0){i--;draw()}};nx.onclick=function(){if(i<S.length-1){i++;draw()}};draw();
+})();
+</script>
+
+<nav class="pager"><a class="prev" href="lecon-5-guerre-totale.html"><small>◀ Leçon précédente</small>5. Guerre totale</a><a class="next" href="index.html"><small>Fin du cours ▶</small>Sommaire et révision</a></nav>
+</main>
+</div>
+<script>
+(function(){
+ var main=document.querySelector('main');
+ var hs=[].slice.call(main.querySelectorAll('h2[id]'));
+ function mk(){var ol=document.createElement('ol');hs.forEach(function(h){var li=document.createElement('li');var a=document.createElement('a');a.href='#'+h.id;a.textContent=h.getAttribute('data-toc')||h.textContent;li.appendChild(a);ol.appendChild(li)});return ol}
+ var side=document.querySelector('.toc-side'),mob=document.querySelector('.toc-mob');
+ if(hs.length){if(side)side.appendChild(mk());if(mob)mob.appendChild(mk())}else{if(side)side.remove();if(mob)mob.remove()}
+ if(mob)mob.addEventListener('click',function(e){if(e.target.tagName==='A')mob.removeAttribute('open')});
+ if(side&&'IntersectionObserver' in window){var links={};side.querySelectorAll('a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){side.querySelectorAll('a.on').forEach(function(x){x.classList.remove('on')});var l=links[e.target.id];if(l)l.classList.add('on')}})},{rootMargin:'0px 0px -75% 0px'});hs.forEach(function(h){io.observe(h)})}
+ document.querySelectorAll('.sol-btn').forEach(function(b){var s=b.nextElementSibling;b.setAttribute('aria-expanded','false');b.addEventListener('click',function(){var show=s.hidden;s.hidden=!show;b.textContent=show?'Masquer la solution':'Afficher la solution';b.setAttribute('aria-expanded',String(show))})});
+ document.querySelectorAll('.quiz').forEach(function(q){var opts=[].slice.call(q.querySelectorAll('.opt'));var fb=q.querySelector('.fb');
+  opts.forEach(function(o){o.addEventListener('click',function(){if(q.classList.contains('done'))return;q.classList.add('done');var good=o.hasAttribute('data-ok');
+   opts.forEach(function(x){x.disabled=true;if(x.hasAttribute('data-ok'))x.classList.add('ok')});if(!good)o.classList.add('ko');
+   fb.textContent='';var b=document.createElement('b');b.textContent=good?'Juste. ':'Pas tout à fait. ';fb.appendChild(b);fb.appendChild(document.createTextNode(o.getAttribute('data-why')||q.getAttribute('data-why')||''));fb.hidden=false;
+   var r=document.createElement('button');r.className='retry';r.type='button';r.textContent='Réessayer';r.onclick=function(){q.classList.remove('done');opts.forEach(function(x){x.disabled=false;x.classList.remove('ok','ko')});fb.hidden=true;r.remove()};fb.after(r)})})});
+ document.querySelectorAll('.stepper').forEach(function(st){var steps=[].slice.call(st.children).filter(function(c){return c.classList.contains('step')});var i=0;
+  var prog=document.createElement('div');prog.className='st-prog';prog.innerHTML='<i></i>';var t=st.querySelector('.st-title');if(t)t.after(prog);else st.prepend(prog);
+  var bar=document.createElement('div');bar.className='st-ctl';bar.innerHTML='<button type="button" class="st-prev">◀ Précédent</button><span class="st-n"></span><button type="button" class="st-next">Suivant ▶</button>';st.appendChild(bar);
+  function show(){steps.forEach(function(s,k){s.classList.toggle('on',k===i)});bar.querySelector('.st-n').textContent='Étape '+(i+1)+' sur '+steps.length;bar.querySelector('.st-prev').disabled=i===0;bar.querySelector('.st-next').disabled=i===steps.length-1;prog.firstChild.style.width=((i+1)/steps.length*100)+'%'}
+  bar.querySelector('.st-prev').onclick=function(){if(i>0){i--;show()}};bar.querySelector('.st-next').onclick=function(){if(i<steps.length-1){i++;show()}};show()});
+ document.querySelectorAll('.sorter').forEach(function(so){var items=[].slice.call(so.querySelectorAll('.sort-item'));var cats=JSON.parse(so.getAttribute('data-cats'));var sc=so.querySelector('.score');
+  function upd(){var done=items.filter(function(it){return it.dataset.done}).length,good=items.filter(function(it){return it.dataset.done==='ok'}).length;sc.textContent=done?('Score : '+good+' / '+done+' (sur '+items.length+')'):''}
+  items.forEach(function(it){var ctl=document.createElement('div');ctl.className='sort-ctl';var why=document.createElement('div');why.className='why';why.hidden=true;
+   cats.forEach(function(c){var b=document.createElement('button');b.type='button';b.textContent=c[1];b.setAttribute('aria-pressed','false');b.onclick=function(){ctl.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});var ok=it.getAttribute('data-a')===c[0];it.classList.toggle('ok',ok);it.classList.toggle('ko',!ok);it.dataset.done=ok?'ok':'ko';why.textContent=(ok?'Juste. ':'Non : ')+it.getAttribute('data-why');why.hidden=false;upd()};ctl.appendChild(b)});
+   it.appendChild(ctl);it.appendChild(why)});upd()});
+})();
+</script>
+</body>
+</html>

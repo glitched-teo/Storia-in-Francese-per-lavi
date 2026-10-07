@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3. Verdun (1916) · Grande Guerre</title>
+<style>
+*{box-sizing:border-box}
+:root{
+--bg:#faf9f6;--fg:#1c1c1e;--muted:#5d5d66;--card:#fff;--line:#e3e0d8;--accent:#1d4f7a;--accent-bg:#e7eff7;--link:#1d5fa0;
+--def:#1d5fa0;--def-bg:#e9f1fb;--src:#8a5a00;--src-bg:#fbf2df;--ex:#1d7445;--ex-bg:#e7f5ed;
+--warn:#b02a1f;--warn-bg:#fdebe9;--app:#6a3d9e;--app-bg:#f2ecfa;--note:#555a61;--note-bg:#eef0f2;
+--ana:#0d7480;--ana-bg:#e4f4f6;--q:#383896;--q-bg:#ebebfa;
+--ok:#1d7445;--ok-bg:#e7f5ed;--ko:#b02a1f;--ko-bg:#fdebe9;
+--de:#5a6474;--fr:#2c6db3;--uk:#c25a1c;--it:#2e8b57;--soft:#f2f0ea;
+}
+@media (prefers-color-scheme:dark){:root{
+--bg:#141518;--fg:#e9e9ec;--muted:#a3a3ad;--card:#1d1f24;--line:#33363e;--accent:#8fbbe6;--accent-bg:#1f2a36;--link:#8fbbe6;
+--def:#8fbbe6;--def-bg:#1b2633;--src:#e2b25c;--src-bg:#2c2416;--ex:#76cf9c;--ex-bg:#17281f;
+--warn:#f08a80;--warn-bg:#2f1a18;--app:#c5a6ef;--app-bg:#251d33;--note:#b9bec5;--note-bg:#24272c;
+--ana:#6fd0db;--ana-bg:#152a2d;--q:#aeaef5;--q-bg:#1f1f38;
+--ok:#76cf9c;--ok-bg:#17281f;--ko:#f08a80;--ko-bg:#2f1a18;
+--de:#9aa5b5;--fr:#6fa8e8;--uk:#f0955a;--it:#6fcf97;--soft:#22252b;
+}}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 clamp(17px,.95rem + .35vw,19px)/1.68 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;overflow-x:hidden}
+a{color:var(--link)}
+h1,h2,h3,h4{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;line-height:1.25}
+h1{font-size:clamp(1.7rem,1.2rem + 2vw,2.4rem);margin:.2em 0 .3em}
+h2{font-size:1.55rem;margin:2.4em 0 .6em;padding-top:.8em;border-top:2px solid var(--line)}
+h3{font-size:1.2rem;margin:1.7em 0 .4em}
+h4{font-size:1.05rem;margin:1.1em 0 .3em}
+p{margin:.6em 0}
+ul,ol{padding-left:1.3em}
+li{margin:.25em 0}
+.cit{font-style:italic}
+strong{font-weight:700}
+.top{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--line);font-size:.92rem}
+.top a{text-decoration:none;font-weight:600;white-space:nowrap}
+.top .crumb{color:var(--muted);white-space:nowrap}
+.top .sp{flex:1}
+.top .nav a{padding:4px 10px;border:1px solid var(--line);border-radius:999px;margin-left:4px}
+.layout{max-width:1180px;margin:0 auto;padding:0 16px}
+main{max-width:780px;margin:0 auto;padding-bottom:60px;min-width:0}
+.toc-side{display:none}
+@media (min-width:1120px){
+ .layout{display:grid;grid-template-columns:250px minmax(0,780px);gap:48px;justify-content:center}
+ main{margin:0}
+ .toc-side{display:block;position:sticky;top:70px;align-self:start;max-height:calc(100vh - 90px);overflow:auto;padding-top:34px;font-size:.88rem}
+ .toc-mob{display:none}
+}
+.toc-h{font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:.78rem;margin-bottom:6px}
+.toc-side ol,.toc-mob ol{list-style:none;padding:0;margin:0}
+.toc-side a,.toc-mob a{display:block;padding:4px 10px;border-left:3px solid transparent;text-decoration:none;color:var(--fg)}
+.toc-side a.on{border-left-color:var(--accent);background:var(--accent-bg);color:var(--accent);font-weight:600}
+.toc-mob{margin:16px 0;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.toc-mob summary{cursor:pointer;padding:12px 16px;font-weight:700}
+.toc-mob ol{padding:0 6px 10px}
+.hero{padding:30px 0 6px}
+.kicker{color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.07em;font-weight:600}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+.box{--c:var(--note);--cbg:var(--note-bg);border-left:5px solid var(--c);background:var(--cbg);border-radius:10px;padding:12px 16px;margin:18px 0}
+.box>.lbl{font-size:.74rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--c);margin-bottom:2px}
+.box>:last-child{margin-bottom:0}
+.box.def{--c:var(--def);--cbg:var(--def-bg)}
+.box.src{--c:var(--src);--cbg:var(--src-bg)}
+.box.ex{--c:var(--ex);--cbg:var(--ex-bg)}
+.box.warn{--c:var(--warn);--cbg:var(--warn-bg)}
+.box.app{--c:var(--app);--cbg:var(--app-bg)}
+.box.note{--c:var(--note);--cbg:var(--note-bg)}
+.box.ana{--c:var(--ana);--cbg:var(--ana-bg)}
+.box.q{--c:var(--q);--cbg:var(--q-bg)}
+.box.intu{--c:var(--accent);--cbg:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);font-size:1.06em}
+blockquote{margin:10px 0;padding:6px 14px;border-left:3px solid var(--line);color:var(--fg);font-family:Georgia,serif}
+blockquote .tr{display:block;color:var(--muted);font-family:system-ui,sans-serif;font-size:.92em;margin-top:4px}
+.tblwrap{overflow-x:auto;margin:14px 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.93em;background:var(--card)}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tl{list-style:none;padding:0;margin:14px 0 14px 6px;border-left:3px solid var(--line)}
+.tl li{position:relative;padding:4px 0 10px 18px}
+.tl li::before{content:"";position:absolute;left:-8px;top:12px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl .d{display:block;font-weight:700;color:var(--accent);font-size:.9em}
+.tl li.it::before{background:var(--it)}
+.tl li.it .d{color:var(--it)}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:1px 7px;border-radius:999px;background:var(--soft);color:var(--muted);vertical-align:middle;margin-left:4px}
+.ex-card{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:16px 0}
+.ex-h{font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lvl{font-size:.72rem;font-weight:800;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+.lvl.l1{background:var(--ok-bg);color:var(--ok)}
+.lvl.l2{background:var(--src-bg);color:var(--src)}
+.lvl.l3{background:var(--ko-bg);color:var(--ko)}
+button{font:inherit;cursor:pointer}
+.sol-btn,.retry,.st-ctl button,.seg button,.calc button,.sort-ctl button{border:1px solid var(--accent);background:var(--accent-bg);color:var(--accent);border-radius:8px;padding:7px 14px;font-weight:600;font-size:.92em;min-height:40px}
+.sol-btn:hover{filter:brightness(.97)}
+.sol{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--ok-bg);border-left:4px solid var(--ok)}
+.sol>:first-child{margin-top:0}.sol>:last-child{margin-bottom:0}
+.quiz{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:14px 0}
+.quiz .q{font-weight:600;margin-top:0}
+.quiz .opts{display:grid;gap:8px}
+.opt{text-align:left;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:9px;padding:10px 12px;min-height:44px}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt.ok{background:var(--ok-bg);border-color:var(--ok);color:var(--fg)}
+.opt.ok::after{content:"  ✓";color:var(--ok);font-weight:800}
+.opt.ko{background:var(--ko-bg);border-color:var(--ko)}
+.opt.ko::after{content:"  ✗";color:var(--ko);font-weight:800}
+.opt:disabled{cursor:default;opacity:1}
+.fb{margin:10px 0 8px;padding:10px 12px;border-radius:9px;background:var(--soft)}
+.quiz .opts.row{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+.stepper{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:18px 0}
+.stepper>.st-title{font-weight:700;margin:0 0 8px}
+.st-prog{height:6px;background:var(--soft);border-radius:999px;overflow:hidden;margin-bottom:10px}
+.st-prog i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.stepper .step{display:none}
+.stepper .step.on{display:block;animation:fade .25s}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.stepper .step h4{margin-top:4px}
+.st-ctl{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px;flex-wrap:wrap}
+.st-ctl button:disabled{opacity:.4;cursor:default}
+.st-n{color:var(--muted);font-size:.9em}
+@media (max-width:480px){.st-ctl .st-n{order:-1;flex-basis:100%;text-align:center}}
+.seg{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.seg button[aria-pressed=true],.calc button[aria-pressed=true],.sort-ctl button[aria-pressed=true]{background:var(--accent);color:var(--card)}
+.widget{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:18px 0}
+.widget svg{width:100%;height:auto;display:block}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.88em;color:var(--muted)}
+.legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--sw)}
+.small{font-size:.88em;color:var(--muted)}
+.calc{display:flex;flex-wrap:wrap;gap:6px}
+.calc-out{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--soft);min-height:3em}
+.big{font-size:1.5em;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:48px}
+.pager a{display:block;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--fg)}
+.pager a small{display:block;color:var(--muted)}
+.pager a.next{text-align:right;grid-column:2}
+.cards{display:grid;gap:12px;margin:16px 0}
+.cards a{display:block;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--fg)}
+.cards a:hover{border-color:var(--accent)}
+.cards .n{font-weight:800;color:var(--accent);font-size:.85em;text-transform:uppercase;letter-spacing:.06em}
+.cards .t{font-family:Georgia,serif;font-size:1.2em;font-weight:700;display:block;margin:2px 0}
+.cards .d{color:var(--muted);font-size:.93em}
+.legend-boxes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.legend-boxes .box{margin:0;padding:8px 12px;font-size:.9em}
+.hot{cursor:pointer}
+.hot circle{fill:var(--accent);stroke:var(--card);stroke-width:2}
+.hot text{fill:var(--card);font:700 13px system-ui,sans-serif;pointer-events:none}
+.hot.on circle{fill:var(--warn)}
+svg text{font-family:system-ui,sans-serif}
+.sort-item{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0;background:var(--bg)}
+.sort-item.ok{border-color:var(--ok);background:var(--ok-bg)}
+.sort-item.ko{border-color:var(--ko);background:var(--ko-bg)}
+.sort-item .why{margin-top:6px;font-size:.92em}
+.score{font-weight:700;margin-top:10px}
+.sort-item .sort-ctl{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.sort-item .sort-ctl button{font-size:.85em;padding:6px 8px;line-height:1.25}
+.cycle{display:flex;align-items:center;gap:8px;margin:10px 0}
+.cyc{flex:1 1 0;border:1px solid var(--accent);background:var(--accent-bg);border-radius:10px;padding:10px 12px;font-weight:600;text-align:center}
+.cyc.loop{background:transparent;border-style:dashed;font-weight:500;color:var(--muted)}
+.cyc-ar{color:var(--accent);font-weight:800;font-size:1.3em;flex:0 0 auto}
+@media (max-width:640px){.cycle{flex-direction:column;align-items:stretch}.cyc-ar{text-align:center;transform:rotate(90deg)}}
+.hot-btns{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:10px}
+.hot-btns button{border:1px solid var(--accent);background:var(--accent-bg);color:var(--accent);border-radius:8px;font-weight:700;min-height:42px}
+.hot-btns button[aria-pressed=true]{background:var(--accent);color:var(--card)}
+@media print{.top,.toc-side,.toc-mob,.pager{display:none}.sol{display:block!important}.stepper .step{display:block}}
+</style>
+</head>
+<body>
+<header class="top"><a class="home" href="index.html">☰ Sommaire</a><span class="crumb">Leçon 3/6</span><span class="sp"></span><span class="nav"><a href="lecon-2-etapes-1914-1917.html" title="Les principales étapes du conflit (1914–1917)">◀ 2</a><a href="lecon-4-1917-1919.html" title="1917, l'année décisive — du tournant à Versailles">4 ▶</a></span></header>
+<div class="layout">
+<aside class="toc-side" aria-label="Sections"><div class="toc-h">Dans cette page</div></aside>
+<main>
+<div class="hero"><div class="kicker">Diapositives XIII (3) · Leçon 3 sur 6</div><h1>Verdun (1916)</h1><p class="sub">Pourquoi une seule bataille est devenue le symbole de la guerre sur le front occidental.</p></div>
+<details class="toc-mob"><summary>Sections de la page</summary></details>
+<section>
+<h2 id="intuition">Intuition</h2>
+<div class="box intu"><div class="lbl">En 4 lignes</div>
+<p>Verdun (février–décembre 1916), c'est la guerre d'usure poussée à l'extrême. Le commandant allemand ne veut pas conquérir une ville : il veut <em>saigner à blanc</em> l'armée française en l'obligeant à défendre coûte que coûte un lieu symbolique. Il en résulte dix mois de combats, environ 300.000 morts sur quelques kilomètres carrés et un paysage rasé par l'artillerie. C'est pourquoi, après la guerre, Verdun devient le symbole de l'horreur, puis de la réconciliation franco-allemande.</p>
+</div>
+<div class="box q"><div class="lbl">La question directrice de la diapositive (question d'examen probable)</div>
+<p>« Pourquoi Verdun est-elle devenue le lieu symbole des sanglantes batailles du front occidental ? »</p>
+<p>Toute la leçon est construite comme une réponse à cette question. Les diapositives donnent <strong>six raisons</strong> : apprends-les comme six « paragraphes ».</p>
+</div>
+</section>
+
+<section>
+<h2 id="pas-a-pas" data-toc="Les six raisons, pas à pas">Les six raisons, pas à pas</h2>
+
+<h3>Raison 1 · La durée</h3>
+<p>« La bataille de Verdun se déroule de <strong>février à décembre 1916</strong> : ce sont <strong>dix mois</strong> de combats presque ininterrompus. » Le tableau de la diapositive parle de 300 jours et situe le début au 21 février. C'est « l'une des batailles les plus longues de toute la guerre ». Une bataille « normale » dure quelques jours ; celle-ci dure presque un an. C'est pour cela qu'elle devient le « <strong>symbole d'un affrontement sans fin</strong> ».</p>
+
+<h3>Raison 2 · La logique : « saigner à blanc »</h3>
+<p>« Le général allemand <strong>Falkenhayn</strong> conçoit cette offensive <strong>non pour conquérir un territoire</strong>, mais pour “saigner à blanc” l'armée française en l'attirant dans une <strong>bataille d'attrition</strong>. »</p>
+<div class="box def"><div class="lbl">Définition (d'après la diapositive)</div>
+<p><strong>Saigner à blanc</strong> : « épuiser complètement les ressources financières ou vitales de quelqu'un, le ruiner ou le vider de tout ce qu'il possède ». Au sens propre : vider quelqu'un de son sang jusqu'à ce qu'il devienne blanc.</p>
+</div>
+<p>Le raisonnement est le suivant. On choisit un lieu que l'ennemi <strong>ne peut pas se permettre d'abandonner</strong> (pour une question de prestige, raison 5). L'ennemi y envoie alors des hommes sans arrêt, et on espère qu'il en perde plus que l'attaquant. Le terrain conquis est secondaire : l'objectif, c'est le décompte des morts. C'est pourquoi, selon la diapositive, Verdun devient « l'<strong>incarnation même de la logique meurtrière de la guerre d'usure</strong> ».</p>
+
+<h3>Raison 3 · Le bilan humain</h3>
+<p>« On estime à environ <strong>300.000 morts</strong> et <strong>plus de 400.000 blessés</strong> pour les deux camps réunis, sur un territoire de <strong>quelques kilomètres carrés</strong> à peine. » Le point clé n'est pas seulement le chiffre : c'est le <strong>rapport</strong> entre l'ampleur des pertes et l'étroitesse du terrain disputé. Ce rapport, dit la diapositive, « illustre l'<strong>absurdité meurtrière</strong> du conflit ».</p>
+<div class="box note"><div class="lbl">Note sur le matériel · contradiction dans les chiffres</div>
+<p>Dans la même diapositive, deux séries de chiffres ne concordent pas :</p>
+<ul>
+<li><strong>Le texte :</strong> environ 300.000 morts et plus de 400.000 blessés au total.</li>
+<li><strong>Le tableau « Bilan humain » :</strong> 275.000 morts français + 240.000 morts allemands (= 515.000) et 200.000 blessés.</li>
+</ul>
+<p>Les deux versions sont incompatibles : 275.000 + 240.000 ne font pas 300.000, et les blessés passent de 400.000 à 200.000. Le résumé joint les mélange (« 300 000 morts (275 000 Français et 240 000 Allemands) »), ce qui est arithmétiquement faux.</p>
+<p><strong>Que retenir pour l'examen :</strong> le chiffre du texte, <strong>environ 300.000 morts et plus de 400.000 blessés</strong>. C'est aussi celui des sources que j'ai vérifiées (voir ci-dessous).</p>
+</div>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>Le Mémorial de Verdun donne 300.000 morts et 400.000 blessés dans les deux camps, dont environ 163.000 morts français et 143.000 allemands, soit une moyenne d'environ 1.000 morts par jour. Les chiffres 275.000 / 240.000 du tableau ne correspondent ni aux seuls morts, ni au total des pertes (tués + blessés + disparus) que j'ai trouvé. Le tableau vient probablement d'un manuel qui compte autrement. Si l'enseignant les a commentés en cours, suis ce qu'il a dit.</p>
+</div>
+
+<h3>Raison 4 · La guerre industrielle et le paysage détruit</h3>
+<p>« Les bombardements intensifs et continus transforment le champ de bataille en un <strong>paysage lunaire</strong>, sans végétation ni relief reconnaissable. Des villages entiers, comme <strong>Fleury-devant-Douaumont</strong>, sont <strong>rayés de la carte</strong> et ne seront jamais reconstruits. »</p>
+<p>« Verdun illustre de manière emblématique la <strong>guerre industrielle</strong> et l'importance écrasante de l'<strong>artillerie</strong>, responsable de la majorité des pertes. » Les <strong>forts de Douaumont et de Vaux</strong>, âprement disputés, symbolisent « cette guerre de position où <strong>chaque mètre de terrain se paie au prix du sang</strong> ».</p>
+<p>Le tableau « Moyens matériels » de la diapositive donne les chiffres. Fais les calculs avec la calculatrice : c'est la meilleure façon de comprendre ce qu'ils signifient.</p>
+
+<div class="widget" id="verdun-calc">
+<p style="margin-top:0"><strong>Calculatrice · les chiffres de Verdun</strong></p>
+<div class="calc" role="group" aria-label="Choisis une donnée">
+<button type="button" data-c="obus">Obus par jour</button>
+<button type="button" data-c="jour1">Le premier jour</button>
+<button type="button" data-c="canons">Canons</button>
+<button type="button" data-c="voie">Voie sacrée</button>
+<button type="button" data-c="morts">Morts par jour</button>
+<button type="button" data-c="debut">Les 6 premiers jours</button>
+<button type="button" data-c="contra">Les deux bilans</button>
+</div>
+<div class="calc-out" id="verdun-out" aria-live="polite">Choisis une donnée : tu verras le calcul et ce qu'il signifie.</div>
+<p class="small">Toutes les données de départ viennent de la diapositive. Les calculs sont de moi.</p>
+</div>
+
+<h3>Raison 5 · Le prestige : « Ils ne passeront pas »</h3>
+<p>« Verdun, ville fortifiée considérée comme un <strong>verrou</strong> essentiel de la défense nationale française, devient un enjeu de <strong>prestige</strong> autant que militaire. » La perdre serait un coup porté au moral de tout le pays.</p>
+<p>« La formule <strong>attribuée</strong> au général <strong>Pétain</strong>, “Ils ne passeront pas”, résume la détermination absolue à défendre ce site <strong>coûte que coûte</strong>. »</p>
+<p>Relie avec la raison 2 : c'est justement cette détermination « coûte que coûte » que Falkenhayn voulait exploiter. Le prestige de Verdun est le piège de l'usure.</p>
+<div class="box warn"><div class="lbl">Attention · qui a dit « Ils ne passeront pas » ?</div>
+<p>La diapositive écrit prudemment « formule <strong>attribuée</strong> au général Pétain ». Le résumé joint, lui, la présente comme un fait certain (« le général Pétain lance le célèbre ordre »). Garde la formulation de la diapositive : <strong>attribuée</strong>.</p>
+</div>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>D'après plusieurs sources historiques, la phrase vient en réalité du général <strong>Robert Nivelle</strong>, qui a remplacé Pétain à la tête de la II<sup>e</sup> armée à Verdun au printemps 1916 ; elle aurait été attribuée à Pétain plus tard. La phrase propre à Pétain est « Courage, on les aura ! », qui apparaît d'ailleurs sur l'affiche de 1942 analysée plus bas. Si tu ajoutes « attribution discutée » à l'examen, tu montres ta rigueur sans contredire la diapositive.</p>
+</div>
+
+<h3>Raison 6 · La mémoire</h3>
+<p>« Après la guerre, Verdun devient un site emblématique du <strong>souvenir</strong> et du <strong>pacifisme</strong>, visité par des générations d'Européens. » L'<strong>ossuaire de Douaumont</strong> « rassemble les restes de <strong>dizaines de milliers de soldats non identifiés</strong> ». C'est encore aujourd'hui un symbole universel :</p>
+<ul>
+<li>de l'<strong>horreur de la guerre</strong> ;</li>
+<li>de la <strong>réconciliation franco-allemande</strong> : en <strong>1984</strong>, le président français <strong>Mitterrand</strong> et le chancelier ouest-allemand <strong>Kohl</strong> commémorent ensemble la bataille, main dans la main.</li>
+</ul>
+<p>Remarque le renversement : le lieu même où la France et l'Allemagne se sont saignées à blanc devient le lieu de leur réconciliation.</p>
+</section>
+
+<section>
+<h2 id="analogies">Analogies</h2>
+<div class="box ana"><div class="lbl">Analogie · l'otage de l'orgueil</div>
+<p>Imagine une enseigne qui a juré, par orgueil, de ne jamais fermer une boutique historique. Un concurrent s'installe juste en face et vend à perte : il ne cherche pas à gagner de l'argent dans cette rue, il veut que tu continues à perdre de l'argent pour défendre ta boutique jusqu'à la faillite. Verdun est la boutique historique, le « prestige » est le serment, Falkenhayn est le concurrent. <em>Limite de l'analogie :</em> ici, le « prix » se paie en vies humaines, et à la fin l'attaquant se saigne presque autant que le défenseur.</p>
+</div>
+<div class="box ana"><div class="lbl">Analogie · une ville entière pour quelques kilomètres</div>
+<p>Pour se représenter le rapport pertes / terrain : 300.000 morts, c'est l'ordre de grandeur de la population d'une grande ville comme Nantes ou Strasbourg. Toute cette « ville » meurt pour déplacer le front de quelques kilomètres.</p>
+</div>
+</section>
+
+<section>
+<h2 id="sources" data-toc="Sources analysées">Sources analysées (exemples traités)</h2>
+
+<div class="box src"><div class="lbl">Source 1 · Maurice Neumont, affiche, 1918</div>
+<p><strong>Ce qu'on voit :</strong> un soldat français (le <strong>poilu</strong>) debout, barbu, casqué, l'équipement usé, fusil à la main ; derrière lui, un fond de flammes rouges et orange. L'inscription est coupée en deux par le soldat, avec les dates 1914 et 1918 de part et d'autre.</p>
+<p><strong>Sens :</strong> le soldat est un mur humain : épuisé mais inébranlable. Les dates 1914–1918 montrent que le message vaut pour toute la guerre, pas seulement pour Verdun.</p>
+<p><strong>Lien :</strong> la détermination « coûte que coûte » de la raison 5, transformée en propagande (<a href="lecon-5-guerre-totale.html">leçon 5</a>).</p>
+</div>
+<div class="box note"><div class="lbl">Note sur le matériel · la légende et l'image ne correspondent pas</div>
+<p>La légende de la diapositive indique « Ils ne passeront pas ! », mais l'inscription sur l'affiche est « On ne passe pas ! ». Le sens est le même, la phrase non. Si tu cites l'affiche, utilise le texte qu'on lit sur l'image.</p>
+</div>
+
+<div class="box src"><div class="lbl">Source 2 · « Les héros de Verdun », affiche, juin 1942</div>
+<p><strong>Qui, quand :</strong> imprimée en <strong>1942</strong> à Limoges par l'« Imagerie du Maréchal » (l'affiche le dit elle-même, en bas). Elle est conservée au Musée de la Résistance et de la Déportation de Besançon.</p>
+<p><strong>Ce qu'on voit :</strong> Pétain debout, jumelles et carte de Verdun à la main, domine le paysage de la bataille. On lit Douaumont, Vaux, la Cote 304, le Mort-Homme et la « Voie sacrée » couverte de soldats. Le texte en bas raconte que le <strong>25 février 1916</strong>, Pétain prend le commandement de l'armée de Verdun, rétablit « l'ordre et l'autorité » et lance « Ils ne passeront pas ». Le 9 avril, s'inspirant de Du Guesclin et de Jeanne d'Arc, il lance « Courage, on les aura ! ».</p>
+<p><strong>Le point clé :</strong> ce n'est pas un document de la Première Guerre mondiale. C'est un document de <strong>1942</strong> qui <em>utilise</em> la mémoire de Verdun.</p>
+</div>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>En 1942, Pétain est à la tête de l'« État français » de Vichy, le régime qui collabore avec l'Allemagne nazie après la défaite française de 1940. L'affiche construit le culte du « vainqueur de Verdun » pour donner du prestige à son régime. Ce n'est pas un hasard si elle se trouve dans un musée de la Résistance. C'est un excellent exemple de réutilisation politique de la mémoire d'une bataille.</p>
+</div>
+
+<div class="box src"><div class="lbl">Source 3 · « Verdun, tel que le poilu l'a vécu », affiche de film muet, 1928</div>
+<p><strong>Ce qu'on voit :</strong> un poilu lance une grenade au milieu d'explosions rouges. Le film est présenté par Pathé-Rural, « en 6 parties ».</p>
+<p><strong>Sens :</strong> dès les années 1920, Verdun est devenu un « nom » de la mémoire, raconté au cinéma du point de vue du simple soldat. C'est une partie de la raison 6.</p>
+</div>
+
+<div class="box src"><div class="lbl">Source 4 · Nécropole nationale et ossuaire de Douaumont (photo)</div>
+<p><strong>Ce qu'on voit :</strong> des rangées régulières de croix blanches devant l'ossuaire et sa tour, avec le drapeau français. La légende le présente comme un monument « à la mémoire des soldats français <strong>et allemands</strong> morts en 1916 lors de la bataille de Verdun ».</p>
+<p><strong>Sens :</strong> la répétition infinie des croix rend visible la masse des morts. L'ossuaire contient les restes non identifiés des deux camps : dans la mort, les nations ne se distinguent plus.</p>
+</div>
+
+<div class="box src"><div class="lbl">Source 5 · Mitterrand et Kohl à Verdun, 1984 (photo)</div>
+<p><strong>Ce qu'on voit :</strong> les deux dirigeants debout, main dans la main, devant deux couronnes de fleurs et un catafalque recouvert des drapeaux français et allemand entrelacés. Derrière eux, une foule d'officiels et d'anciens combattants.</p>
+<p><strong>Sens :</strong> le geste transforme le lieu du massacre réciproque en lieu de réconciliation. C'est la seconde moitié de la raison 6.</p>
+</div>
+</section>
+
+<section>
+<h2 id="examen" data-toc="Répondre à l'examen">Répondre à l'examen</h2>
+<div class="box q"><div class="lbl">Question</div>
+<p>« Pourquoi Verdun est-elle devenue le lieu symbole des sanglantes batailles du front occidental ? »</p>
+</div>
+<p><strong>Idée :</strong> six raisons, chacune avec <strong>un chiffre ou un exemple concret</strong>. Sans données, la réponse reste vague.</p>
+<div class="tblwrap"><table>
+<tr><th>Raison</th><th>Mot-clé</th><th>Chiffre ou exemple à citer</th></tr>
+<tr><td>1. Durée</td><td>dix mois</td><td>février–décembre 1916, 300 jours</td></tr>
+<tr><td>2. Logique d'usure</td><td>saigner à blanc</td><td>Falkenhayn : non pas conquérir, mais saigner à blanc</td></tr>
+<tr><td>3. Bilan</td><td>absurdité meurtrière</td><td>environ 300.000 morts, plus de 400.000 blessés, quelques km²</td></tr>
+<tr><td>4. Guerre industrielle</td><td>paysage lunaire, artillerie</td><td>2 millions d'obus le 1<sup>er</sup> jour ; Fleury-devant-Douaumont ; forts de Douaumont et de Vaux</td></tr>
+<tr><td>5. Prestige</td><td>verrou, « Ils ne passeront pas »</td><td>ville fortifiée ; formule attribuée à Pétain</td></tr>
+<tr><td>6. Mémoire</td><td>ossuaire, réconciliation</td><td>ossuaire de Douaumont ; Mitterrand et Kohl en 1984</td></tr>
+</table></div>
+<div class="box ex"><div class="lbl">Réponse modèle (version courte)</div>
+<p>Verdun est devenue le symbole des batailles du front occidental pour plusieurs raisons. D'abord sa durée : dix mois de combats presque ininterrompus, de février à décembre 1916. Ensuite sa logique : le général Falkenhayn ne cherche pas à conquérir un territoire mais à « saigner à blanc » l'armée française dans une bataille d'usure. Le bilan, environ 300.000 morts et plus de 400.000 blessés sur quelques kilomètres carrés, montre l'absurdité meurtrière de cette guerre. Verdun est aussi l'exemple de la guerre industrielle : deux millions d'obus tirés le seul premier jour, un paysage lunaire, des villages comme Fleury-devant-Douaumont rayés de la carte. Pour la France, c'est un enjeu de prestige, résumé par la formule attribuée à Pétain : « Ils ne passeront pas ». Enfin, après la guerre, Verdun devient un lieu de mémoire : l'ossuaire de Douaumont et la poignée de main entre Mitterrand et Kohl en 1984 en font le symbole de l'horreur de la guerre et de la réconciliation franco-allemande.</p>
+</div>
+</section>
+
+<section>
+<h2 id="erreurs">Erreurs fréquentes</h2>
+<div class="box warn"><div class="lbl">Pièges</div>
+<ul>
+<li><strong>La date :</strong> Verdun, c'est <strong>1916</strong> (février–décembre), ni 1914 ni 1917.</li>
+<li><strong>L'objectif allemand :</strong> non pas « conquérir Verdun », mais <strong>saigner à blanc l'armée française</strong>. C'est la question piège la plus probable.</li>
+<li><strong>Additionner les chiffres du tableau</strong> et écrire 515.000 morts. Utilise le chiffre du texte : environ 300.000 morts.</li>
+<li><strong>« Pétain a dit… »</strong> comme un fait certain. La diapositive dit <strong>attribuée</strong>.</li>
+<li><strong>Utiliser l'affiche de 1942 comme une source « de 1916 ».</strong> C'est une propagande de Vichy qui relit Verdun.</li>
+<li><strong>Confondre les noms :</strong> Douaumont et Vaux sont des <strong>forts</strong> ; Fleury-devant-Douaumont est un <strong>village</strong> détruit ; l'ossuaire est celui de Douaumont.</li>
+<li><strong>Verdun et la Somme, c'est la même bataille.</strong> Non : ce sont deux batailles de 1916, toutes deux d'usure (la Somme est seulement nommée dans les diapositives).</li>
+<li><strong>Mitterrand et Kohl « après la guerre ».</strong> Oui, mais en <strong>1984</strong>, presque soixante-dix ans plus tard : c'est de la mémoire, pas l'après-guerre.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2 id="vocabulaire" data-toc="Vocabulaire clé">Vocabulaire clé</h2>
+<div class="tblwrap"><table>
+<tr><th>Terme</th><th>Sens</th></tr>
+<tr><td>saigner à blanc</td><td>épuiser complètement les ressources vitales de quelqu'un (définition de la diapositive)</td></tr>
+<tr><td>une bataille d'attrition / la guerre d'usure</td><td>une bataille ou une guerre où l'on cherche à épuiser l'adversaire</td></tr>
+<tr><td>un verrou</td><td>ici, un point clé de la défense, qui bloque le passage de l'ennemi</td></tr>
+<tr><td>l'artillerie</td><td>l'ensemble des canons ; responsable de la majorité des pertes à Verdun</td></tr>
+<tr><td>un paysage lunaire</td><td>un paysage sans végétation, criblé de cratères</td></tr>
+<tr><td>rayé de la carte</td><td>totalement détruit, disparu</td></tr>
+<tr><td>la Voie sacrée</td><td>la route qui ravitaille Verdun (3.900 camions par jour)</td></tr>
+<tr><td>le poilu</td><td>le surnom du soldat français de la Grande Guerre</td></tr>
+<tr><td>un ossuaire</td><td>un monument qui rassemble les ossements de nombreux morts</td></tr>
+<tr><td>une nécropole</td><td>un grand cimetière</td></tr>
+<tr><td>la réconciliation franco-allemande</td><td>le rapprochement entre la France et l'Allemagne après les guerres</td></tr>
+<tr><td>coûte que coûte</td><td>à n'importe quel prix</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2 id="resume">Résumé</h2>
+<ul>
+<li><strong>Quand :</strong> février–décembre 1916, 10 mois (300 jours).</li>
+<li><strong>Pourquoi :</strong> Falkenhayn veut saigner à blanc l'armée française → guerre d'usure.</li>
+<li><strong>Bilan :</strong> environ 300.000 morts et plus de 400.000 blessés sur quelques km² (attention au tableau contradictoire).</li>
+<li><strong>Guerre industrielle :</strong> artillerie (2 millions d'obus le 1<sup>er</sup> jour, 30 millions en 300 jours), paysage lunaire, Fleury-devant-Douaumont détruit, forts de Douaumont et de Vaux, Voie sacrée (3.900 camions par jour).</li>
+<li><strong>Prestige :</strong> verrou de la défense française ; « Ils ne passeront pas », formule attribuée à Pétain.</li>
+<li><strong>Mémoire :</strong> ossuaire de Douaumont, film de 1928, récupération politique en 1942, Mitterrand et Kohl en 1984 → horreur et réconciliation.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="quiz" data-toc="Quiz rapide">Quiz rapide</h2>
+<div class="quiz"><p class="q">D'après la diapositive, quel était l'objectif de Falkenhayn à Verdun ?</p><div class="opts">
+<button type="button" class="opt" data-why="La diapositive dit explicitement « non pour conquérir un territoire ».">Prendre la ville pour s'ouvrir la route de Paris</button>
+<button type="button" class="opt" data-ok data-why="Oui : l'attirer dans une bataille d'attrition et le saigner à blanc.">« Saigner à blanc » l'armée française</button>
+<button type="button" class="opt" data-why="Cela n'a rien à voir avec la logique de Verdun.">Obliger le Royaume-Uni à se retirer de la guerre</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">Quel chiffre vaut-il mieux citer pour les morts de Verdun ?</p><div class="opts">
+<button type="button" class="opt" data-why="C'est la somme du tableau, incompatible avec le texte de la diapositive et avec les sources historiques.">515.000</button>
+<button type="button" class="opt" data-ok data-why="Oui : environ 300.000 morts (et plus de 400.000 blessés), comme dans le texte de la diapositive et les sources historiques.">Environ 300.000</button>
+<button type="button" class="opt" data-why="9.600, ce sont les tués ou disparus des six premiers jours seulement (21–26 février).">9.600</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">L'affiche « Les héros de Verdun » date de…</p><div class="opts">
+<button type="button" class="opt" data-why="Non : elle est imprimée bien après la bataille.">1916, pendant la bataille</button>
+<button type="button" class="opt" data-why="1928, c'est l'affiche du film muet.">1928</button>
+<button type="button" class="opt" data-ok data-why="Oui : 1942, « Imagerie du Maréchal » ; elle utilise la mémoire de Verdun pour le culte de Pétain.">1942</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">Fleury-devant-Douaumont, c'est…</p><div class="opts">
+<button type="button" class="opt" data-why="Les forts sont ceux de Douaumont et de Vaux.">un fort âprement disputé</button>
+<button type="button" class="opt" data-ok data-why="Oui : rayé de la carte et jamais reconstruit.">un village détruit et jamais reconstruit</button>
+<button type="button" class="opt" data-why="L'ossuaire est celui de Douaumont.">l'ossuaire</button>
+</div><p class="fb" hidden></p></div>
+</section>
+
+<section>
+<h2 id="exercices" data-toc="Exercices de vérification">Exercices de vérification</h2>
+<div class="ex-card"><div class="ex-h"><span class="lvl l1">Facile</span> Exercice 1</div>
+<p>Quand commence et quand finit la bataille de Verdun ? Qui est le général allemand et quel est son objectif ?</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Février–décembre 1916 (début le 21 février, d'après le tableau). Le général Falkenhayn. Objectif : non pas conquérir un territoire, mais « saigner à blanc » l'armée française dans une bataille d'usure.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l1">Facile</span> Exercice 2</div>
+<p>Calcule combien d'obus tombent en moyenne par jour, puis compare avec le premier jour.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>30.000.000 / 300 = <strong>100.000 par jour</strong>. Le premier jour : 2.000.000, soit <strong>20 fois</strong> la moyenne. Le premier jour est exceptionnel, mais la « moyenne » est déjà énorme : plus d'un obus par seconde pendant dix mois.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l2">Moyen</span> Exercice 3</div>
+<p>Explique le lien entre le <strong>prestige</strong> de Verdun et la stratégie de Falkenhayn.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Verdun est un verrou de la défense et un symbole pour le moral français. La France ne peut donc pas l'abandonner et la défend coûte que coûte (« Ils ne passeront pas »). Falkenhayn exploite justement cela : il choisit un lieu que l'ennemi est obligé de défendre, pour que celui-ci y envoie sans cesse des hommes et se saigne à blanc. Le prestige est le levier de la stratégie d'usure.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l2">Moyen</span> Exercice 4</div>
+<p>Sur la diapositive, les chiffres des morts sont contradictoires. Comment le dire à l'examen en deux lignes, sans perdre de temps ?</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>« Les estimations varient ; on retient généralement environ 300.000 morts et plus de 400.000 blessés dans les deux camps. » Cela suffit. N'additionne pas les chiffres du tableau et n'invente pas d'explication.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l3">Difficile</span> Exercice 5</div>
+<p>Pourquoi une affiche de 1942 sur Verdun se trouve-t-elle dans un musée de la Résistance ? Qu'est-ce que cela enseigne sur la lecture des sources ?</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>L'affiche est imprimée en 1942 par l'« Imagerie du Maréchal » et glorifie Pétain en héros de Verdun. À ce moment-là, Pétain dirige le régime de Vichy, qui collabore avec l'Allemagne (approfondissement) : l'affiche utilise la mémoire de la Grande Guerre pour légitimer ce régime. Cela enseigne qu'il faut toujours se demander <em>quand</em> et <em>pourquoi</em> une source a été produite. Un document <em>sur</em> un événement n'est pas forcément un document <em>de</em> cet événement.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l3">Difficile</span> Exercice 6</div>
+<p>Verdun est le symbole à la fois de l'« horreur » et de la « réconciliation ». Comment un même lieu peut-il signifier deux choses opposées ? Utilise au moins trois sources de la leçon.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>L'horreur vient de la bataille elle-même : dix mois, environ 300.000 morts, un paysage lunaire. La mémoire la conserve à travers le film de 1928 et l'ossuaire de Douaumont, où reposent des restes non identifiés de Français et d'Allemands. Justement parce que les deux peuples ont souffert ensemble au même endroit, Verdun devient le lieu naturel de la réconciliation : en 1984, Mitterrand et Kohl se tiennent la main devant les drapeaux entrelacés. L'horreur partagée fonde le « plus jamais ça » partagé, c'est-à-dire l'espoir de la « der' des der' ».</p></div></div>
+</section>
+
+<section>
+<h2 id="liens" data-toc="Liens avec les autres leçons">Liens avec les autres leçons</h2>
+<ul>
+<li><strong>← Leçon 2 :</strong> Verdun est le cas exemplaire de la guerre de position devenue guerre d'usure. La Somme, la même année, est l'autre bataille symbole.</li>
+<li><strong>→ Leçon 4 :</strong> après 1916, les armées sont épuisées : en 1917 arrivent les mutineries françaises.</li>
+<li><strong>→ Leçon 5 :</strong> l'artillerie et la logistique (la Voie sacrée) montrent la guerre industrielle ; les affiches montrent la propagande.</li>
+<li><strong>→ Leçon 6 :</strong> les offensives de Cadorna sur l'Isonzo suivent la même logique : attaques frontales répétées, pertes énormes, gains minimes.</li>
+</ul>
+</section>
+
+<script>
+(function(){
+function f(n,d){d=d||0;var s=n.toFixed(d).split('.');s[0]=s[0].replace(/\B(?=(\d{3})+(?!\d))/g,'.');return s.join(',')}
+var R={
+ obus:function(){var d=30000000/300;return ['30.000.000 obus ÷ 300 jours',f(d)+' par jour','Soit environ '+f(d/24)+' par heure et '+f(d/1440)+' par minute : plus d\'un obus par seconde ('+f(d/86400,2)+' par seconde), pendant dix mois.']},
+ jour1:function(){return ['2.000.000 ÷ 100.000 (moyenne journalière)',f(2000000/100000)+' fois la moyenne','Le premier jour équivaut à lui seul à près de trois semaines de bombardement « normal ».']},
+ canons:function(){return ['1.200 canons allemands ÷ 270 canons français',f(1200/270,1)+' contre 1','Pour chaque canon français, il y a plus de quatre canons allemands (données du tableau). C\'est l\'artillerie qui domine la bataille.']},
+ voie:function(){return ['86.400 secondes par jour ÷ 3.900 camions',f(86400/3900,0)+' secondes','Un camion toutes les 22 secondes environ, jour et nuit, sur la Voie sacrée. C\'est la logistique de la guerre industrielle : sans ravitaillement continu, la défense s\'effondrerait.']},
+ morts:function(){return ['300.000 morts ÷ 300 jours',f(300000/300)+' morts par jour','En moyenne, environ mille morts chaque jour pendant dix mois (chiffre du texte de la diapositive).']},
+ debut:function(){return ['9.600 tués ou disparus ÷ 6 jours (21–26 février)',f(9600/6)+' par jour','Les premiers jours sont plus meurtriers que la moyenne : l\'attaque initiale est le moment le plus violent.']},
+ contra:function(){var t=275000+240000;return ['275.000 + 240.000 (tableau) contre 300.000 (texte)',f(t)+' contre 300.000','Écart : '+f(t-300000)+'. Les deux chiffres d\'une même diapositive sont incompatibles. À l\'examen, retiens environ 300.000 morts et plus de 400.000 blessés.']}
+};
+var out=document.getElementById('verdun-out'),bs=document.querySelectorAll('#verdun-calc [data-c]');
+bs.forEach(function(b){b.onclick=function(){bs.forEach(function(x){x.setAttribute('aria-pressed',x===b)});var r=R[b.dataset.c]();out.innerHTML='<div class="small">'+r[0]+'</div><div class="big">'+r[1]+'</div><div>'+r[2]+'</div>'}});
+})();
+</script>
+
+<nav class="pager"><a class="prev" href="lecon-2-etapes-1914-1917.html"><small>◀ Leçon précédente</small>2. Étapes 1914–1917</a><a class="next" href="lecon-4-1917-1919.html"><small>Leçon suivante ▶</small>4. 1917 → Versailles</a></nav>
+</main>
+</div>
+<script>
+(function(){
+ var main=document.querySelector('main');
+ var hs=[].slice.call(main.querySelectorAll('h2[id]'));
+ function mk(){var ol=document.createElement('ol');hs.forEach(function(h){var li=document.createElement('li');var a=document.createElement('a');a.href='#'+h.id;a.textContent=h.getAttribute('data-toc')||h.textContent;li.appendChild(a);ol.appendChild(li)});return ol}
+ var side=document.querySelector('.toc-side'),mob=document.querySelector('.toc-mob');
+ if(hs.length){if(side)side.appendChild(mk());if(mob)mob.appendChild(mk())}else{if(side)side.remove();if(mob)mob.remove()}
+ if(mob)mob.addEventListener('click',function(e){if(e.target.tagName==='A')mob.removeAttribute('open')});
+ if(side&&'IntersectionObserver' in window){var links={};side.querySelectorAll('a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){side.querySelectorAll('a.on').forEach(function(x){x.classList.remove('on')});var l=links[e.target.id];if(l)l.classList.add('on')}})},{rootMargin:'0px 0px -75% 0px'});hs.forEach(function(h){io.observe(h)})}
+ document.querySelectorAll('.sol-btn').forEach(function(b){var s=b.nextElementSibling;b.setAttribute('aria-expanded','false');b.addEventListener('click',function(){var show=s.hidden;s.hidden=!show;b.textContent=show?'Masquer la solution':'Afficher la solution';b.setAttribute('aria-expanded',String(show))})});
+ document.querySelectorAll('.quiz').forEach(function(q){var opts=[].slice.call(q.querySelectorAll('.opt'));var fb=q.querySelector('.fb');
+  opts.forEach(function(o){o.addEventListener('click',function(){if(q.classList.contains('done'))return;q.classList.add('done');var good=o.hasAttribute('data-ok');
+   opts.forEach(function(x){x.disabled=true;if(x.hasAttribute('data-ok'))x.classList.add('ok')});if(!good)o.classList.add('ko');
+   fb.textContent='';var b=document.createElement('b');b.textContent=good?'Juste. ':'Pas tout à fait. ';fb.appendChild(b);fb.appendChild(document.createTextNode(o.getAttribute('data-why')||q.getAttribute('data-why')||''));fb.hidden=false;
+   var r=document.createElement('button');r.className='retry';r.type='button';r.textContent='Réessayer';r.onclick=function(){q.classList.remove('done');opts.forEach(function(x){x.disabled=false;x.classList.remove('ok','ko')});fb.hidden=true;r.remove()};fb.after(r)})})});
+ document.querySelectorAll('.stepper').forEach(function(st){var steps=[].slice.call(st.children).filter(function(c){return c.classList.contains('step')});var i=0;
+  var prog=document.createElement('div');prog.className='st-prog';prog.innerHTML='<i></i>';var t=st.querySelector('.st-title');if(t)t.after(prog);else st.prepend(prog);
+  var bar=document.createElement('div');bar.className='st-ctl';bar.innerHTML='<button type="button" class="st-prev">◀ Précédent</button><span class="st-n"></span><button type="button" class="st-next">Suivant ▶</button>';st.appendChild(bar);
+  function show(){steps.forEach(function(s,k){s.classList.toggle('on',k===i)});bar.querySelector('.st-n').textContent='Étape '+(i+1)+' sur '+steps.length;bar.querySelector('.st-prev').disabled=i===0;bar.querySelector('.st-next').disabled=i===steps.length-1;prog.firstChild.style.width=((i+1)/steps.length*100)+'%'}
+  bar.querySelector('.st-prev').onclick=function(){if(i>0){i--;show()}};bar.querySelector('.st-next').onclick=function(){if(i<steps.length-1){i++;show()}};show()});
+ document.querySelectorAll('.sorter').forEach(function(so){var items=[].slice.call(so.querySelectorAll('.sort-item'));var cats=JSON.parse(so.getAttribute('data-cats'));var sc=so.querySelector('.score');
+  function upd(){var done=items.filter(function(it){return it.dataset.done}).length,good=items.filter(function(it){return it.dataset.done==='ok'}).length;sc.textContent=done?('Score : '+good+' / '+done+' (sur '+items.length+')'):''}
+  items.forEach(function(it){var ctl=document.createElement('div');ctl.className='sort-ctl';var why=document.createElement('div');why.className='why';why.hidden=true;
+   cats.forEach(function(c){var b=document.createElement('button');b.type='button';b.textContent=c[1];b.setAttribute('aria-pressed','false');b.onclick=function(){ctl.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});var ok=it.getAttribute('data-a')===c[0];it.classList.toggle('ok',ok);it.classList.toggle('ko',!ok);it.dataset.done=ok?'ok':'ko';why.textContent=(ok?'Juste. ':'Non : ')+it.getAttribute('data-why');why.hidden=false;upd()};ctl.appendChild(b)});
+   it.appendChild(ctl);it.appendChild(why)});upd()});
+})();
+</script>
+</body>
+</html>

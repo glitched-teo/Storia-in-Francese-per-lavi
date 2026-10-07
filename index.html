@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grande Guerre · Sommaire des leçons</title>
+<style>
+*{box-sizing:border-box}
+:root{
+--bg:#faf9f6;--fg:#1c1c1e;--muted:#5d5d66;--card:#fff;--line:#e3e0d8;--accent:#1d4f7a;--accent-bg:#e7eff7;--link:#1d5fa0;
+--def:#1d5fa0;--def-bg:#e9f1fb;--src:#8a5a00;--src-bg:#fbf2df;--ex:#1d7445;--ex-bg:#e7f5ed;
+--warn:#b02a1f;--warn-bg:#fdebe9;--app:#6a3d9e;--app-bg:#f2ecfa;--note:#555a61;--note-bg:#eef0f2;
+--ana:#0d7480;--ana-bg:#e4f4f6;--q:#383896;--q-bg:#ebebfa;
+--ok:#1d7445;--ok-bg:#e7f5ed;--ko:#b02a1f;--ko-bg:#fdebe9;
+--de:#5a6474;--fr:#2c6db3;--uk:#c25a1c;--it:#2e8b57;--soft:#f2f0ea;
+}
+@media (prefers-color-scheme:dark){:root{
+--bg:#141518;--fg:#e9e9ec;--muted:#a3a3ad;--card:#1d1f24;--line:#33363e;--accent:#8fbbe6;--accent-bg:#1f2a36;--link:#8fbbe6;
+--def:#8fbbe6;--def-bg:#1b2633;--src:#e2b25c;--src-bg:#2c2416;--ex:#76cf9c;--ex-bg:#17281f;
+--warn:#f08a80;--warn-bg:#2f1a18;--app:#c5a6ef;--app-bg:#251d33;--note:#b9bec5;--note-bg:#24272c;
+--ana:#6fd0db;--ana-bg:#152a2d;--q:#aeaef5;--q-bg:#1f1f38;
+--ok:#76cf9c;--ok-bg:#17281f;--ko:#f08a80;--ko-bg:#2f1a18;
+--de:#9aa5b5;--fr:#6fa8e8;--uk:#f0955a;--it:#6fcf97;--soft:#22252b;
+}}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 clamp(17px,.95rem + .35vw,19px)/1.68 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;overflow-x:hidden}
+a{color:var(--link)}
+h1,h2,h3,h4{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;line-height:1.25}
+h1{font-size:clamp(1.7rem,1.2rem + 2vw,2.4rem);margin:.2em 0 .3em}
+h2{font-size:1.55rem;margin:2.4em 0 .6em;padding-top:.8em;border-top:2px solid var(--line)}
+h3{font-size:1.2rem;margin:1.7em 0 .4em}
+h4{font-size:1.05rem;margin:1.1em 0 .3em}
+p{margin:.6em 0}
+ul,ol{padding-left:1.3em}
+li{margin:.25em 0}
+.cit{font-style:italic}
+strong{font-weight:700}
+.top{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--line);font-size:.92rem}
+.top a{text-decoration:none;font-weight:600;white-space:nowrap}
+.top .crumb{color:var(--muted);white-space:nowrap}
+.top .sp{flex:1}
+.top .nav a{padding:4px 10px;border:1px solid var(--line);border-radius:999px;margin-left:4px}
+.layout{max-width:1180px;margin:0 auto;padding:0 16px}
+main{max-width:780px;margin:0 auto;padding-bottom:60px;min-width:0}
+.toc-side{display:none}
+@media (min-width:1120px){
+ .layout{display:grid;grid-template-columns:250px minmax(0,780px);gap:48px;justify-content:center}
+ main{margin:0}
+ .toc-side{display:block;position:sticky;top:70px;align-self:start;max-height:calc(100vh - 90px);overflow:auto;padding-top:34px;font-size:.88rem}
+ .toc-mob{display:none}
+}
+.toc-h{font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:.78rem;margin-bottom:6px}
+.toc-side ol,.toc-mob ol{list-style:none;padding:0;margin:0}
+.toc-side a,.toc-mob a{display:block;padding:4px 10px;border-left:3px solid transparent;text-decoration:none;color:var(--fg)}
+.toc-side a.on{border-left-color:var(--accent);background:var(--accent-bg);color:var(--accent);font-weight:600}
+.toc-mob{margin:16px 0;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.toc-mob summary{cursor:pointer;padding:12px 16px;font-weight:700}
+.toc-mob ol{padding:0 6px 10px}
+.hero{padding:30px 0 6px}
+.kicker{color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.07em;font-weight:600}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+.box{--c:var(--note);--cbg:var(--note-bg);border-left:5px solid var(--c);background:var(--cbg);border-radius:10px;padding:12px 16px;margin:18px 0}
+.box>.lbl{font-size:.74rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--c);margin-bottom:2px}
+.box>:last-child{margin-bottom:0}
+.box.def{--c:var(--def);--cbg:var(--def-bg)}
+.box.src{--c:var(--src);--cbg:var(--src-bg)}
+.box.ex{--c:var(--ex);--cbg:var(--ex-bg)}
+.box.warn{--c:var(--warn);--cbg:var(--warn-bg)}
+.box.app{--c:var(--app);--cbg:var(--app-bg)}
+.box.note{--c:var(--note);--cbg:var(--note-bg)}
+.box.ana{--c:var(--ana);--cbg:var(--ana-bg)}
+.box.q{--c:var(--q);--cbg:var(--q-bg)}
+.box.intu{--c:var(--accent);--cbg:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);font-size:1.06em}
+blockquote{margin:10px 0;padding:6px 14px;border-left:3px solid var(--line);color:var(--fg);font-family:Georgia,serif}
+blockquote .tr{display:block;color:var(--muted);font-family:system-ui,sans-serif;font-size:.92em;margin-top:4px}
+.tblwrap{overflow-x:auto;margin:14px 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.93em;background:var(--card)}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tl{list-style:none;padding:0;margin:14px 0 14px 6px;border-left:3px solid var(--line)}
+.tl li{position:relative;padding:4px 0 10px 18px}
+.tl li::before{content:"";position:absolute;left:-8px;top:12px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl .d{display:block;font-weight:700;color:var(--accent);font-size:.9em}
+.tl li.it::before{background:var(--it)}
+.tl li.it .d{color:var(--it)}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:1px 7px;border-radius:999px;background:var(--soft);color:var(--muted);vertical-align:middle;margin-left:4px}
+.ex-card{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:16px 0}
+.ex-h{font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lvl{font-size:.72rem;font-weight:800;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+.lvl.l1{background:var(--ok-bg);color:var(--ok)}
+.lvl.l2{background:var(--src-bg);color:var(--src)}
+.lvl.l3{background:var(--ko-bg);color:var(--ko)}
+button{font:inherit;cursor:pointer}
+.sol-btn,.retry,.st-ctl button,.seg button,.calc button,.sort-ctl button{border:1px solid var(--accent);background:var(--accent-bg);color:var(--accent);border-radius:8px;padding:7px 14px;font-weight:600;font-size:.92em;min-height:40px}
+.sol-btn:hover{filter:brightness(.97)}
+.sol{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--ok-bg);border-left:4px solid var(--ok)}
+.sol>:first-child{margin-top:0}.sol>:last-child{margin-bottom:0}
+.quiz{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:14px 0}
+.quiz .q{font-weight:600;margin-top:0}
+.quiz .opts{display:grid;gap:8px}
+.opt{text-align:left;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:9px;padding:10px 12px;min-height:44px}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt.ok{background:var(--ok-bg);border-color:var(--ok);color:var(--fg)}
+.opt.ok::after{content:"  ✓";color:var(--ok);font-weight:800}
+.opt.ko{background:var(--ko-bg);border-color:var(--ko)}
+.opt.ko::after{content:"  ✗";color:var(--ko);font-weight:800}
+.opt:disabled{cursor:default;opacity:1}
+.fb{margin:10px 0 8px;padding:10px 12px;border-radius:9px;background:var(--soft)}
+.quiz .opts.row{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+.stepper{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:18px 0}
+.stepper>.st-title{font-weight:700;margin:0 0 8px}
+.st-prog{height:6px;background:var(--soft);border-radius:999px;overflow:hidden;margin-bottom:10px}
+.st-prog i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.stepper .step{display:none}
+.stepper .step.on{display:block;animation:fade .25s}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.stepper .step h4{margin-top:4px}
+.st-ctl{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px;flex-wrap:wrap}
+.st-ctl button:disabled{opacity:.4;cursor:default}
+.st-n{color:var(--muted);font-size:.9em}
+@media (max-width:480px){.st-ctl .st-n{order:-1;flex-basis:100%;text-align:center}}
+.seg{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.seg button[aria-pressed=true],.calc button[aria-pressed=true],.sort-ctl button[aria-pressed=true]{background:var(--accent);color:var(--card)}
+.widget{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:18px 0}
+.widget svg{width:100%;height:auto;display:block}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.88em;color:var(--muted)}
+.legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--sw)}
+.small{font-size:.88em;color:var(--muted)}
+.calc{display:flex;flex-wrap:wrap;gap:6px}
+.calc-out{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--soft);min-height:3em}
+.big{font-size:1.5em;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:48px}
+.pager a{display:block;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--fg)}
+.pager a small{display:block;color:var(--muted)}
+.pager a.next{text-align:right;grid-column:2}
+.cards{display:grid;gap:12px;margin:16px 0}
+.cards a{display:block;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--fg)}
+.cards a:hover{border-color:var(--accent)}
+.cards .n{font-weight:800;color:var(--accent);font-size:.85em;text-transform:uppercase;letter-spacing:.06em}
+.cards .t{font-family:Georgia,serif;font-size:1.2em;font-weight:700;display:block;margin:2px 0}
+.cards .d{color:var(--muted);font-size:.93em}
+.legend-boxes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.legend-boxes .box{margin:0;padding:8px 12px;font-size:.9em}
+.hot{cursor:pointer}
+.hot circle{fill:var(--accent);stroke:var(--card);stroke-width:2}
+.hot text{fill:var(--card);font:700 13px system-ui,sans-serif;pointer-events:none}
+.hot.on circle{fill:var(--warn)}
+svg text{font-family:system-ui,sans-serif}
+.sort-item{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0;background:var(--bg)}
+.sort-item.ok{border-color:var(--ok);background:var(--ok-bg)}
+.sort-item.ko{border-color:var(--ko);background:var(--ko-bg)}
+.sort-item .why{margin-top:6px;font-size:.92em}
+.score{font-weight:700;margin-top:10px}
+.sort-item .sort-ctl{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.sort-item .sort-ctl button{font-size:.85em;padding:6px 8px;line-height:1.25}
+.cycle{display:flex;align-items:center;gap:8px;margin:10px 0}
+.cyc{flex:1 1 0;border:1px solid var(--accent);background:var(--accent-bg);border-radius:10px;padding:10px 12px;font-weight:600;text-align:center}
+.cyc.loop{background:transparent;border-style:dashed;font-weight:500;color:var(--muted)}
+.cyc-ar{color:var(--accent);font-weight:800;font-size:1.3em;flex:0 0 auto}
+@media (max-width:640px){.cycle{flex-direction:column;align-items:stretch}.cyc-ar{text-align:center;transform:rotate(90deg)}}
+.hot-btns{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:10px}
+.hot-btns button{border:1px solid var(--accent);background:var(--accent-bg);color:var(--accent);border-radius:8px;font-weight:700;min-height:42px}
+.hot-btns button[aria-pressed=true]{background:var(--accent);color:var(--card)}
+@media print{.top,.toc-side,.toc-mob,.pager{display:none}.sol{display:block!important}.stepper .step{display:block}}
+</style>
+</head>
+<body>
+<header class="top"><a class="home" href="index.html">☰ Sommaire</a><span class="crumb">Sommaire</span><span class="sp"></span><span class="nav"><a href="lecon-1-origines.html">Commencer ▶</a></span></header>
+<div class="layout">
+<aside class="toc-side" aria-label="Sections"><div class="toc-h">Dans cette page</div></aside>
+<main>
+<div class="hero"><div class="kicker">Thème 6 · XIII — La « der' des der' »</div><h1>La Première Guerre mondiale — leçons de révision</h1><p class="sub">Six leçons construites sur les diapositives du cours : sources analysées, erreurs fréquentes, quiz et exercices avec solution cachée.</p></div>
+<details class="toc-mob"><summary>Sections de la page</summary></details>
+<section>
+<h2 id="lecons" data-toc="Les six leçons">Les six leçons</h2>
+<p>Chaque leçon suit l'ordre des diapositives du cours (paquets XIII (1) à (6)) et les complète là où elles sont trop brèves. Le document « Storia 2 » joint n'est pas un manuel mais un résumé rédigé à partir des mêmes diapositives : je l'ai utilisé seulement quand il concorde avec elles, et j'ai signalé chaque divergence.</p>
+<div class="cards"><a href="lecon-1-origines.html"><span class="n">Leçon 1 · Diapositives XIII (1)</span><span class="t">Les origines et le déclenchement de la guerre</span><span class="d">Rivalités coloniales, alliances, course aux armements, Balkans, Sarajevo et « l'esprit de 1914 ».</span></a><a href="lecon-2-etapes-1914-1917.html"><span class="n">Leçon 2 · Diapositives XIII (2)</span><span class="t">Les principales étapes du conflit (1914–1917)</span><span class="d">Plan Schlieffen, bataille de la Marne, guerre des tranchées, extension du conflit, batailles d'usure.</span></a><a href="lecon-3-verdun.html"><span class="n">Leçon 3 · Diapositives XIII (3)</span><span class="t">Verdun (1916)</span><span class="d">Pourquoi une seule bataille est devenue le symbole de la guerre sur le front occidental.</span></a><a href="lecon-4-1917-1919.html"><span class="n">Leçon 4 · Diapositives XIII (4)</span><span class="t">1917, l'année décisive — du tournant à Versailles</span><span class="d">Révolutions russes, mutineries, États-Unis, fin de la guerre, armistice et traité de Versailles.</span></a><a href="lecon-5-guerre-totale.html"><span class="n">Leçon 5 · Diapositives XIII (5)</span><span class="t">La guerre totale</span><span class="d">Pourquoi la Première Guerre mondiale mobilise toute la société, et pas seulement les armées.</span></a><a href="lecon-6-italie.html"><span class="n">Leçon 6 · Diapositives XIII (6)</span><span class="t">L'Italie dans la Grande Guerre</span><span class="d">De l'entrée tardive à la « victoire mutilée » : neutralité, pacte de Londres, Caporetto, Vittorio Veneto.</span></a></div>
+</section>
+
+<section>
+<h2 id="mode-emploi" data-toc="Mode d'emploi">Mode d'emploi</h2>
+<p>Chaque leçon suit la même structure : <strong>intuition</strong> → <strong>explication pas à pas</strong> → <strong>analogies</strong> → <strong>sources analysées</strong> → <strong>réponse d'examen</strong> → <strong>erreurs fréquentes</strong> → <strong>vocabulaire</strong> → <strong>résumé</strong> → <strong>quiz</strong> → <strong>exercices</strong> → <strong>liens</strong>. Les citations entre guillemets sans autre précision viennent des diapositives.</p>
+<p>Fais les exercices <em>avant</em> d'afficher la solution : c'est là que tu apprends vraiment.</p>
+<div class="legend-boxes">
+<div class="box def"><div class="lbl">Définition</div>Notion à connaître par cœur.</div>
+<div class="box src"><div class="lbl">Source</div>Document du cours analysé pas à pas.</div>
+<div class="box ex"><div class="lbl">Exemple traité</div>Raisonnement ou réponse modèle.</div>
+<div class="box warn"><div class="lbl">Attention</div>Piège fréquent à l'examen.</div>
+<div class="box ana"><div class="lbl">Analogie</div>Image de la vie courante pour comprendre.</div>
+<div class="box app"><div class="lbl">Approfondissement</div>Information <strong>hors diapositives</strong>, ajoutée pour la clarté.</div>
+<div class="box note"><div class="lbl">Note sur le matériel</div>Ambiguïté, erreur ou contradiction dans le cours.</div>
+<div class="box q"><div class="lbl">Question d'examen</div>Question posée par les diapositives.</div>
+</div>
+</section>
+
+<section>
+<h2 id="chronologie">Chronologie générale</h2>
+<p class="small">En vert : les dates propres à l'Italie (leçon 6). <span class="tag">hors diapo.</span> = date ajoutée en approfondissement.</p>
+<ul class="tl">
+<li><span class="d">1878</span>Congrès de Berlin : naissance de la Serbie indépendante.</li>
+<li><span class="d">1882</span>Formation de la Triple-Alliance (Allemagne, Autriche-Hongrie, Italie).</li>
+<li><span class="d">1905</span>Conception du plan Schlieffen.</li>
+<li><span class="d">1908</span>L'Autriche-Hongrie annexe la Bosnie-Herzégovine (une du <em>Petit Journal</em>).</li>
+<li><span class="d">28 juin 1914</span>Attentat de Sarajevo : élément déclencheur.</li>
+<li><span class="d">Août 1914</span>Invasion de la Belgique, entrée en guerre du Royaume-Uni ; « esprit de 1914 ». Tannenberg (1914). <span class="tag">jours exacts hors diapo.</span></li>
+<li class="it"><span class="d">1914</span>L'Italie reste neutre.</li>
+<li><span class="d">Septembre 1914</span>Bataille de la Marne : fin de la guerre de mouvement.</li>
+<li class="it"><span class="d">Avril 1915</span>Pacte (traité) de Londres, secret.</li>
+<li class="it"><span class="d">5 mai 1915</span>Discours de D'Annunzio à Quarto.</li>
+<li class="it"><span class="d">Mai 1915</span>L'Italie entre en guerre contre l'Autriche-Hongrie.</li>
+<li><span class="d">1915–1917</span>Guerre de position sur le front occidental ; offensives de Cadorna sur l'Isonzo.</li>
+<li><span class="d">Février–décembre 1916</span>Bataille de Verdun.</li>
+<li><span class="d">1<sup>er</sup> juillet – 18 novembre 1916</span>Bataille de la Somme. <span class="tag">dates hors diapo.</span></li>
+<li><span class="d">Février 1917</span>Première révolution russe : chute du tsarisme.</li>
+<li><span class="d">7 avril 1917</span>Les États-Unis déclarent la guerre à l'Allemagne.</li>
+<li><span class="d">1917</span>Mutineries dans l'armée française.</li>
+<li><span class="d">Octobre 1917</span>Révolution d'octobre : les bolcheviks au pouvoir.</li>
+<li class="it"><span class="d">Octobre 1917</span>Caporetto ; retraite jusqu'au Piave ; Diaz remplace Cadorna.</li>
+<li><span class="d">Mars 1918</span>Traité de Brest-Litovsk.</li>
+<li><span class="d">Printemps 1918</span>Dernière offensive allemande, qui échoue.</li>
+<li class="it"><span class="d">Octobre–novembre 1918</span>Vittorio Veneto ; armistice de Villa Giusti.</li>
+<li><span class="d">9 novembre 1918</span>Abdication de Guillaume II ; proclamation de la république en Allemagne.</li>
+<li><span class="d">11 novembre 1918</span>Armistice de Rethondes.</li>
+<li><span class="d">Juin 1919</span>Traité de Versailles.</li>
+<li class="it"><span class="d">1919</span>« Victoire mutilée » ; <em>Il Ghibli</em> : « O Fiume o morte ! » (1<sup>er</sup> juin 1919).</li>
+<li><span class="d">1984</span>Mitterrand et Kohl à Verdun.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="methode">Méthode pour l'examen</h2>
+<h3>Analyser un document en quatre temps</h3>
+<ol>
+<li><strong>Qui, quand, où ?</strong> Auteur, date, type de document. La date est décisive : un document <em>sur</em> la guerre n'est pas forcément un document <em>de</em> la guerre (affiche de 1942, caricature de 1931).</li>
+<li><strong>Que voit-on, que lit-on ?</strong> Décris avant d'interpréter.</li>
+<li><strong>Que veut dire le document ?</strong> Son message, son but.</li>
+<li><strong>Quel lien avec le cours ?</strong> Rattache-le à une notion précise.</li>
+</ol>
+<h3>Construire une réponse développée</h3>
+<ol>
+<li>Une phrase d'introduction qui reprend la question.</li>
+<li>Un paragraphe par idée, chacun avec <strong>un fait précis</strong> (date, chiffre, nom, document).</li>
+<li>Des connecteurs qui montrent les liens de cause : <em>parce que, donc, c'est pourquoi, en conséquence</em>.</li>
+<li>Une conclusion qui relie les idées entre elles plutôt que de les répéter.</li>
+</ol>
+</section>
+
+<section>
+<h2 id="essentiel" data-toc="L'essentiel pour l'examen">L'essentiel pour l'examen</h2>
+<p>Les diapositives posent elles-mêmes cinq questions. Ce sont les plus probables à l'examen, et chaque leçon contient une réponse modèle :</p>
+<ol>
+<li>« Quelles peuvent être considérées comme les causes de la Première Guerre mondiale ? » → <a href="lecon-1-origines.html#examen">leçon 1</a></li>
+<li>« Les principales étapes du conflit entre 1914 et 1917 » → <a href="lecon-2-etapes-1914-1917.html#examen">leçon 2</a></li>
+<li>« Pourquoi Verdun est-elle devenue le lieu symbole des sanglantes batailles du front occidental ? » → <a href="lecon-3-verdun.html#examen">leçon 3</a></li>
+<li>« 1917, l'année décisive » (pourquoi ?) → <a href="lecon-4-1917-1919.html#examen">leçon 4</a></li>
+<li>« Pourquoi la Première Guerre mondiale fut-elle une guerre totale ? » → <a href="lecon-5-guerre-totale.html#examen">leçon 5</a></li>
+</ol>
+<p>Les notions qui reviennent partout et relient les leçons entre elles :</p>
+<ul>
+<li><strong>Cause profonde / élément déclencheur</strong> et le rôle des <strong>alliances défensives</strong> (qui expliquent aussi la neutralité italienne).</li>
+<li><strong>Guerre de mouvement → guerre de position → guerre d'usure</strong> : la Marne comme tournant, Verdun comme symbole, l'Isonzo comme équivalent italien.</li>
+<li><strong>Guerre totale</strong> : ses cinq piliers et son lien avec l'usure.</li>
+<li><strong>1917</strong> : Russie, mutineries, États-Unis ; puis la distinction <strong>armistice ≠ traité</strong>.</li>
+<li><strong>Versailles</strong> : article 231 et les clauses ; <strong>Wilson ≠ France et Royaume-Uni</strong>.</li>
+<li>Les <strong>deux humiliations de la paix</strong> : l'Allemagne vaincue et punie, l'Italie victorieuse mais « mutilée ».</li>
+<li>La <strong>critique des sources</strong> : dater chaque document et se demander à quoi il sert.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="problemes" data-toc="Problèmes du matériel">Problèmes relevés dans le matériel</h2>
+<div class="box note"><div class="lbl">À vérifier avec l'enseignant si possible</div>
+<ul>
+<li><strong>Verdun, bilan humain (leçon 3) :</strong> le texte de la diapositive donne environ 300.000 morts et plus de 400.000 blessés ; le tableau de la même diapositive donne 275.000 morts français + 240.000 morts allemands (= 515.000) et 200.000 blessés. Le résumé mélange les deux. Les sources historiques consultées confirment le chiffre du texte.</li>
+<li><strong>« Ils ne passeront pas » (leçon 3) :</strong> la diapositive dit « formule attribuée à Pétain » ; le résumé la présente comme un fait certain. Plusieurs sources l'attribuent en réalité à Nivelle.</li>
+<li><strong>Affiche de Neumont (leçon 3) :</strong> la légende dit « Ils ne passeront pas ! », alors que l'affiche porte « On ne passe pas ! ».</li>
+<li><strong>Fiume (leçon 6) :</strong> la diapositive peut laisser croire que Fiume figurait parmi les promesses du pacte de Londres ; ce n'est pas le cas, d'après la liste de la diapositive précédente comme d'après l'histoire.</li>
+<li><strong>Affiche « Enfin ! » (leçon 6) :</strong> la légende dit que les deux femmes sont agenouillées ; sur l'image, seule la femme en rouge l'est.</li>
+<li><strong>Armistice (leçon 4) :</strong> le résumé dit « signé à 5 h 30 » ; la légende de la photo dit que la délégation sort du wagon vers 5 h 30, après la signature.</li>
+<li><strong>Coquilles :</strong> « 1914-195 » pour la carte postale de Bertiglia (lire 1914-1915) ; numérotation incohérente de certaines diapositives (diapositives marquées (2) dans le paquet (5), diapositive de titre sur l'Italie marquée (5), carte de Bertiglia marquée (1) dans le paquet (2)).</li>
+<li><strong>Documents absents :</strong> l'image de la <em>Domenica del Corriere</em> (1917) n'est donnée que par un lien ; je n'ai pas pu l'analyser. La photo des masques à gaz (paquet (2)) n'a ni légende ni date.</li>
+<li><strong>Termes du résumé absents des diapositives :</strong> « Diktat », « munitionnettes », « droit des peuples à disposer d'eux-mêmes », « crise d'Algésiras ». Ils sont exacts, mais signalés comme approfondissements.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2 id="revision" data-toc="Quiz de révision générale">Quiz de révision générale</h2>
+<p>Dix questions qui mélangent les six leçons. Si tu te trompes, l'explication te dit quelle leçon relire.</p>
+
+<div class="quiz"><p class="q">1. Pourquoi l'Italie a-t-elle pu rester neutre en 1914 ?</p><div class="opts">
+<button type="button" class="opt" data-why="Non : elle faisait bien partie de la Triple-Alliance depuis 1882 (leçon 1).">Parce qu'elle n'était liée à aucune alliance</button>
+<button type="button" class="opt" data-ok data-why="Oui : l'alliance prévoyait une assistance en cas d'attaque contre ses alliés, or ce sont eux qui ont attaqué (leçons 2 et 6).">Parce que l'alliance était défensive et que ses alliés ont attaqué</button>
+<button type="button" class="opt" data-why="Non : le pacte de Londres date d'avril 1915 et explique l'entrée en guerre, pas la neutralité (leçon 6).">Parce qu'elle avait déjà signé le pacte de Londres</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">2. Quel événement fait entrer le Royaume-Uni dans la guerre, d'après les diapositives ?</p><div class="opts">
+<button type="button" class="opt" data-why="Sarajevo est l'élément déclencheur général, pas la raison britannique (leçon 2).">L'attentat de Sarajevo</button>
+<button type="button" class="opt" data-ok data-why="Oui : l'invasion de la Belgique neutre, prévue par le plan Schlieffen (leçon 2).">La violation de la neutralité belge</button>
+<button type="button" class="opt" data-why="Ce sont les États-Unis, en 1917, qui réagissent à la guerre sous-marine (leçon 4).">La guerre sous-marine</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">3. Quelle bataille marque la fin de la guerre de mouvement ?</p><div class="opts">
+<button type="button" class="opt" data-ok data-why="Oui, en septembre 1914 (leçon 2).">La Marne</button>
+<button type="button" class="opt" data-why="Verdun (1916) est une bataille d'usure, en pleine guerre de position (leçon 3).">Verdun</button>
+<button type="button" class="opt" data-why="Tannenberg est une victoire allemande à l'est, en 1914 (leçon 2).">Tannenberg</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">4. « Saigner à blanc » l'armée française : c'est l'objectif de qui, et où ?</p><div class="opts">
+<button type="button" class="opt" data-why="Cadorna est italien et attaque sur l'Isonzo (leçon 6).">Cadorna, sur l'Isonzo</button>
+<button type="button" class="opt" data-ok data-why="Oui : Falkenhayn, à Verdun, en 1916 (leçon 3).">Falkenhayn, à Verdun</button>
+<button type="button" class="opt" data-why="Le plan Schlieffen vise une victoire rapide, pas l'usure (leçon 2).">Schlieffen, en Belgique</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">5. Laquelle de ces mesures relève de l'économie de guerre ?</p><div class="opts">
+<button type="button" class="opt" data-why="La censure relève de la propagande et de la censure (leçon 5).">La censure de la presse</button>
+<button type="button" class="opt" data-ok data-why="Oui, avec la réquisition des usines et le contrôle des prix et de la production (leçon 5).">Le rationnement des ressources</button>
+<button type="button" class="opt" data-why="Les chars sont une arme nouvelle (leçon 5).">L'utilisation des chars d'assaut</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">6. Pourquoi 1917 est-elle « l'année décisive » ?</p><div class="opts">
+<button type="button" class="opt" data-why="L'armistice est signé en novembre 1918 (leçon 4).">Parce que la guerre se termine</button>
+<button type="button" class="opt" data-ok data-why="Oui : révolutions russes, mutineries et entrée en guerre des États-Unis modifient le rapport de forces (leçon 4).">Parce que la Russie sort du jeu, les armées se mutinent et les États-Unis entrent en guerre</button>
+<button type="button" class="opt" data-why="L'Italie entre en guerre en 1915 (leçon 6).">Parce que l'Italie entre en guerre</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">7. Quel ordre est correct ?</p><div class="opts">
+<button type="button" class="opt" data-why="L'armistice (11 novembre) suit l'abdication (9 novembre) (leçon 4).">Armistice de Rethondes → abdication de Guillaume II → Versailles</button>
+<button type="button" class="opt" data-ok data-why="Oui : 9 novembre 1918 → 11 novembre 1918 → juin 1919 (leçon 4).">Abdication de Guillaume II → armistice de Rethondes → Versailles</button>
+<button type="button" class="opt" data-why="Versailles (juin 1919) vient en dernier (leçon 4).">Versailles → abdication → armistice</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">8. L'article 231 du traité de Versailles…</p><div class="opts">
+<button type="button" class="opt" data-ok data-why="Oui, c'est la « clause de culpabilité » (leçon 4).">déclare l'Allemagne seule responsable de la guerre</button>
+<button type="button" class="opt" data-why="La limitation de l'armée est une autre clause (leçon 4).">limite l'armée allemande à 100.000 hommes</button>
+<button type="button" class="opt" data-why="La SDN vient du programme de Wilson (leçon 4).">crée la Société des Nations</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">9. Après Caporetto, l'armée italienne recule jusqu'…</p><div class="opts">
+<button type="button" class="opt" data-ok data-why="Oui : environ 130 km, jusqu'au fleuve Piave (leçon 6).">au Piave</button>
+<button type="button" class="opt" data-why="L'Isonzo est la ligne d'où part la retraite (leçon 6).">à l'Isonzo</button>
+<button type="button" class="opt" data-why="Vittorio Veneto est le lieu de la victoire de 1918 (leçon 6).">à Vittorio Veneto</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">10. Laquelle de ces images est une propagande produite <em>pendant</em> la Première Guerre mondiale ?</p><div class="opts">
+<button type="button" class="opt" data-why="Elle date de 1942 : c'est une propagande de Vichy (leçon 3).">« Les héros de Verdun »</button>
+<button type="button" class="opt" data-why="Elle date de 1931 : c'est une propagande contre le traité (leçon 4).">« Supprimez ce fardeau et le monde sera guéri »</button>
+<button type="button" class="opt" data-ok data-why="Oui : affiche de Neumont, 1918 (leçons 3 et 5).">« On ne passe pas ! »</button>
+</div><p class="fb" hidden></p></div>
+</section>
+
+
+</main>
+</div>
+<script>
+(function(){
+ var main=document.querySelector('main');
+ var hs=[].slice.call(main.querySelectorAll('h2[id]'));
+ function mk(){var ol=document.createElement('ol');hs.forEach(function(h){var li=document.createElement('li');var a=document.createElement('a');a.href='#'+h.id;a.textContent=h.getAttribute('data-toc')||h.textContent;li.appendChild(a);ol.appendChild(li)});return ol}
+ var side=document.querySelector('.toc-side'),mob=document.querySelector('.toc-mob');
+ if(hs.length){if(side)side.appendChild(mk());if(mob)mob.appendChild(mk())}else{if(side)side.remove();if(mob)mob.remove()}
+ if(mob)mob.addEventListener('click',function(e){if(e.target.tagName==='A')mob.removeAttribute('open')});
+ if(side&&'IntersectionObserver' in window){var links={};side.querySelectorAll('a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){side.querySelectorAll('a.on').forEach(function(x){x.classList.remove('on')});var l=links[e.target.id];if(l)l.classList.add('on')}})},{rootMargin:'0px 0px -75% 0px'});hs.forEach(function(h){io.observe(h)})}
+ document.querySelectorAll('.sol-btn').forEach(function(b){var s=b.nextElementSibling;b.setAttribute('aria-expanded','false');b.addEventListener('click',function(){var show=s.hidden;s.hidden=!show;b.textContent=show?'Masquer la solution':'Afficher la solution';b.setAttribute('aria-expanded',String(show))})});
+ document.querySelectorAll('.quiz').forEach(function(q){var opts=[].slice.call(q.querySelectorAll('.opt'));var fb=q.querySelector('.fb');
+  opts.forEach(function(o){o.addEventListener('click',function(){if(q.classList.contains('done'))return;q.classList.add('done');var good=o.hasAttribute('data-ok');
+   opts.forEach(function(x){x.disabled=true;if(x.hasAttribute('data-ok'))x.classList.add('ok')});if(!good)o.classList.add('ko');
+   fb.textContent='';var b=document.createElement('b');b.textContent=good?'Juste. ':'Pas tout à fait. ';fb.appendChild(b);fb.appendChild(document.createTextNode(o.getAttribute('data-why')||q.getAttribute('data-why')||''));fb.hidden=false;
+   var r=document.createElement('button');r.className='retry';r.type='button';r.textContent='Réessayer';r.onclick=function(){q.classList.remove('done');opts.forEach(function(x){x.disabled=false;x.classList.remove('ok','ko')});fb.hidden=true;r.remove()};fb.after(r)})})});
+ document.querySelectorAll('.stepper').forEach(function(st){var steps=[].slice.call(st.children).filter(function(c){return c.classList.contains('step')});var i=0;
+  var prog=document.createElement('div');prog.className='st-prog';prog.innerHTML='<i></i>';var t=st.querySelector('.st-title');if(t)t.after(prog);else st.prepend(prog);
+  var bar=document.createElement('div');bar.className='st-ctl';bar.innerHTML='<button type="button" class="st-prev">◀ Précédent</button><span class="st-n"></span><button type="button" class="st-next">Suivant ▶</button>';st.appendChild(bar);
+  function show(){steps.forEach(function(s,k){s.classList.toggle('on',k===i)});bar.querySelector('.st-n').textContent='Étape '+(i+1)+' sur '+steps.length;bar.querySelector('.st-prev').disabled=i===0;bar.querySelector('.st-next').disabled=i===steps.length-1;prog.firstChild.style.width=((i+1)/steps.length*100)+'%'}
+  bar.querySelector('.st-prev').onclick=function(){if(i>0){i--;show()}};bar.querySelector('.st-next').onclick=function(){if(i<steps.length-1){i++;show()}};show()});
+ document.querySelectorAll('.sorter').forEach(function(so){var items=[].slice.call(so.querySelectorAll('.sort-item'));var cats=JSON.parse(so.getAttribute('data-cats'));var sc=so.querySelector('.score');
+  function upd(){var done=items.filter(function(it){return it.dataset.done}).length,good=items.filter(function(it){return it.dataset.done==='ok'}).length;sc.textContent=done?('Score : '+good+' / '+done+' (sur '+items.length+')'):''}
+  items.forEach(function(it){var ctl=document.createElement('div');ctl.className='sort-ctl';var why=document.createElement('div');why.className='why';why.hidden=true;
+   cats.forEach(function(c){var b=document.createElement('button');b.type='button';b.textContent=c[1];b.setAttribute('aria-pressed','false');b.onclick=function(){ctl.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});var ok=it.getAttribute('data-a')===c[0];it.classList.toggle('ok',ok);it.classList.toggle('ko',!ok);it.dataset.done=ok?'ok':'ko';why.textContent=(ok?'Juste. ':'Non : ')+it.getAttribute('data-why');why.hidden=false;upd()};ctl.appendChild(b)});
+   it.appendChild(ctl);it.appendChild(why)});upd()});
+})();
+</script>
+</body>
+</html>

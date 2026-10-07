@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2. Étapes 1914–1917 · Grande Guerre</title>
+<style>
+*{box-sizing:border-box}
+:root{
+--bg:#faf9f6;--fg:#1c1c1e;--muted:#5d5d66;--card:#fff;--line:#e3e0d8;--accent:#1d4f7a;--accent-bg:#e7eff7;--link:#1d5fa0;
+--def:#1d5fa0;--def-bg:#e9f1fb;--src:#8a5a00;--src-bg:#fbf2df;--ex:#1d7445;--ex-bg:#e7f5ed;
+--warn:#b02a1f;--warn-bg:#fdebe9;--app:#6a3d9e;--app-bg:#f2ecfa;--note:#555a61;--note-bg:#eef0f2;
+--ana:#0d7480;--ana-bg:#e4f4f6;--q:#383896;--q-bg:#ebebfa;
+--ok:#1d7445;--ok-bg:#e7f5ed;--ko:#b02a1f;--ko-bg:#fdebe9;
+--de:#5a6474;--fr:#2c6db3;--uk:#c25a1c;--it:#2e8b57;--soft:#f2f0ea;
+}
+@media (prefers-color-scheme:dark){:root{
+--bg:#141518;--fg:#e9e9ec;--muted:#a3a3ad;--card:#1d1f24;--line:#33363e;--accent:#8fbbe6;--accent-bg:#1f2a36;--link:#8fbbe6;
+--def:#8fbbe6;--def-bg:#1b2633;--src:#e2b25c;--src-bg:#2c2416;--ex:#76cf9c;--ex-bg:#17281f;
+--warn:#f08a80;--warn-bg:#2f1a18;--app:#c5a6ef;--app-bg:#251d33;--note:#b9bec5;--note-bg:#24272c;
+--ana:#6fd0db;--ana-bg:#152a2d;--q:#aeaef5;--q-bg:#1f1f38;
+--ok:#76cf9c;--ok-bg:#17281f;--ko:#f08a80;--ko-bg:#2f1a18;
+--de:#9aa5b5;--fr:#6fa8e8;--uk:#f0955a;--it:#6fcf97;--soft:#22252b;
+}}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 clamp(17px,.95rem + .35vw,19px)/1.68 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;overflow-x:hidden}
+a{color:var(--link)}
+h1,h2,h3,h4{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;line-height:1.25}
+h1{font-size:clamp(1.7rem,1.2rem + 2vw,2.4rem);margin:.2em 0 .3em}
+h2{font-size:1.55rem;margin:2.4em 0 .6em;padding-top:.8em;border-top:2px solid var(--line)}
+h3{font-size:1.2rem;margin:1.7em 0 .4em}
+h4{font-size:1.05rem;margin:1.1em 0 .3em}
+p{margin:.6em 0}
+ul,ol{padding-left:1.3em}
+li{margin:.25em 0}
+.cit{font-style:italic}
+strong{font-weight:700}
+.top{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--line);font-size:.92rem}
+.top a{text-decoration:none;font-weight:600;white-space:nowrap}
+.top .crumb{color:var(--muted);white-space:nowrap}
+.top .sp{flex:1}
+.top .nav a{padding:4px 10px;border:1px solid var(--line);border-radius:999px;margin-left:4px}
+.layout{max-width:1180px;margin:0 auto;padding:0 16px}
+main{max-width:780px;margin:0 auto;padding-bottom:60px;min-width:0}
+.toc-side{display:none}
+@media (min-width:1120px){
+ .layout{display:grid;grid-template-columns:250px minmax(0,780px);gap:48px;justify-content:center}
+ main{margin:0}
+ .toc-side{display:block;position:sticky;top:70px;align-self:start;max-height:calc(100vh - 90px);overflow:auto;padding-top:34px;font-size:.88rem}
+ .toc-mob{display:none}
+}
+.toc-h{font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:.78rem;margin-bottom:6px}
+.toc-side ol,.toc-mob ol{list-style:none;padding:0;margin:0}
+.toc-side a,.toc-mob a{display:block;padding:4px 10px;border-left:3px solid transparent;text-decoration:none;color:var(--fg)}
+.toc-side a.on{border-left-color:var(--accent);background:var(--accent-bg);color:var(--accent);font-weight:600}
+.toc-mob{margin:16px 0;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.toc-mob summary{cursor:pointer;padding:12px 16px;font-weight:700}
+.toc-mob ol{padding:0 6px 10px}
+.hero{padding:30px 0 6px}
+.kicker{color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.07em;font-weight:600}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:0}
+.box{--c:var(--note);--cbg:var(--note-bg);border-left:5px solid var(--c);background:var(--cbg);border-radius:10px;padding:12px 16px;margin:18px 0}
+.box>.lbl{font-size:.74rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--c);margin-bottom:2px}
+.box>:last-child{margin-bottom:0}
+.box.def{--c:var(--def);--cbg:var(--def-bg)}
+.box.src{--c:var(--src);--cbg:var(--src-bg)}
+.box.ex{--c:var(--ex);--cbg:var(--ex-bg)}
+.box.warn{--c:var(--warn);--cbg:var(--warn-bg)}
+.box.app{--c:var(--app);--cbg:var(--app-bg)}
+.box.note{--c:var(--note);--cbg:var(--note-bg)}
+.box.ana{--c:var(--ana);--cbg:var(--ana-bg)}
+.box.q{--c:var(--q);--cbg:var(--q-bg)}
+.box.intu{--c:var(--accent);--cbg:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);font-size:1.06em}
+blockquote{margin:10px 0;padding:6px 14px;border-left:3px solid var(--line);color:var(--fg);font-family:Georgia,serif}
+blockquote .tr{display:block;color:var(--muted);font-family:system-ui,sans-serif;font-size:.92em;margin-top:4px}
+.tblwrap{overflow-x:auto;margin:14px 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.93em;background:var(--card)}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tl{list-style:none;padding:0;margin:14px 0 14px 6px;border-left:3px solid var(--line)}
+.tl li{position:relative;padding:4px 0 10px 18px}
+.tl li::before{content:"";position:absolute;left:-8px;top:12px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl .d{display:block;font-weight:700;color:var(--accent);font-size:.9em}
+.tl li.it::before{background:var(--it)}
+.tl li.it .d{color:var(--it)}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:1px 7px;border-radius:999px;background:var(--soft);color:var(--muted);vertical-align:middle;margin-left:4px}
+.ex-card{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:16px 0}
+.ex-h{font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lvl{font-size:.72rem;font-weight:800;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+.lvl.l1{background:var(--ok-bg);color:var(--ok)}
+.lvl.l2{background:var(--src-bg);color:var(--src)}
+.lvl.l3{background:var(--ko-bg);color:var(--ko)}
+button{font:inherit;cursor:pointer}
+.sol-btn,.retry,.st-ctl button,.seg button,.calc button,.sort-ctl button{border:1px solid var(--accent);background:var(--accent-bg);color:var(--accent);border-radius:8px;padding:7px 14px;font-weight:600;font-size:.92em;min-height:40px}
+.sol-btn:hover{filter:brightness(.97)}
+.sol{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--ok-bg);border-left:4px solid var(--ok)}
+.sol>:first-child{margin-top:0}.sol>:last-child{margin-bottom:0}
+.quiz{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:14px 0}
+.quiz .q{font-weight:600;margin-top:0}
+.quiz .opts{display:grid;gap:8px}
+.opt{text-align:left;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:9px;padding:10px 12px;min-height:44px}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt.ok{background:var(--ok-bg);border-color:var(--ok);color:var(--fg)}
+.opt.ok::after{content:"  ✓";color:var(--ok);font-weight:800}
+.opt.ko{background:var(--ko-bg);border-color:var(--ko)}
+.opt.ko::after{content:"  ✗";color:var(--ko);font-weight:800}
+.opt:disabled{cursor:default;opacity:1}
+.fb{margin:10px 0 8px;padding:10px 12px;border-radius:9px;background:var(--soft)}
+.quiz .opts.row{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+.stepper{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:18px 0}
+.stepper>.st-title{font-weight:700;margin:0 0 8px}
+.st-prog{height:6px;background:var(--soft);border-radius:999px;overflow:hidden;margin-bottom:10px}
+.st-prog i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.stepper .step{display:none}
+.stepper .step.on{display:block;animation:fade .25s}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.stepper .step h4{margin-top:4px}
+.st-ctl{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px;flex-wrap:wrap}
+.st-ctl button:disabled{opacity:.4;cursor:default}
+.st-n{color:var(--muted);font-size:.9em}
+@media (max-width:480px){.st-ctl .st-n{order:-1;flex-basis:100%;text-align:center}}
+.seg{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.seg button[aria-pressed=true],.calc button[aria-pressed=true],.sort-ctl button[aria-pressed=true]{background:var(--accent);color:var(--card)}
+.widget{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;margin:18px 0}
+.widget svg{width:100%;height:auto;display:block}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.88em;color:var(--muted)}
+.legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--sw)}
+.small{font-size:.88em;color:var(--muted)}
+.calc{display:flex;flex-wrap:wrap;gap:6px}
+.calc-out{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--soft);min-height:3em}
+.big{font-size:1.5em;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:48px}
+.pager a{display:block;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--fg)}
+.pager a small{display:block;color:var(--muted)}
+.pager a.next{text-align:right;grid-column:2}
+.cards{display:grid;gap:12px;margin:16px 0}
+.cards a{display:block;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--fg)}
+.cards a:hover{border-color:var(--accent)}
+.cards .n{font-weight:800;color:var(--accent);font-size:.85em;text-transform:uppercase;letter-spacing:.06em}
+.cards .t{font-family:Georgia,serif;font-size:1.2em;font-weight:700;display:block;margin:2px 0}
+.cards .d{color:var(--muted);font-size:.93em}
+.legend-boxes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.legend-boxes .box{margin:0;padding:8px 12px;font-size:.9em}
+.hot{cursor:pointer}
+.hot circle{fill:var(--accent);stroke:var(--card);stroke-width:2}
+.hot text{fill:var(--card);font:700 13px system-ui,sans-serif;pointer-events:none}
+.hot.on circle{fill:var(--warn)}
+svg text{font-family:system-ui,sans-serif}
+.sort-item{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0;background:var(--bg)}
+.sort-item.ok{border-color:var(--ok);background:var(--ok-bg)}
+.sort-item.ko{border-color:var(--ko);background:var(--ko-bg)}
+.sort-item .why{margin-top:6px;font-size:.92em}
+.score{font-weight:700;margin-top:10px}
+.sort-item .sort-ctl{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.sort-item .sort-ctl button{font-size:.85em;padding:6px 8px;line-height:1.25}
+.cycle{display:flex;align-items:center;gap:8px;margin:10px 0}
+.cyc{flex:1 1 0;border:1px solid var(--accent);background:var(--accent-bg);border-radius:10px;padding:10px 12px;font-weight:600;text-align:center}
+.cyc.loop{background:transparent;border-style:dashed;font-weight:500;color:var(--muted)}
+.cyc-ar{color:var(--accent);font-weight:800;font-size:1.3em;flex:0 0 auto}
+@media (max-width:640px){.cycle{flex-direction:column;align-items:stretch}.cyc-ar{text-align:center;transform:rotate(90deg)}}
+.hot-btns{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:10px}
+.hot-btns button{border:1px solid var(--accent);background:var(--accent-bg);color:var(--accent);border-radius:8px;font-weight:700;min-height:42px}
+.hot-btns button[aria-pressed=true]{background:var(--accent);color:var(--card)}
+@media print{.top,.toc-side,.toc-mob,.pager{display:none}.sol{display:block!important}.stepper .step{display:block}}
+</style>
+</head>
+<body>
+<header class="top"><a class="home" href="index.html">☰ Sommaire</a><span class="crumb">Leçon 2/6</span><span class="sp"></span><span class="nav"><a href="lecon-1-origines.html" title="Les origines et le déclenchement de la guerre">◀ 1</a><a href="lecon-3-verdun.html" title="Verdun (1916)">3 ▶</a></span></header>
+<div class="layout">
+<aside class="toc-side" aria-label="Sections"><div class="toc-h">Dans cette page</div></aside>
+<main>
+<div class="hero"><div class="kicker">Diapositives XIII (2) · Leçon 2 sur 6</div><h1>Les principales étapes du conflit (1914–1917)</h1><p class="sub">Plan Schlieffen, bataille de la Marne, guerre des tranchées, extension du conflit, batailles d'usure.</p></div>
+<details class="toc-mob"><summary>Sections de la page</summary></details>
+<section>
+<h2 id="intuition">Intuition</h2>
+<div class="box intu"><div class="lbl">En 4 lignes</div>
+<p>L'Allemagne avait un plan pour gagner vite : battre la France en six semaines en passant par la Belgique, puis se retourner contre la Russie. Le plan échoue sur la Marne (septembre 1914). Dès lors, le front occidental se fige sur une ligne de tranchées de la mer du Nord à la Suisse. Attaquer coûte des centaines de milliers de morts pour quelques mètres, et la guerre devient une course à qui s'épuisera le premier : la guerre d'usure. Pendant ce temps, le conflit s'étend : Empire ottoman, Italie, front de l'Est, guerre sous-marine.</p>
+</div>
+<p>Le fil de la leçon tient en trois expressions qu'il faut savoir distinguer : <strong>guerre de mouvement</strong> → <strong>guerre de position</strong> → <strong>guerre d'usure</strong>.</p>
+</section>
+
+<section>
+<h2 id="pas-a-pas" data-toc="Explication pas à pas">Explication pas à pas</h2>
+
+<h3>0. Point de départ : les causes</h3>
+<p>Le paquet (2) s'ouvre en récapitulant les causes : tensions coloniales, enthousiasme nationaliste, réarmement (notamment allemand), alliances défensives, crise locale entre la Serbie et l'Autriche après Sarajevo. Tu les as déjà dans la <a href="lecon-1-origines.html#examen">leçon 1</a>, avec la réponse modèle.</p>
+
+<h3>1. Le plan Schlieffen (conçu dès 1905)</h3>
+<p>Le problème stratégique allemand est simple : l'Allemagne est au milieu, avec la France à l'ouest et la Russie à l'est. Combattre sur deux fronts en même temps est dangereux. La solution du plan, c'est de <strong>faire une chose à la fois</strong>, en profitant du fait que la Russie, immense, met longtemps à mobiliser sa grande armée.</p>
+<div class="stepper">
+<p class="st-title">Le plan en quatre temps (d'après la diapositive)</p>
+<div class="step"><h4>1 · Battre la France avant que la Russie soit prête</h4><p>« Vaincre rapidement la France avant que la Russie n'ait eu le temps de mobiliser pleinement son importante armée. »</p></div>
+<div class="step"><h4>2 · Passer par la Belgique neutre</h4><p>« Envoyer le gros des troupes allemandes à travers la Belgique neutre pour prendre l'armée française par surprise », en contournant les défenses françaises.</p><p class="small">Sur la carte de la diapositive, ce sont les grandes flèches rouges en pointillé qui entrent en Belgique et contournent Paris par l'ouest.</p></div>
+<div class="step"><h4>3 · Foncer sur Paris</h4><p>« Avancer rapidement sur Paris. »</p></div>
+<div class="step"><h4>4 · Se retourner vers l'est, en train</h4><p>« Immédiatement après la capitulation de la France (<strong>6 semaines</strong>), transférer rapidement des troupes <strong>par train</strong> vers le front de l'Est pour affronter l'armée russe. »</p></div>
+<div class="step"><h4>Le prix politique</h4><p>Envahir la Belgique neutre a une conséquence : « cette violation de la neutralité belge entraîne l'entrée en guerre du <strong>Royaume-Uni</strong> ». L'Allemagne se retrouve avec un ennemi de plus.</p></div>
+<div class="step"><h4>Le point faible</h4><p>Tout dépend du <strong>temps</strong>. Si la France ne tombe pas en six semaines, l'Allemagne se retrouve exactement dans la guerre sur deux fronts que le plan devait éviter. C'est ce qui se passe sur la Marne.</p></div>
+</div>
+<div class="box note"><div class="lbl">Note sur le matériel</div>
+<p>La carte de la diapositive (Northwest Europe 1914) montre aussi le « Plan XVII », le plan d'attaque français vers l'est. Les diapositives ne le commentent pas : inutile de l'apprendre s'il n'a pas été expliqué en cours.</p>
+</div>
+
+<h3>2. La bataille de la Marne (septembre 1914)</h3>
+<p>« L'avancée allemande est stoppée <strong>aux portes de Paris</strong> grâce à la résistance franco-britannique. » La carte de la diapositive montre la situation au 9 septembre 1914 : les armées allemandes (en rouge) sont arrivées à l'est de Paris ; les armées françaises et le corps expéditionnaire britannique (BEF, en bleu) leur font face le long de la Marne.</p>
+<p>Pourquoi est-ce si important ? Parce que cela fait échouer le plan Schlieffen. Selon la diapositive, cet échec « marque la <strong>fin de la guerre de mouvement</strong> et le début d'un conflit prolongé (<strong>guerre de position</strong>) ».</p>
+
+<h3>3. La guerre de position</h3>
+<p>Après la Marne, « le front occidental se fige sur une ligne de tranchées s'étendant de la <strong>mer du Nord à la frontière suisse</strong> ». La guerre devient :</p>
+<ul>
+<li><strong>statique</strong> : le front ne bouge presque plus ;</li>
+<li><strong>meurtrière</strong> : les attaques coûtent des pertes énormes ;</li>
+<li><strong>industrielle</strong> : avec de nouvelles armes comme les <strong>gaz toxiques</strong> et les <strong>mitrailleuses</strong>.</li>
+</ul>
+<p>Pourquoi n'arrive-t-on plus à avancer ? En reliant les éléments des diapositives : l'attaquant doit sortir de sa tranchée et traverser le no man's land, plein de barbelés et de cratères, sous le feu des mitrailleuses ennemies. Le défenseur, lui, est abrité sous terre. La défense est avantagée, donc chaque attaque coûte très cher et rapporte peu.</p>
+
+<div class="box def"><div class="lbl">Définitions à connaître</div>
+<div class="tblwrap"><table>
+<tr><th></th><th>Guerre de mouvement</th><th>Guerre de position (des tranchées)</th><th>Guerre d'usure</th></tr>
+<tr><td>Ce que c'est</td><td>Les armées avancent et manœuvrent sur le territoire</td><td>Le front se bloque : on se défend, enterré dans les tranchées</td><td>On gagne en faisant épuiser à l'adversaire ses hommes et ses ressources</td></tr>
+<tr><td>Quand</td><td>Août–septembre 1914 (plan Schlieffen, Marne)</td><td>Après la Marne, 1915–1917 sur le front occidental</td><td>Symbole : les batailles de 1916 (Verdun, la Somme)</td></tr>
+<tr><td>Objectif</td><td>Conquérir du terrain et la capitale ennemie</td><td>Tenir la ligne</td><td>« Saigner à blanc » l'ennemi (<a href="lecon-3-verdun.html">Verdun</a>)</td></tr>
+</table></div>
+<p>Position et usure sont liées : si personne n'arrive à percer, la seule voie qui reste est d'épuiser l'autre.</p>
+</div>
+
+<h3>4. Comment est construite une tranchée</h3>
+<div class="box def"><div class="lbl">Définition (d'après la diapositive)</div>
+<p>« Une <strong>tranchée</strong> est un fossé creusé dans le sol, profond de <strong>deux à trois mètres</strong> environ, utilisé comme système <strong>défensif et offensif</strong>. »</p>
+<p>« Le système de tranchées n'est pas une simple ligne, mais un <strong>réseau organisé en plusieurs lignes parallèles reliées entre elles</strong> : la plus proche de l'ennemi est la <strong>tranchée de première ligne</strong>, surplombant le <strong>no man's land</strong> (l'espace séparant les deux camps, souvent jonché de barbelés, de cratères d'obus et de cadavres de soldats des deux camps). »</p>
+</div>
+
+<div class="widget">
+<p style="margin-top:0"><strong>Vue de dessus : le réseau de tranchées</strong> <span class="small">(schéma simplifié)</span></p>
+<svg viewBox="0 0 640 250" role="img" aria-label="Schéma vu de dessus : lignes de tranchées parallèles, no man's land et tranchée ennemie">
+<rect x="0" y="0" width="640" height="250" rx="8" style="fill:var(--soft)"/>
+<g fill="none" stroke-width="7" stroke-linejoin="round" style="stroke:var(--fr)">
+<polyline points="250,15 230,40 250,65 230,90 250,115 230,140 250,165 230,190 250,215"/>
+<polyline points="150,15 130,40 150,65 130,90 150,115 130,140 150,165 130,190 150,215" opacity=".75"/>
+<polyline points="55,15 35,40 55,65 35,90 55,115 35,140 55,165 35,190 55,215" opacity=".5"/>
+</g>
+<g stroke-width="5" style="stroke:var(--fr)" opacity=".6">
+<line x1="140" y1="52" x2="240" y2="52"/><line x1="140" y1="178" x2="240" y2="178"/><line x1="45" y1="115" x2="140" y2="115"/>
+</g>
+<g style="fill:var(--card)" opacity=".85"><rect x="268" y="10" width="232" height="210" rx="4"/></g>
+<g font-size="19" style="fill:var(--muted)">
+<text x="384" y="38" text-anchor="middle" font-weight="700" style="fill:var(--fg)">no man's land</text>
+<text x="384" y="62" text-anchor="middle" font-style="italic" font-size="16">(entre les deux camps)</text>
+</g>
+<g style="stroke:var(--muted)" stroke-width="1.5">
+<path d="M285 80 l8 8 m0 -8 l-8 8 M300 80 l8 8 m0 -8 l-8 8 M315 80 l8 8 m0 -8 l-8 8 M285 160 l8 8 m0 -8 l-8 8 M300 160 l8 8 m0 -8 l-8 8 M315 160 l8 8 m0 -8 l-8 8 M455 120 l8 8 m0 -8 l-8 8 M470 120 l8 8 m0 -8 l-8 8 M440 120 l8 8 m0 -8 l-8 8"/>
+</g>
+<g style="fill:var(--line);stroke:var(--muted)"><circle cx="370" cy="110" r="14"/><circle cx="410" cy="160" r="10"/><circle cx="350" cy="185" r="8"/><circle cx="420" cy="80" r="9"/></g>
+<polyline points="520,15 540,40 520,65 540,90 520,115 540,140 520,165 540,190 520,215" fill="none" stroke-width="7" stroke-linejoin="round" style="stroke:var(--de)"/>
+<g font-size="18" font-weight="700">
+<text x="262" y="240" text-anchor="middle" style="fill:var(--fr)">1re ligne</text>
+<text x="100" y="240" text-anchor="middle" style="fill:var(--fr)">lignes arrière</text>
+<text x="590" y="240" text-anchor="middle" style="fill:var(--de)">ennemi</text>
+</g>
+</svg>
+<p class="small">Les lignes parallèles « reliées entre elles » sont celles de la diapositive. ✕ = barbelés, cercles = cratères d'obus.</p>
+</div>
+
+<div class="widget" id="tranchee">
+<p style="margin-top:0"><strong>Coupe d'une tranchée : touche les numéros</strong></p>
+<svg viewBox="0 0 640 340" role="img" aria-label="Coupe d'une tranchée avec ses parties numérotées">
+<rect x="0" y="0" width="640" height="340" rx="8" style="fill:var(--soft)"/>
+<path d="M0 150 L210 150 L210 310 L390 310 L390 250 L440 250 L440 135 L452 135 L452 128 L550 128 L600 150 L640 150 L640 340 L0 340 Z" style="fill:#8a6a45" opacity=".85"/>
+<rect x="150" y="255" width="60" height="55" rx="3" style="fill:#3b2d1f"/>
+<rect x="204" y="150" width="6" height="105" style="fill:#c9a36b"/>
+<g style="stroke:#5b3d1e" stroke-width="1"><line x1="204" y1="170" x2="210" y2="170"/><line x1="204" y1="195" x2="210" y2="195"/><line x1="204" y1="220" x2="210" y2="220"/><line x1="204" y1="245" x2="210" y2="245"/></g>
+<rect x="210" y="300" width="180" height="10" style="fill:#5b8fbf"/>
+<g style="fill:#c9a36b"><rect x="214" y="293" width="40" height="7"/><rect x="258" y="293" width="40" height="7"/><rect x="302" y="293" width="40" height="7"/><rect x="346" y="293" width="40" height="7"/></g>
+<rect x="384" y="250" width="6" height="60" style="fill:#a8875a"/>
+<path d="M384 255 l6 6 M384 265 l6 6 M384 275 l6 6 M384 285 l6 6 M384 295 l6 6" style="stroke:#5b3d1e"/>
+<rect x="430" y="195" width="10" height="18" style="fill:#3b2d1f"/><rect x="432" y="203" width="7" height="8" style="fill:#c9a36b"/>
+<g style="fill:#d8c79a;stroke:#8a7a50"><rect x="452" y="108" width="34" height="20" rx="6"/><rect x="488" y="108" width="34" height="20" rx="6"/><rect x="524" y="108" width="30" height="20" rx="6"/><rect x="468" y="89" width="34" height="20" rx="6"/><rect x="504" y="89" width="34" height="20" rx="6"/></g>
+<path d="M600 145 c6 -8 10 8 16 0 c6 -8 10 8 16 0" fill="none" style="stroke:var(--fg)" stroke-width="1.5"/>
+<text x="545" y="72" font-size="13" style="fill:var(--fg)">vers l'ennemi →</text>
+<g class="hots"></g>
+</svg>
+<div class="hot-btns" id="tranchee-btns" role="group" aria-label="Parties de la tranchée"></div>
+<div class="calc-out" id="tranchee-out" aria-live="polite">Touche un numéro, sur le schéma ou dans la grille, pour voir de quoi il s'agit.</div>
+<p class="small">Les noms anglais viennent du schéma de la diapositive. Traductions et fonctions : explication de ma part (approfondissement).</p>
+</div>
+
+<h3>5. La vie quotidienne dans les tranchées</h3>
+<p>La diapositive la résume ainsi : « une <strong>souffrance extrême, tant physique que psychologique</strong> ».</p>
+<ul>
+<li><strong>La boue</strong>, en permanence, « ce qui provoque la tristement célèbre <strong>maladie des pieds de tranchée</strong> (une forme de <strong>gangrène</strong> due à l'humidité constante) ».</li>
+<li><strong>Le froid</strong> et l'inconfort.</li>
+<li><strong>La vermine</strong>. Le résumé joint cite les poux.</li>
+<li><strong>La faim</strong> et la mauvaise alimentation.</li>
+<li><strong>La peur constante</strong>, jusqu'à la <strong>névrose de guerre</strong>.</li>
+<li><strong>La proximité de la mort</strong>.</li>
+<li><strong>Les maladies</strong>.</li>
+</ul>
+<p>Relie le pied de tranchée à la coupe ci-dessus : l'eau au fond de la tranchée explique pourquoi on pose des caillebotis.</p>
+
+<h3>6. Le conflit s'étend</h3>
+<ul>
+<li>L'<strong>Empire ottoman</strong> rejoint les <strong>Empires centraux</strong> (Allemagne et Autriche-Hongrie).</li>
+<li>L'<strong>Italie</strong>, « après avoir quitté la Triple Alliance, s'engage aux côtés de l'<strong>Entente en 1915</strong>, attirée par les promesses territoriales du <strong>traité de Londres</strong> ».</li>
+</ul>
+<div class="box def"><div class="lbl">Pourquoi l'Italie a pu rester neutre en 1914</div>
+<p>« Le pacte d'alliance qui la liait à l'Allemagne et à l'Empire autrichien prévoyait une assistance <strong>en cas d'attaque contre</strong> l'une des deux puissances (alors qu'en réalité, <strong>les deux ont attaqué</strong>). » L'obligation ne s'appliquait donc pas. Détails dans la <a href="lecon-6-italie.html">leçon 6</a>.</p>
+</div>
+
+<h3>7. Le front de l'Est et la guerre sur mer</h3>
+<ul>
+<li><strong>À l'est :</strong> « l'Allemagne inflige de lourdes défaites à la Russie (<strong>Tannenberg, 1914</strong>) ».</li>
+<li><strong>En mer :</strong> l'Allemagne intensifie la <strong>guerre sous-marine</strong>, « en particulier contre les <strong>navires marchands</strong> », ce qui provoque des tensions avec les <strong>États-Unis</strong>, encore neutres. Garde ce fil : en 1917, c'est justement la guerre sous-marine qui fera entrer les États-Unis dans la guerre (<a href="lecon-4-1917-1919.html">leçon 4</a>).</li>
+</ul>
+
+<h3>8. Les grandes batailles d'usure (1916)</h3>
+<p>« <strong>Verdun</strong> et la <strong>Somme</strong> symbolisent l'horreur de la guerre moderne, avec des centaines de milliers de morts pour des gains territoriaux minimes. » Ces batailles « épuisent les ressources humaines et matérielles des belligérants ». Verdun a sa propre leçon (<a href="lecon-3-verdun.html">leçon 3</a>).</p>
+<div class="box app"><div class="lbl">Approfondissement · hors diapositives</div>
+<p>Sur la Somme, les diapositives ne donnent que le nom. En bref : offensive surtout britannique et française contre les Allemands, dans le nord de la France, du 1<sup>er</sup> juillet au 18 novembre 1916. On s'en souvient aussi pour la première utilisation de chars d'assaut (britanniques, septembre 1916).</p>
+</div>
+</section>
+
+<section>
+<h2 id="analogies">Analogies</h2>
+<div class="box ana"><div class="lbl">Analogie · la correspondance de train</div>
+<p>Le plan Schlieffen ressemble à un voyage avec une correspondance très serrée. Il faut arriver à Paris en six semaines pour prendre « le train » vers l'est avant que la Russie soit prête. Si le premier train a du retard (la Marne), on rate la correspondance et on reste bloqué dans la pire situation. Un plan fondé sur le timing s'effondre tout entier dès qu'une étape saute.</p>
+</div>
+<div class="box ana"><div class="lbl">Analogie · match de foot contre tir à la corde dans la boue</div>
+<p>La guerre de mouvement, c'est un match : on court, on manœuvre, on peut marquer. La guerre de position, c'est un tir à la corde dans la boue : deux équipes tirent de toutes leurs forces et la corde bouge de quelques centimètres. À ce stade, gagne celui qui tient le plus longtemps sans s'effondrer : c'est la <strong>guerre d'usure</strong>.</p>
+</div>
+</section>
+
+<section>
+<h2 id="sources" data-toc="Sources analysées">Sources analysées (exemples traités)</h2>
+<div class="box src"><div class="lbl">Source 1 · Carte du plan Schlieffen (1905) et du front en 1914</div>
+<p><strong>Ce qu'on voit :</strong> de grandes flèches rouges en pointillé partent d'Allemagne, traversent la <strong>Belgique</strong> et contournent Paris par l'ouest et par le sud. L'aile droite allemande (celle qui passe par la Belgique) est beaucoup plus forte que l'aile gauche.</p>
+<p><strong>Comment la lire :</strong> l'idée est de contourner les fortifications françaises à la frontière (la carte indique les zones fortifiées) en passant là où elles n'existent pas, c'est-à-dire par la Belgique.</p>
+<p><strong>Lien :</strong> le choix qui rend le plan efficace (passer par la Belgique neutre) est aussi celui qui fait entrer le Royaume-Uni dans la guerre.</p>
+</div>
+<div class="box src"><div class="lbl">Source 2 · Photo « Soldats français en tranchée », 1915 (Archives Heritage)</div>
+<p><strong>Ce qu'on voit :</strong> des soldats français serrés dans une tranchée creusée dans la terre, assis, en casque et en capote. Personne ne combat : ils attendent. Sur la même diapositive, une seconde photo sans légende montre des soldats avec des <strong>masques à gaz</strong>.</p>
+<p><strong>Sens :</strong> la vie dans les tranchées est faite surtout d'attente, d'inconfort et de menace permanente. Les masques à gaz sont la preuve concrète des « nouvelles armes » de la diapositive.</p>
+</div>
+<div class="box note"><div class="lbl">Note sur le matériel</div>
+<p>La seconde photo (masques à gaz) n'a ni légende ni date sur la diapositive : on ne sait ni qui ni quand. Si tu l'utilises à l'examen, décris-la sans inventer de source.</p>
+</div>
+<div class="box ex"><div class="lbl">Exemple traité · « Pourquoi le plan Schlieffen fait-il entrer le Royaume-Uni dans la guerre ? »</div>
+<ol>
+<li><strong>Objectif allemand :</strong> battre la France en 6 semaines.</li>
+<li><strong>Moyen :</strong> contourner les défenses françaises en passant par la Belgique.</li>
+<li><strong>Problème :</strong> la Belgique est un État <strong>neutre</strong>.</li>
+<li><strong>Conséquence :</strong> la violation de la neutralité belge entraîne l'entrée en guerre du Royaume-Uni.</li>
+<li><strong>Bilan :</strong> pour éviter deux fronts, l'Allemagne se fait un ennemi de plus.</li>
+</ol>
+</div>
+</section>
+
+<section>
+<h2 id="examen" data-toc="Répondre à l'examen">Répondre à l'examen</h2>
+<div class="box q"><div class="lbl">Question d'examen (titre du paquet (2))</div>
+<p>« Les principales étapes du conflit entre 1914 et 1917 » : retrace les grandes étapes.</p>
+</div>
+<p><strong>Idée :</strong> pas de liste de dates. Raconte une <em>transformation</em> : d'une guerre rapide à une guerre bloquée, puis à une guerre d'usure. Chaque étape doit expliquer la suivante.</p>
+<ol>
+<li><strong>1914, le plan :</strong> Schlieffen (1905), la Belgique, objectif 6 semaines → le Royaume-Uni entre en guerre.</li>
+<li><strong>Septembre 1914, la Marne :</strong> l'avancée est stoppée aux portes de Paris → fin de la guerre de mouvement.</li>
+<li><strong>1915–1917, les tranchées :</strong> front immobile de la mer du Nord à la Suisse ; nouvelles armes (gaz, mitrailleuses) ; vie quotidienne très dure.</li>
+<li><strong>Extension :</strong> l'Empire ottoman rejoint les Empires centraux ; l'Italie rejoint l'Entente (1915, traité de Londres) ; Tannenberg (1914) à l'est ; guerre sous-marine → tensions avec les États-Unis.</li>
+<li><strong>1916, l'usure :</strong> Verdun et la Somme, énormément de victimes pour très peu de terrain.</li>
+<li><strong>Conclusion :</strong> en 1917, tout le monde est épuisé → ouverture vers le « tournant » de 1917 (leçon 4).</li>
+</ol>
+<div class="box ex"><div class="lbl">Réponse modèle (version courte)</div>
+<p>En 1914, l'Allemagne applique le plan Schlieffen, conçu dès 1905 : vaincre la France en six semaines en passant par la Belgique neutre, puis transférer ses troupes en train contre la Russie. L'invasion de la Belgique fait entrer le Royaume-Uni dans la guerre. En septembre 1914, l'avancée allemande est stoppée aux portes de Paris lors de la bataille de la Marne : c'est la fin de la guerre de mouvement. Le front occidental se fige alors sur une ligne de tranchées de la mer du Nord à la frontière suisse, et la guerre devient statique, meurtrière et industrielle. Le conflit s'étend : l'Empire ottoman rejoint les Empires centraux, l'Italie rejoint l'Entente en 1915, l'Allemagne bat la Russie à Tannenberg et intensifie la guerre sous-marine. En 1916, les batailles de Verdun et de la Somme symbolisent la guerre d'usure : des centaines de milliers de morts pour des gains territoriaux minimes.</p>
+</div>
+</section>
+
+<section>
+<h2 id="erreurs">Erreurs fréquentes</h2>
+<div class="box warn"><div class="lbl">Pièges</div>
+<ul>
+<li><strong>Le plan Schlieffen « de 1914 ».</strong> Il est <strong>conçu en 1905</strong> et <strong>appliqué en 1914</strong>.</li>
+<li><strong>Le plan voulait frapper la Russie d'abord.</strong> Non : d'abord la <strong>France</strong>, justement parce que la Russie est lente à mobiliser.</li>
+<li><strong>La Marne « met fin à la guerre ».</strong> Non : elle met fin à la guerre <strong>de mouvement</strong>. Et on est en <strong>septembre 1914</strong>, pas en 1918.</li>
+<li><strong>Le Royaume-Uni entre en guerre à cause de Sarajevo.</strong> D'après les diapositives, il entre en guerre à cause de la <strong>violation de la neutralité belge</strong>.</li>
+<li><strong>Tannenberg, victoire russe.</strong> Non : victoire <strong>allemande</strong> sur la Russie (1914).</li>
+<li><strong>Les États-Unis entrent en guerre à cause de la guerre sous-marine en 1915–1916.</strong> La guerre sous-marine provoque des <em>tensions</em> ; l'entrée en guerre a lieu en <strong>1917</strong>.</li>
+<li><strong>Le pied de tranchée est une gelure.</strong> La diapositive dit : une forme de <strong>gangrène due à l'humidité constante</strong>.</li>
+<li><strong>Confondre « position » et « usure ».</strong> La position est la <em>forme</em> de la guerre (immobile, dans les tranchées) ; l'usure est la <em>logique</em> pour la gagner (épuiser l'ennemi).</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2 id="vocabulaire" data-toc="Vocabulaire clé">Vocabulaire clé</h2>
+<div class="tblwrap"><table>
+<tr><th>Terme</th><th>Sens</th></tr>
+<tr><td>le plan Schlieffen</td><td>le plan allemand (1905) pour battre la France en 6 semaines via la Belgique</td></tr>
+<tr><td>la neutralité belge</td><td>le statut de la Belgique, qui ne devait prendre part à aucune guerre</td></tr>
+<tr><td>la guerre de mouvement</td><td>une guerre où les armées avancent et manœuvrent</td></tr>
+<tr><td>la guerre de position (des tranchées)</td><td>une guerre où le front est bloqué et où l'on se défend enterré</td></tr>
+<tr><td>la guerre d'usure</td><td>une guerre où l'on cherche à épuiser l'ennemi en hommes et en ressources</td></tr>
+<tr><td>la tranchée de première ligne</td><td>la tranchée la plus proche de l'ennemi</td></tr>
+<tr><td>le no man's land</td><td>l'espace entre les deux camps, plein de barbelés, de cratères et de cadavres</td></tr>
+<tr><td>les barbelés</td><td>les fils de fer hérissés de pointes qui protègent les tranchées</td></tr>
+<tr><td>un obus</td><td>un projectile tiré par un canon, qui explose</td></tr>
+<tr><td>la maladie des pieds de tranchée</td><td>une forme de gangrène due à l'humidité constante</td></tr>
+<tr><td>la vermine</td><td>les parasites (poux, puces, rats)</td></tr>
+<tr><td>la névrose de guerre</td><td>un traumatisme psychologique causé par la peur et la violence du front</td></tr>
+<tr><td>les Empires centraux</td><td>l'Allemagne et l'Autriche-Hongrie (puis leurs alliés)</td></tr>
+<tr><td>la guerre sous-marine</td><td>les attaques de sous-marins contre les navires, notamment marchands</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2 id="resume">Résumé</h2>
+<ul>
+<li><strong>Plan Schlieffen</strong> (1905) : la France en 6 semaines via la Belgique, puis en train contre la Russie → le Royaume-Uni entre en guerre.</li>
+<li><strong>La Marne</strong> (septembre 1914) : avancée stoppée aux portes de Paris → fin de la guerre de mouvement.</li>
+<li><strong>Guerre de position</strong> : tranchées de la mer du Nord à la Suisse ; tranchée = fossé de 2 à 3 m, réseau de lignes parallèles, no man's land.</li>
+<li><strong>Vie dans les tranchées</strong> : boue (pied de tranchée), froid, vermine, faim, peur (névrose de guerre), mort, maladies.</li>
+<li><strong>Extension</strong> : l'Empire ottoman avec les Empires centraux ; l'Italie avec l'Entente (1915) ; Tannenberg (1914) ; guerre sous-marine → tensions avec les États-Unis.</li>
+<li><strong>1916</strong> : Verdun et la Somme, batailles d'usure.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="quiz" data-toc="Quiz rapide">Quiz rapide</h2>
+<div class="quiz"><p class="q">Pourquoi le plan Schlieffen prévoyait-il d'attaquer d'abord la France ?</p><div class="opts">
+<button type="button" class="opt" data-why="La diapositive ne parle pas d'une faiblesse française : la raison concerne la Russie.">Parce que la France était l'ennemi le plus faible</button>
+<button type="button" class="opt" data-ok data-why="Oui : il fallait gagner à l'ouest avant que la Russie ait pleinement mobilisé son importante armée.">Parce que la Russie mettrait longtemps à mobiliser son armée</button>
+<button type="button" class="opt" data-why="Non : c'est justement le plan (passage par la Belgique) qui fait entrer le Royaume-Uni en guerre.">Parce que le Royaume-Uni avait promis de rester neutre</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">Que marque la bataille de la Marne ?</p><div class="opts">
+<button type="button" class="opt" data-why="Non, la guerre dure jusqu'en 1918.">La fin de la guerre</button>
+<button type="button" class="opt" data-ok data-why="Oui : septembre 1914, fin de la guerre de mouvement, début de la guerre de position.">La fin de la guerre de mouvement</button>
+<button type="button" class="opt" data-why="L'Italie entre en guerre en 1915, sans lien avec la Marne.">L'entrée en guerre de l'Italie</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">Qu'est-ce que le no man's land ?</p><div class="opts">
+<button type="button" class="opt" data-why="C'est la tranchée de première ligne, qui surplombe le no man's land.">La tranchée la plus proche de l'ennemi</button>
+<button type="button" class="opt" data-why="Non : on parle du front occidental, pas d'un territoire neutre.">Un État neutre comme la Belgique</button>
+<button type="button" class="opt" data-ok data-why="Oui : l'espace séparant les deux camps, avec barbelés, cratères et cadavres.">L'espace entre les tranchées des deux camps</button>
+</div><p class="fb" hidden></p></div>
+
+<div class="quiz"><p class="q">Tannenberg (1914), c'est…</p><div class="opts">
+<button type="button" class="opt" data-ok data-why="Oui : sur le front de l'Est, l'Allemagne inflige de lourdes défaites à la Russie.">une lourde défaite russe face à l'Allemagne</button>
+<button type="button" class="opt" data-why="C'est sur le front de l'Est, pas à l'ouest.">une bataille du front occidental</button>
+<button type="button" class="opt" data-why="Non : c'est une victoire allemande.">une victoire russe sur l'Allemagne</button>
+</div><p class="fb" hidden></p></div>
+</section>
+
+<section>
+<h2 id="exercices" data-toc="Exercices de vérification">Exercices de vérification</h2>
+<div class="ex-card"><div class="ex-h"><span class="lvl l1">Facile</span> Exercice 1</div>
+<p>Range dans l'ordre chronologique : Verdun · conception du plan Schlieffen · bataille de la Marne · entrée en guerre de l'Italie · Tannenberg.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Conception du plan Schlieffen (1905) → Tannenberg et la Marne (toutes deux en 1914 ; la Marne en septembre) → entrée en guerre de l'Italie (mai 1915) → Verdun (février–décembre 1916). Les diapositives ne donnent pas le mois de Tannenberg : « 1914 » suffit.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l1">Facile</span> Exercice 2</div>
+<p>Décris une tranchée : profondeur, organisation du réseau, ce qu'est la première ligne.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Un fossé profond d'environ 2 à 3 m, défensif et offensif. Pas une simple ligne, mais un réseau de lignes parallèles reliées entre elles. La première ligne est la plus proche de l'ennemi et surplombe le no man's land (barbelés, cratères d'obus, cadavres).</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l2">Moyen</span> Exercice 3</div>
+<p>Explique pourquoi le plan Schlieffen dépendait du <strong>temps</strong> et ce qui se passe quand le calendrier « saute ».</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Le plan ne fonctionne que si la France tombe en 6 semaines, avant que la Russie ait fini de mobiliser ; c'est seulement alors que les troupes peuvent partir en train vers l'est. Quand l'avancée est stoppée sur la Marne (septembre 1914), l'Allemagne se retrouve dans la guerre sur deux fronts qu'elle voulait éviter, et à l'ouest le front se fige dans les tranchées.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l2">Moyen</span> Exercice 4</div>
+<p>Pourquoi, juridiquement, l'Italie pouvait-elle rester neutre en 1914 alors qu'elle faisait partie de la Triple-Alliance ?</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Le pacte prévoyait une assistance en cas d'<em>attaque contre</em> l'Allemagne ou l'Autriche-Hongrie. En 1914, ce sont elles qui ont attaqué les premières : la clause ne s'appliquait donc pas.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l3">Difficile</span> Exercice 5</div>
+<p>En reliant les éléments des diapositives, explique pourquoi, sur le front occidental, la défense était avantagée par rapport à l'attaque.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Les défenseurs sont abrités dans un réseau de tranchées profondes de 2 à 3 m, avec plusieurs lignes. Les attaquants doivent sortir à découvert et traverser le no man's land, avec ses barbelés et ses cratères, sous le feu des mitrailleuses et de l'artillerie. Chaque attaque coûte des pertes énormes et, même si elle perce la première ligne, elle tombe sur les suivantes. Résultat : des gains minimes pour un prix très élevé, c'est-à-dire la guerre d'usure.</p></div></div>
+
+<div class="ex-card"><div class="ex-h"><span class="lvl l3">Difficile</span> Exercice 6</div>
+<p>« La bataille de la Marne est un tournant. » Argumente en 5 à 6 lignes.</p>
+<button type="button" class="sol-btn">Afficher la solution</button>
+<div class="sol" hidden><p>Jusqu'en septembre 1914, la guerre est une guerre de mouvement et l'Allemagne suit le plan Schlieffen pour obtenir une victoire rapide. Sur la Marne, l'avancée est stoppée aux portes de Paris par la résistance franco-britannique. Le plan échoue, la guerre courte devient impossible et le front se fige dans les tranchées de la mer du Nord à la Suisse. De là naissent la guerre de position, puis la logique de l'usure (Verdun, la Somme) et, à plus long terme, la mobilisation totale des sociétés.</p></div></div>
+</section>
+
+<section>
+<h2 id="liens" data-toc="Liens avec les autres leçons">Liens avec les autres leçons</h2>
+<ul>
+<li><strong>← Leçon 1 :</strong> les causes et la chaîne des alliances. Ici, tu vois le dernier maillon (Belgique → Royaume-Uni) et la fin de l'illusion d'une guerre courte.</li>
+<li><strong>→ Leçon 3 :</strong> Verdun est le cas exemplaire de la guerre d'usure.</li>
+<li><strong>→ Leçon 4 :</strong> la guerre sous-marine fait entrer les États-Unis dans la guerre en 1917 ; l'épuisement provoque les mutineries.</li>
+<li><strong>→ Leçon 5 :</strong> plus la guerre s'éternise, plus toutes les ressources de l'État sont mobilisées : c'est la guerre totale.</li>
+<li><strong>→ Leçon 6 :</strong> l'Italie entre en guerre en 1915 ; ses offensives sur l'Isonzo se déroulent « dans des conditions souvent comparables à celles du front occidental ».</li>
+</ul>
+</section>
+
+<script>
+(function(){
+var P=[
+ {x:500,y:76,en:'Sandbags',fr:'Sacs de sable',f:'Empilés sur le bord côté ennemi : ils arrêtent balles et éclats.'},
+ {x:575,y:118,en:'Parapet',fr:'Parapet',f:'Le rebord surélevé de la tranchée, du côté de l\'ennemi.'},
+ {x:470,y:150,en:'Elbow rest',fr:'Appui-coudes',f:'La tablette où le soldat pose ses coudes pour tirer par-dessus le parapet.'},
+ {x:415,y:235,en:'Fire-step',fr:'Banquette de tir',f:'La marche sur laquelle on monte pour tirer. Le reste du temps, on reste plus bas, à l\'abri.'},
+ {x:415,y:190,en:'Ammunition shelf / box',fr:'Niche à munitions',f:'Un renfoncement dans la paroi où l\'on garde les munitions à portée de main.'},
+ {x:470,y:215,en:'Exposed earth',fr:'Terre nue',f:'Une paroi de terre non renforcée : sous la pluie, elle s\'éboule et devient de la boue.'},
+ {x:232,y:200,en:'Timber board revetment',fr:'Coffrage en planches',f:'Des planches de bois qui soutiennent la paroi pour qu\'elle ne s\'effondre pas.'},
+ {x:365,y:265,en:'Wicker or brushwood revetment',fr:'Clayonnage (osier ou branchages)',f:'Une autre façon de renforcer les parois, avec des matériaux tressés.'},
+ {x:300,y:278,en:'Duck-boards',fr:'Caillebotis',f:'Des grilles de bois posées au fond pour marcher au-dessus de l\'eau et de la boue.'},
+ {x:330,y:325,en:'Water',fr:'Eau',f:'Elle s\'accumule au fond : c\'est l\'origine du « pied de tranchée » (gangrène due à l\'humidité constante, d\'après la diapositive).'},
+ {x:180,y:240,en:'Dug-out shelter',fr:'Abri creusé (cagna)',f:'Un abri creusé dans la paroi pour se protéger des bombardements et se reposer.'},
+ {x:618,y:170,en:'No man\'s land and enemy trenches',fr:'No man\'s land et tranchées ennemies',f:'Au-delà du parapet : barbelés, cratères et, plus loin, l\'ennemi.'}
+];
+var g=document.querySelector('#tranchee .hots'),out=document.getElementById('tranchee-out'),bx=document.getElementById('tranchee-btns'),ns='http://www.w3.org/2000/svg',hs=[],bs=[];
+function pick(i){var p=P[i];hs.forEach(function(h,k){h.classList.toggle('on',k===i)});bs.forEach(function(b,k){b.setAttribute('aria-pressed',String(k===i))});out.innerHTML='<strong>'+(i+1)+'. '+p.fr+'</strong> <span class="small">('+p.en+')</span><br>'+p.f}
+P.forEach(function(p,i){var a=document.createElementNS(ns,'g');a.setAttribute('class','hot');a.setAttribute('tabindex','0');a.setAttribute('role','button');a.setAttribute('aria-label',p.fr);
+ var c=document.createElementNS(ns,'circle');c.setAttribute('cx',p.x);c.setAttribute('cy',p.y);c.setAttribute('r',15);
+ var t=document.createElementNS(ns,'text');t.setAttribute('x',p.x);t.setAttribute('y',p.y+5);t.setAttribute('text-anchor','middle');t.setAttribute('font-size','15');t.textContent=i+1;
+ a.appendChild(c);a.appendChild(t);g.appendChild(a);hs.push(a);
+ a.addEventListener('click',function(){pick(i)});a.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(i)}});
+ var b=document.createElement('button');b.type='button';b.textContent=i+1;b.title=p.fr;b.setAttribute('aria-pressed','false');b.onclick=function(){pick(i)};bx.appendChild(b);bs.push(b);
+});
+})();
+</script>
+
+<nav class="pager"><a class="prev" href="lecon-1-origines.html"><small>◀ Leçon précédente</small>1. Origines (1914)</a><a class="next" href="lecon-3-verdun.html"><small>Leçon suivante ▶</small>3. Verdun (1916)</a></nav>
+</main>
+</div>
+<script>
+(function(){
+ var main=document.querySelector('main');
+ var hs=[].slice.call(main.querySelectorAll('h2[id]'));
+ function mk(){var ol=document.createElement('ol');hs.forEach(function(h){var li=document.createElement('li');var a=document.createElement('a');a.href='#'+h.id;a.textContent=h.getAttribute('data-toc')||h.textContent;li.appendChild(a);ol.appendChild(li)});return ol}
+ var side=document.querySelector('.toc-side'),mob=document.querySelector('.toc-mob');
+ if(hs.length){if(side)side.appendChild(mk());if(mob)mob.appendChild(mk())}else{if(side)side.remove();if(mob)mob.remove()}
+ if(mob)mob.addEventListener('click',function(e){if(e.target.tagName==='A')mob.removeAttribute('open')});
+ if(side&&'IntersectionObserver' in window){var links={};side.querySelectorAll('a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){side.querySelectorAll('a.on').forEach(function(x){x.classList.remove('on')});var l=links[e.target.id];if(l)l.classList.add('on')}})},{rootMargin:'0px 0px -75% 0px'});hs.forEach(function(h){io.observe(h)})}
+ document.querySelectorAll('.sol-btn').forEach(function(b){var s=b.nextElementSibling;b.setAttribute('aria-expanded','false');b.addEventListener('click',function(){var show=s.hidden;s.hidden=!show;b.textContent=show?'Masquer la solution':'Afficher la solution';b.setAttribute('aria-expanded',String(show))})});
+ document.querySelectorAll('.quiz').forEach(function(q){var opts=[].slice.call(q.querySelectorAll('.opt'));var fb=q.querySelector('.fb');
+  opts.forEach(function(o){o.addEventListener('click',function(){if(q.classList.contains('done'))return;q.classList.add('done');var good=o.hasAttribute('data-ok');
+   opts.forEach(function(x){x.disabled=true;if(x.hasAttribute('data-ok'))x.classList.add('ok')});if(!good)o.classList.add('ko');
+   fb.textContent='';var b=document.createElement('b');b.textContent=good?'Juste. ':'Pas tout à fait. ';fb.appendChild(b);fb.appendChild(document.createTextNode(o.getAttribute('data-why')||q.getAttribute('data-why')||''));fb.hidden=false;
+   var r=document.createElement('button');r.className='retry';r.type='button';r.textContent='Réessayer';r.onclick=function(){q.classList.remove('done');opts.forEach(function(x){x.disabled=false;x.classList.remove('ok','ko')});fb.hidden=true;r.remove()};fb.after(r)})})});
+ document.querySelectorAll('.stepper').forEach(function(st){var steps=[].slice.call(st.children).filter(function(c){return c.classList.contains('step')});var i=0;
+  var prog=document.createElement('div');prog.className='st-prog';prog.innerHTML='<i></i>';var t=st.querySelector('.st-title');if(t)t.after(prog);else st.prepend(prog);
+  var bar=document.createElement('div');bar.className='st-ctl';bar.innerHTML='<button type="button" class="st-prev">◀ Précédent</button><span class="st-n"></span><button type="button" class="st-next">Suivant ▶</button>';st.appendChild(bar);
+  function show(){steps.forEach(function(s,k){s.classList.toggle('on',k===i)});bar.querySelector('.st-n').textContent='Étape '+(i+1)+' sur '+steps.length;bar.querySelector('.st-prev').disabled=i===0;bar.querySelector('.st-next').disabled=i===steps.length-1;prog.firstChild.style.width=((i+1)/steps.length*100)+'%'}
+  bar.querySelector('.st-prev').onclick=function(){if(i>0){i--;show()}};bar.querySelector('.st-next').onclick=function(){if(i<steps.length-1){i++;show()}};show()});
+ document.querySelectorAll('.sorter').forEach(function(so){var items=[].slice.call(so.querySelectorAll('.sort-item'));var cats=JSON.parse(so.getAttribute('data-cats'));var sc=so.querySelector('.score');
+  function upd(){var done=items.filter(function(it){return it.dataset.done}).length,good=items.filter(function(it){return it.dataset.done==='ok'}).length;sc.textContent=done?('Score : '+good+' / '+done+' (sur '+items.length+')'):''}
+  items.forEach(function(it){var ctl=document.createElement('div');ctl.className='sort-ctl';var why=document.createElement('div');why.className='why';why.hidden=true;
+   cats.forEach(function(c){var b=document.createElement('button');b.type='button';b.textContent=c[1];b.setAttribute('aria-pressed','false');b.onclick=function(){ctl.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});var ok=it.getAttribute('data-a')===c[0];it.classList.toggle('ok',ok);it.classList.toggle('ko',!ok);it.dataset.done=ok?'ok':'ko';why.textContent=(ok?'Juste. ':'Non : ')+it.getAttribute('data-why');why.hidden=false;upd()};ctl.appendChild(b)});
+   it.appendChild(ctl);it.appendChild(why)});upd()});
+})();
+</script>
+</body>
+</html>
